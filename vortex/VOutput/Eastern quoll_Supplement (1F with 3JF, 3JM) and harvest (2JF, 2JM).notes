@@ -1,0 +1,31 @@
+Project Notes: Scenario settings	
+      Number of iterations	1000
+      Number of years	100
+Extinction definition	1 sex remains
+
+Reproductive system	Reproductive system	Polygynous
+	Age of first offspring	1
+	Maximum lifespan	3
+	Maximum litters per year	1
+	Maximum progeny per litter	6
+	Sex ratio at birth#	1:01
+	Maximum age of female reproduction	3
+	Maximum age of male reproduction	2
+
+Reproductive rates	Adult females breeding	100%
+
+Mortality rates
+	Mortality rate <age 1	70%
+	Mortality rate >age 1	10%
+	Carrying capacity	51
+Mate monopolisation	Males in breeding pool	25.51%
+Abundance	Initial population size	48
+Harvest	Frequency	-
+	Survival	-
+	Harvest sex ratio	-
+Supplementation	Frequency	-
+	Survival of individuals	-
+	Sex ratio	-
+Genetics	Maximum female mates	3
+
+Species Description Notes: Coarse

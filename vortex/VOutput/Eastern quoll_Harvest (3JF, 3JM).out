@@ -1,0 +1,4152 @@
+Results from VORTEX 10.5.5.0
+Project: Eastern quoll
+Scenario: Harvest (3JF, 3JM)
+
+Population 1: MFWS
+
+Year 0; Census 0
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 47.00 (0.00 SE; 0.00 SD)
+  Means across extant populations only:
+     Population size =          47.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.9894 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  1.0000 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 94.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  47.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 3.14 (0.01 SE; 0.22 SD)
+
+Year 1; Census 1
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 86.51 (0.70 SE; 22.11 SD)
+  Means across extant populations only:
+     Population size =          86.51 (0.70 SE; 22.11 SD)
+     GD(expected heterozygosity) =  0.9856 (0.0000 SE; 0.0012 SD)
+     Observed heterozygosity =  1.0000 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 90.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  45.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 3.15 (0.01 SE; 0.27 SD)
+
+Year 1; Census 2
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 86.51 (0.70 SE; 22.11 SD)
+  Means across extant populations only:
+     Population size =          86.51 (0.70 SE; 22.11 SD)
+     GD(expected heterozygosity) =  0.9856 (0.0000 SE; 0.0012 SD)
+     Observed heterozygosity =  1.0000 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 90.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  45.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 3.15 (0.01 SE; 0.27 SD)
+
+Year 1; Census 3
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 80.87 (0.68 SE; 21.47 SD)
+  Means across extant populations only:
+     Population size =          80.87 (0.68 SE; 21.47 SD)
+     GD(expected heterozygosity) =  0.9858 (0.0000 SE; 0.0012 SD)
+     Observed heterozygosity =  1.0000 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 90.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  45.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 3.15 (0.01 SE; 0.26 SD)
+
+Year 1; Census 4
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 76.60 (0.76 SE; 23.88 SD)
+  Means across extant populations only:
+     Population size =          76.60 (0.76 SE; 23.88 SD)
+     GD(expected heterozygosity) =  0.9849 (0.0000 SE; 0.0010 SD)
+     Observed heterozygosity =  1.0000 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 84.31 (0.18 SE; 5.72 SD)
+     Number of mt haplotypes =  41.85 (0.09 SE; 2.84 SD)
+     Lethal alleles / diploid = 3.15 (0.01 SE; 0.27 SD)
+
+Year 2; Census 1
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 91.17 (0.87 SE; 27.56 SD)
+  Means across extant populations only:
+     Population size =          91.17 (0.87 SE; 27.56 SD)
+     GD(expected heterozygosity) =  0.9784 (0.0001 SE; 0.0029 SD)
+     Observed heterozygosity =  0.9980 (0.0002 SE; 0.0049 SD)
+     Number of extant alleles = 66.64 (0.19 SE; 6.04 SD)
+     Number of mt haplotypes =  32.87 (0.11 SE; 3.58 SD)
+     Lethal alleles / diploid = 3.14 (0.01 SE; 0.32 SD)
+
+Year 2; Census 2
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 91.17 (0.87 SE; 27.56 SD)
+  Means across extant populations only:
+     Population size =          91.17 (0.87 SE; 27.56 SD)
+     GD(expected heterozygosity) =  0.9784 (0.0001 SE; 0.0029 SD)
+     Observed heterozygosity =  0.9980 (0.0002 SE; 0.0049 SD)
+     Number of extant alleles = 66.64 (0.19 SE; 6.04 SD)
+     Number of mt haplotypes =  32.87 (0.11 SE; 3.58 SD)
+     Lethal alleles / diploid = 3.14 (0.01 SE; 0.32 SD)
+
+Year 2; Census 3
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 85.70 (0.85 SE; 26.82 SD)
+  Means across extant populations only:
+     Population size =          85.70 (0.85 SE; 26.82 SD)
+     GD(expected heterozygosity) =  0.9786 (0.0001 SE; 0.0029 SD)
+     Observed heterozygosity =  0.9982 (0.0001 SE; 0.0047 SD)
+     Number of extant alleles = 66.64 (0.19 SE; 6.04 SD)
+     Number of mt haplotypes =  32.87 (0.11 SE; 3.58 SD)
+     Lethal alleles / diploid = 3.14 (0.01 SE; 0.32 SD)
+
+Year 2; Census 4
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 80.87 (0.92 SE; 29.21 SD)
+  Means across extant populations only:
+     Population size =          80.87 (0.92 SE; 29.21 SD)
+     GD(expected heterozygosity) =  0.9776 (0.0001 SE; 0.0029 SD)
+     Observed heterozygosity =  0.9981 (0.0002 SE; 0.0050 SD)
+     Number of extant alleles = 63.36 (0.21 SE; 6.67 SD)
+     Number of mt haplotypes =  30.87 (0.12 SE; 3.74 SD)
+     Lethal alleles / diploid = 3.14 (0.01 SE; 0.33 SD)
+
+Year 3; Census 1
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 90.23 (0.85 SE; 26.85 SD)
+  Means across extant populations only:
+     Population size =          90.23 (0.85 SE; 26.85 SD)
+     GD(expected heterozygosity) =  0.9690 (0.0002 SE; 0.0049 SD)
+     Observed heterozygosity =  0.9935 (0.0003 SE; 0.0098 SD)
+     Number of extant alleles = 51.76 (0.17 SE; 5.45 SD)
+     Number of mt haplotypes =  24.45 (0.11 SE; 3.45 SD)
+     Lethal alleles / diploid = 3.12 (0.01 SE; 0.38 SD)
+
+Year 3; Census 2
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 90.23 (0.85 SE; 26.85 SD)
+  Means across extant populations only:
+     Population size =          90.23 (0.85 SE; 26.85 SD)
+     GD(expected heterozygosity) =  0.9690 (0.0002 SE; 0.0049 SD)
+     Observed heterozygosity =  0.9935 (0.0003 SE; 0.0098 SD)
+     Number of extant alleles = 51.76 (0.17 SE; 5.45 SD)
+     Number of mt haplotypes =  24.45 (0.11 SE; 3.45 SD)
+     Lethal alleles / diploid = 3.12 (0.01 SE; 0.38 SD)
+
+Year 3; Census 3
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 84.65 (0.83 SE; 26.20 SD)
+  Means across extant populations only:
+     Population size =          84.65 (0.83 SE; 26.20 SD)
+     GD(expected heterozygosity) =  0.9694 (0.0002 SE; 0.0049 SD)
+     Observed heterozygosity =  0.9939 (0.0003 SE; 0.0097 SD)
+     Number of extant alleles = 51.76 (0.17 SE; 5.45 SD)
+     Number of mt haplotypes =  24.45 (0.11 SE; 3.45 SD)
+     Lethal alleles / diploid = 3.12 (0.01 SE; 0.38 SD)
+
+Year 3; Census 4
+     N[Extinct] =    0, P[E] =  0.000
+     N[Surviving] =  1000, P[S] =  1.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 80.00 (0.89 SE; 28.30 SD)
+  Means across extant populations only:
+     Population size =          80.00 (0.89 SE; 28.30 SD)
+     GD(expected heterozygosity) =  0.9684 (0.0002 SE; 0.0048 SD)
+     Observed heterozygosity =  0.9937 (0.0003 SE; 0.0101 SD)
+     Number of extant alleles = 49.75 (0.18 SE; 5.57 SD)
+     Number of mt haplotypes =  23.27 (0.11 SE; 3.38 SD)
+     Lethal alleles / diploid = 3.12 (0.01 SE; 0.39 SD)
+
+Year 4; Census 1
+     N[Extinct] =    6, P[E] =  0.006
+     N[Surviving] =  994, P[S] =  0.994
+     N[1st extinct] =  6, P[1st extinct] =  0.006
+     Mean size (all populations) = 85.53 (0.97 SE; 30.79 SD)
+  Means across extant populations only:
+     Population size =          86.03 (0.96 SE; 30.20 SD)
+     GD(expected heterozygosity) =  0.9550 (0.0004 SE; 0.0128 SD)
+     Observed heterozygosity =  0.9864 (0.0005 SE; 0.0148 SD)
+     Number of extant alleles = 37.07 (0.17 SE; 5.28 SD)
+     Number of mt haplotypes =  15.54 (0.07 SE; 2.16 SD)
+     Lethal alleles / diploid = 3.09 (0.01 SE; 0.46 SD)
+
+Year 4; Census 2
+     N[Extinct] =    6, P[E] =  0.006
+     N[Surviving] =  994, P[S] =  0.994
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 85.53 (0.97 SE; 30.79 SD)
+  Means across extant populations only:
+     Population size =          86.03 (0.96 SE; 30.20 SD)
+     GD(expected heterozygosity) =  0.9550 (0.0004 SE; 0.0128 SD)
+     Observed heterozygosity =  0.9864 (0.0005 SE; 0.0148 SD)
+     Number of extant alleles = 37.07 (0.17 SE; 5.28 SD)
+     Number of mt haplotypes =  15.54 (0.07 SE; 2.16 SD)
+     Lethal alleles / diploid = 3.09 (0.01 SE; 0.46 SD)
+
+Year 4; Census 3
+     N[Extinct] =    6, P[E] =  0.006
+     N[Surviving] =  994, P[S] =  0.994
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 80.06 (0.95 SE; 30.05 SD)
+  Means across extant populations only:
+     Population size =          80.52 (0.94 SE; 29.53 SD)
+     GD(expected heterozygosity) =  0.9554 (0.0004 SE; 0.0121 SD)
+     Observed heterozygosity =  0.9869 (0.0005 SE; 0.0150 SD)
+     Number of extant alleles = 37.07 (0.17 SE; 5.28 SD)
+     Number of mt haplotypes =  15.54 (0.07 SE; 2.16 SD)
+     Lethal alleles / diploid = 3.09 (0.01 SE; 0.46 SD)
+
+Year 4; Census 4
+     N[Extinct] =    7, P[E] =  0.007
+     N[Surviving] =  993, P[S] =  0.993
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 75.71 (1.00 SE; 31.47 SD)
+  Means across extant populations only:
+     Population size =          76.22 (0.98 SE; 30.98 SD)
+     GD(expected heterozygosity) =  0.9546 (0.0004 SE; 0.0118 SD)
+     Observed heterozygosity =  0.9866 (0.0005 SE; 0.0156 SD)
+     Number of extant alleles = 36.08 (0.17 SE; 5.29 SD)
+     Number of mt haplotypes =  15.13 (0.07 SE; 2.18 SD)
+     Lethal alleles / diploid = 3.09 (0.01 SE; 0.46 SD)
+
+Year 5; Census 1
+     N[Extinct] =    18, P[E] =  0.018
+     N[Surviving] =  982, P[S] =  0.982
+     N[1st extinct] =  11, P[1st extinct] =  0.011
+     Mean size (all populations) = 81.27 (0.98 SE; 30.86 SD)
+  Means across extant populations only:
+     Population size =          82.73 (0.93 SE; 29.17 SD)
+     GD(expected heterozygosity) =  0.9445 (0.0005 SE; 0.0164 SD)
+     Observed heterozygosity =  0.9774 (0.0006 SE; 0.0202 SD)
+     Number of extant alleles = 30.78 (0.16 SE; 4.92 SD)
+     Number of mt haplotypes =  12.62 (0.07 SE; 2.06 SD)
+     Lethal alleles / diploid = 3.04 (0.02 SE; 0.51 SD)
+
+Year 5; Census 2
+     N[Extinct] =    18, P[E] =  0.018
+     N[Surviving] =  982, P[S] =  0.982
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 81.27 (0.98 SE; 30.86 SD)
+  Means across extant populations only:
+     Population size =          82.73 (0.93 SE; 29.17 SD)
+     GD(expected heterozygosity) =  0.9445 (0.0005 SE; 0.0164 SD)
+     Observed heterozygosity =  0.9774 (0.0006 SE; 0.0202 SD)
+     Number of extant alleles = 30.78 (0.16 SE; 4.92 SD)
+     Number of mt haplotypes =  12.62 (0.07 SE; 2.06 SD)
+     Lethal alleles / diploid = 3.04 (0.02 SE; 0.51 SD)
+
+Year 5; Census 3
+     N[Extinct] =    18, P[E] =  0.018
+     N[Surviving] =  982, P[S] =  0.982
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 75.91 (0.95 SE; 29.98 SD)
+  Means across extant populations only:
+     Population size =          77.27 (0.91 SE; 28.49 SD)
+     GD(expected heterozygosity) =  0.9449 (0.0005 SE; 0.0163 SD)
+     Observed heterozygosity =  0.9781 (0.0007 SE; 0.0205 SD)
+     Number of extant alleles = 30.78 (0.16 SE; 4.92 SD)
+     Number of mt haplotypes =  12.62 (0.07 SE; 2.06 SD)
+     Lethal alleles / diploid = 3.05 (0.02 SE; 0.50 SD)
+
+Year 5; Census 4
+     N[Extinct] =    18, P[E] =  0.018
+     N[Surviving] =  982, P[S] =  0.982
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 71.59 (0.98 SE; 31.08 SD)
+  Means across extant populations only:
+     Population size =          72.88 (0.95 SE; 29.86 SD)
+     GD(expected heterozygosity) =  0.9438 (0.0006 SE; 0.0178 SD)
+     Observed heterozygosity =  0.9779 (0.0007 SE; 0.0210 SD)
+     Number of extant alleles = 30.04 (0.16 SE; 5.00 SD)
+     Number of mt haplotypes =  12.33 (0.07 SE; 2.10 SD)
+     Lethal alleles / diploid = 3.05 (0.02 SE; 0.51 SD)
+
+Year 6; Census 1
+     N[Extinct] =    25, P[E] =  0.025
+     N[Surviving] =  975, P[S] =  0.975
+     N[1st extinct] =  7, P[1st extinct] =  0.007
+     Mean size (all populations) = 79.11 (1.02 SE; 32.16 SD)
+  Means across extant populations only:
+     Population size =          81.11 (0.96 SE; 29.99 SD)
+     GD(expected heterozygosity) =  0.9325 (0.0007 SE; 0.0223 SD)
+     Observed heterozygosity =  0.9676 (0.0008 SE; 0.0254 SD)
+     Number of extant alleles = 25.94 (0.15 SE; 4.69 SD)
+     Number of mt haplotypes =  10.52 (0.07 SE; 2.12 SD)
+     Lethal alleles / diploid = 3.00 (0.02 SE; 0.54 SD)
+
+Year 6; Census 2
+     N[Extinct] =    25, P[E] =  0.025
+     N[Surviving] =  975, P[S] =  0.975
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 79.11 (1.02 SE; 32.16 SD)
+  Means across extant populations only:
+     Population size =          81.11 (0.96 SE; 29.99 SD)
+     GD(expected heterozygosity) =  0.9325 (0.0007 SE; 0.0223 SD)
+     Observed heterozygosity =  0.9676 (0.0008 SE; 0.0254 SD)
+     Number of extant alleles = 25.94 (0.15 SE; 4.69 SD)
+     Number of mt haplotypes =  10.52 (0.07 SE; 2.12 SD)
+     Lethal alleles / diploid = 3.00 (0.02 SE; 0.54 SD)
+
+Year 6; Census 3
+     N[Extinct] =    25, P[E] =  0.025
+     N[Surviving] =  975, P[S] =  0.975
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 73.79 (0.99 SE; 31.15 SD)
+  Means across extant populations only:
+     Population size =          75.66 (0.94 SE; 29.24 SD)
+     GD(expected heterozygosity) =  0.9331 (0.0007 SE; 0.0218 SD)
+     Observed heterozygosity =  0.9690 (0.0008 SE; 0.0251 SD)
+     Number of extant alleles = 25.94 (0.15 SE; 4.69 SD)
+     Number of mt haplotypes =  10.52 (0.07 SE; 2.12 SD)
+     Lethal alleles / diploid = 3.01 (0.02 SE; 0.54 SD)
+
+Year 6; Census 4
+     N[Extinct] =    25, P[E] =  0.025
+     N[Surviving] =  975, P[S] =  0.975
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 69.63 (1.01 SE; 31.99 SD)
+  Means across extant populations only:
+     Population size =          71.39 (0.97 SE; 30.40 SD)
+     GD(expected heterozygosity) =  0.9321 (0.0007 SE; 0.0231 SD)
+     Observed heterozygosity =  0.9686 (0.0008 SE; 0.0263 SD)
+     Number of extant alleles = 25.43 (0.15 SE; 4.71 SD)
+     Number of mt haplotypes =  10.33 (0.07 SE; 2.13 SD)
+     Lethal alleles / diploid = 3.00 (0.02 SE; 0.54 SD)
+
+Year 7; Census 1
+     N[Extinct] =    41, P[E] =  0.041
+     N[Surviving] =  959, P[S] =  0.959
+     N[1st extinct] =  16, P[1st extinct] =  0.016
+     Mean size (all populations) = 74.38 (1.03 SE; 32.50 SD)
+  Means across extant populations only:
+     Population size =          77.53 (0.95 SE; 29.32 SD)
+     GD(expected heterozygosity) =  0.9210 (0.0008 SE; 0.0258 SD)
+     Observed heterozygosity =  0.9584 (0.0010 SE; 0.0311 SD)
+     Number of extant alleles = 22.27 (0.14 SE; 4.35 SD)
+     Number of mt haplotypes =  8.81 (0.06 SE; 1.93 SD)
+     Lethal alleles / diploid = 2.94 (0.02 SE; 0.59 SD)
+
+Year 7; Census 2
+     N[Extinct] =    41, P[E] =  0.041
+     N[Surviving] =  959, P[S] =  0.959
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 74.38 (1.03 SE; 32.50 SD)
+  Means across extant populations only:
+     Population size =          77.53 (0.95 SE; 29.32 SD)
+     GD(expected heterozygosity) =  0.9210 (0.0008 SE; 0.0258 SD)
+     Observed heterozygosity =  0.9584 (0.0010 SE; 0.0311 SD)
+     Number of extant alleles = 22.27 (0.14 SE; 4.35 SD)
+     Number of mt haplotypes =  8.81 (0.06 SE; 1.93 SD)
+     Lethal alleles / diploid = 2.94 (0.02 SE; 0.59 SD)
+
+Year 7; Census 3
+     N[Extinct] =    41, P[E] =  0.041
+     N[Surviving] =  959, P[S] =  0.959
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 69.18 (0.99 SE; 31.37 SD)
+  Means across extant populations only:
+     Population size =          72.10 (0.92 SE; 28.58 SD)
+     GD(expected heterozygosity) =  0.9217 (0.0008 SE; 0.0251 SD)
+     Observed heterozygosity =  0.9597 (0.0010 SE; 0.0308 SD)
+     Number of extant alleles = 22.27 (0.14 SE; 4.35 SD)
+     Number of mt haplotypes =  8.81 (0.06 SE; 1.93 SD)
+     Lethal alleles / diploid = 2.95 (0.02 SE; 0.59 SD)
+
+Year 7; Census 4
+     N[Extinct] =    42, P[E] =  0.042
+     N[Surviving] =  958, P[S] =  0.958
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 65.11 (1.01 SE; 31.84 SD)
+  Means across extant populations only:
+     Population size =          67.94 (0.95 SE; 29.47 SD)
+     GD(expected heterozygosity) =  0.9205 (0.0008 SE; 0.0260 SD)
+     Observed heterozygosity =  0.9596 (0.0010 SE; 0.0308 SD)
+     Number of extant alleles = 21.85 (0.14 SE; 4.35 SD)
+     Number of mt haplotypes =  8.66 (0.06 SE; 1.91 SD)
+     Lethal alleles / diploid = 2.95 (0.02 SE; 0.59 SD)
+
+Year 8; Census 1
+     N[Extinct] =    59, P[E] =  0.059
+     N[Surviving] =  941, P[S] =  0.941
+     N[1st extinct] =  17, P[1st extinct] =  0.017
+     Mean size (all populations) = 71.07 (1.07 SE; 33.69 SD)
+  Means across extant populations only:
+     Population size =          75.49 (0.96 SE; 29.59 SD)
+     GD(expected heterozygosity) =  0.9089 (0.0010 SE; 0.0317 SD)
+     Observed heterozygosity =  0.9466 (0.0012 SE; 0.0381 SD)
+     Number of extant alleles = 19.63 (0.13 SE; 4.07 SD)
+     Number of mt haplotypes =  7.76 (0.06 SE; 1.80 SD)
+     Lethal alleles / diploid = 2.90 (0.02 SE; 0.62 SD)
+
+Year 8; Census 2
+     N[Extinct] =    59, P[E] =  0.059
+     N[Surviving] =  941, P[S] =  0.941
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 71.07 (1.07 SE; 33.69 SD)
+  Means across extant populations only:
+     Population size =          75.49 (0.96 SE; 29.59 SD)
+     GD(expected heterozygosity) =  0.9089 (0.0010 SE; 0.0317 SD)
+     Observed heterozygosity =  0.9466 (0.0012 SE; 0.0381 SD)
+     Number of extant alleles = 19.63 (0.13 SE; 4.07 SD)
+     Number of mt haplotypes =  7.76 (0.06 SE; 1.80 SD)
+     Lethal alleles / diploid = 2.90 (0.02 SE; 0.62 SD)
+
+Year 8; Census 3
+     N[Extinct] =    59, P[E] =  0.059
+     N[Surviving] =  941, P[S] =  0.941
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 66.02 (1.02 SE; 32.38 SD)
+  Means across extant populations only:
+     Population size =          70.12 (0.94 SE; 28.80 SD)
+     GD(expected heterozygosity) =  0.9098 (0.0010 SE; 0.0308 SD)
+     Observed heterozygosity =  0.9484 (0.0012 SE; 0.0379 SD)
+     Number of extant alleles = 19.63 (0.13 SE; 4.07 SD)
+     Number of mt haplotypes =  7.76 (0.06 SE; 1.80 SD)
+     Lethal alleles / diploid = 2.91 (0.02 SE; 0.61 SD)
+
+Year 8; Census 4
+     N[Extinct] =    60, P[E] =  0.060
+     N[Surviving] =  940, P[S] =  0.940
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 61.85 (1.03 SE; 32.60 SD)
+  Means across extant populations only:
+     Population size =          65.76 (0.97 SE; 29.59 SD)
+     GD(expected heterozygosity) =  0.9085 (0.0010 SE; 0.0317 SD)
+     Observed heterozygosity =  0.9482 (0.0013 SE; 0.0390 SD)
+     Number of extant alleles = 19.32 (0.13 SE; 4.04 SD)
+     Number of mt haplotypes =  7.65 (0.06 SE; 1.79 SD)
+     Lethal alleles / diploid = 2.90 (0.02 SE; 0.62 SD)
+
+Year 9; Census 1
+     N[Extinct] =    82, P[E] =  0.082
+     N[Surviving] =  918, P[S] =  0.918
+     N[1st extinct] =  22, P[1st extinct] =  0.022
+     Mean size (all populations) = 66.63 (1.10 SE; 34.67 SD)
+  Means across extant populations only:
+     Population size =          72.53 (0.98 SE; 29.75 SD)
+     GD(expected heterozygosity) =  0.8965 (0.0012 SE; 0.0377 SD)
+     Observed heterozygosity =  0.9355 (0.0016 SE; 0.0474 SD)
+     Number of extant alleles = 17.49 (0.13 SE; 3.83 SD)
+     Number of mt haplotypes =  6.96 (0.06 SE; 1.68 SD)
+     Lethal alleles / diploid = 2.82 (0.02 SE; 0.63 SD)
+
+Year 9; Census 2
+     N[Extinct] =    82, P[E] =  0.082
+     N[Surviving] =  918, P[S] =  0.918
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 66.63 (1.10 SE; 34.67 SD)
+  Means across extant populations only:
+     Population size =          72.53 (0.98 SE; 29.75 SD)
+     GD(expected heterozygosity) =  0.8965 (0.0012 SE; 0.0377 SD)
+     Observed heterozygosity =  0.9355 (0.0016 SE; 0.0474 SD)
+     Number of extant alleles = 17.49 (0.13 SE; 3.83 SD)
+     Number of mt haplotypes =  6.96 (0.06 SE; 1.68 SD)
+     Lethal alleles / diploid = 2.82 (0.02 SE; 0.63 SD)
+
+Year 9; Census 3
+     N[Extinct] =    82, P[E] =  0.082
+     N[Surviving] =  918, P[S] =  0.918
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 61.77 (1.05 SE; 33.17 SD)
+  Means across extant populations only:
+     Population size =          67.23 (0.95 SE; 28.88 SD)
+     GD(expected heterozygosity) =  0.8976 (0.0012 SE; 0.0369 SD)
+     Observed heterozygosity =  0.9373 (0.0015 SE; 0.0458 SD)
+     Number of extant alleles = 17.49 (0.13 SE; 3.83 SD)
+     Number of mt haplotypes =  6.96 (0.06 SE; 1.68 SD)
+     Lethal alleles / diploid = 2.83 (0.02 SE; 0.63 SD)
+
+Year 9; Census 4
+     N[Extinct] =    85, P[E] =  0.085
+     N[Surviving] =  915, P[S] =  0.915
+     N[1st extinct] =  3, P[1st extinct] =  0.003
+     Mean size (all populations) = 57.96 (1.04 SE; 33.03 SD)
+  Means across extant populations only:
+     Population size =          63.28 (0.97 SE; 29.31 SD)
+     GD(expected heterozygosity) =  0.8965 (0.0012 SE; 0.0373 SD)
+     Observed heterozygosity =  0.9365 (0.0015 SE; 0.0469 SD)
+     Number of extant alleles = 17.24 (0.13 SE; 3.80 SD)
+     Number of mt haplotypes =  6.88 (0.06 SE; 1.68 SD)
+     Lethal alleles / diploid = 2.82 (0.02 SE; 0.63 SD)
+
+Year 10; Census 1
+     N[Extinct] =    110, P[E] =  0.110
+     N[Surviving] =  890, P[S] =  0.890
+     N[1st extinct] =  25, P[1st extinct] =  0.025
+     Mean size (all populations) = 63.50 (1.14 SE; 36.11 SD)
+  Means across extant populations only:
+     Population size =          71.24 (1.02 SE; 30.31 SD)
+     GD(expected heterozygosity) =  0.8844 (0.0014 SE; 0.0427 SD)
+     Observed heterozygosity =  0.9254 (0.0017 SE; 0.0500 SD)
+     Number of extant alleles = 15.67 (0.12 SE; 3.52 SD)
+     Number of mt haplotypes =  6.25 (0.05 SE; 1.60 SD)
+     Lethal alleles / diploid = 2.74 (0.02 SE; 0.65 SD)
+
+Year 10; Census 2
+     N[Extinct] =    110, P[E] =  0.110
+     N[Surviving] =  890, P[S] =  0.890
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 63.50 (1.14 SE; 36.11 SD)
+  Means across extant populations only:
+     Population size =          71.24 (1.02 SE; 30.31 SD)
+     GD(expected heterozygosity) =  0.8844 (0.0014 SE; 0.0427 SD)
+     Observed heterozygosity =  0.9254 (0.0017 SE; 0.0500 SD)
+     Number of extant alleles = 15.67 (0.12 SE; 3.52 SD)
+     Number of mt haplotypes =  6.25 (0.05 SE; 1.60 SD)
+     Lethal alleles / diploid = 2.74 (0.02 SE; 0.65 SD)
+
+Year 10; Census 3
+     N[Extinct] =    110, P[E] =  0.110
+     N[Surviving] =  890, P[S] =  0.890
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 58.75 (1.09 SE; 34.42 SD)
+  Means across extant populations only:
+     Population size =          65.91 (0.99 SE; 29.41 SD)
+     GD(expected heterozygosity) =  0.8854 (0.0014 SE; 0.0409 SD)
+     Observed heterozygosity =  0.9268 (0.0017 SE; 0.0507 SD)
+     Number of extant alleles = 15.67 (0.12 SE; 3.52 SD)
+     Number of mt haplotypes =  6.25 (0.05 SE; 1.60 SD)
+     Lethal alleles / diploid = 2.75 (0.02 SE; 0.65 SD)
+
+Year 10; Census 4
+     N[Extinct] =    110, P[E] =  0.110
+     N[Surviving] =  890, P[S] =  0.890
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 55.14 (1.08 SE; 34.01 SD)
+  Means across extant populations only:
+     Population size =          61.87 (1.00 SE; 29.79 SD)
+     GD(expected heterozygosity) =  0.8839 (0.0014 SE; 0.0427 SD)
+     Observed heterozygosity =  0.9270 (0.0018 SE; 0.0522 SD)
+     Number of extant alleles = 15.42 (0.12 SE; 3.54 SD)
+     Number of mt haplotypes =  6.16 (0.05 SE; 1.58 SD)
+     Lethal alleles / diploid = 2.75 (0.02 SE; 0.65 SD)
+
+Year 11; Census 1
+     N[Extinct] =    141, P[E] =  0.141
+     N[Surviving] =  859, P[S] =  0.859
+     N[1st extinct] =  31, P[1st extinct] =  0.031
+     Mean size (all populations) = 59.28 (1.15 SE; 36.48 SD)
+  Means across extant populations only:
+     Population size =          68.88 (1.02 SE; 29.91 SD)
+     GD(expected heterozygosity) =  0.8729 (0.0016 SE; 0.0480 SD)
+     Observed heterozygosity =  0.9142 (0.0020 SE; 0.0582 SD)
+     Number of extant alleles = 14.18 (0.12 SE; 3.39 SD)
+     Number of mt haplotypes =  5.68 (0.05 SE; 1.55 SD)
+     Lethal alleles / diploid = 2.67 (0.02 SE; 0.67 SD)
+
+Year 11; Census 2
+     N[Extinct] =    141, P[E] =  0.141
+     N[Surviving] =  859, P[S] =  0.859
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 59.28 (1.15 SE; 36.48 SD)
+  Means across extant populations only:
+     Population size =          68.88 (1.02 SE; 29.91 SD)
+     GD(expected heterozygosity) =  0.8729 (0.0016 SE; 0.0480 SD)
+     Observed heterozygosity =  0.9142 (0.0020 SE; 0.0582 SD)
+     Number of extant alleles = 14.18 (0.12 SE; 3.39 SD)
+     Number of mt haplotypes =  5.68 (0.05 SE; 1.55 SD)
+     Lethal alleles / diploid = 2.67 (0.02 SE; 0.67 SD)
+
+Year 11; Census 3
+     N[Extinct] =    141, P[E] =  0.141
+     N[Surviving] =  859, P[S] =  0.859
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 54.77 (1.09 SE; 34.62 SD)
+  Means across extant populations only:
+     Population size =          63.63 (0.99 SE; 28.94 SD)
+     GD(expected heterozygosity) =  0.8735 (0.0016 SE; 0.0469 SD)
+     Observed heterozygosity =  0.9158 (0.0020 SE; 0.0579 SD)
+     Number of extant alleles = 14.18 (0.12 SE; 3.39 SD)
+     Number of mt haplotypes =  5.68 (0.05 SE; 1.55 SD)
+     Lethal alleles / diploid = 2.68 (0.02 SE; 0.67 SD)
+
+Year 11; Census 4
+     N[Extinct] =    145, P[E] =  0.145
+     N[Surviving] =  855, P[S] =  0.855
+     N[1st extinct] =  4, P[1st extinct] =  0.004
+     Mean size (all populations) = 51.39 (1.08 SE; 34.01 SD)
+  Means across extant populations only:
+     Population size =          59.97 (0.99 SE; 29.05 SD)
+     GD(expected heterozygosity) =  0.8727 (0.0015 SE; 0.0446 SD)
+     Observed heterozygosity =  0.9157 (0.0020 SE; 0.0598 SD)
+     Number of extant alleles = 14.01 (0.11 SE; 3.33 SD)
+     Number of mt haplotypes =  5.62 (0.05 SE; 1.53 SD)
+     Lethal alleles / diploid = 2.67 (0.02 SE; 0.67 SD)
+
+Year 12; Census 1
+     N[Extinct] =    180, P[E] =  0.180
+     N[Surviving] =  820, P[S] =  0.820
+     N[1st extinct] =  35, P[1st extinct] =  0.035
+     Mean size (all populations) = 55.36 (1.18 SE; 37.32 SD)
+  Means across extant populations only:
+     Population size =          67.40 (1.04 SE; 29.87 SD)
+     GD(expected heterozygosity) =  0.8605 (0.0018 SE; 0.0529 SD)
+     Observed heterozygosity =  0.9029 (0.0022 SE; 0.0637 SD)
+     Number of extant alleles = 13.06 (0.11 SE; 3.20 SD)
+     Number of mt haplotypes =  5.29 (0.05 SE; 1.47 SD)
+     Lethal alleles / diploid = 2.59 (0.02 SE; 0.68 SD)
+
+Year 12; Census 2
+     N[Extinct] =    180, P[E] =  0.180
+     N[Surviving] =  820, P[S] =  0.820
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 55.36 (1.18 SE; 37.32 SD)
+  Means across extant populations only:
+     Population size =          67.40 (1.04 SE; 29.87 SD)
+     GD(expected heterozygosity) =  0.8605 (0.0018 SE; 0.0529 SD)
+     Observed heterozygosity =  0.9029 (0.0022 SE; 0.0637 SD)
+     Number of extant alleles = 13.06 (0.11 SE; 3.20 SD)
+     Number of mt haplotypes =  5.29 (0.05 SE; 1.47 SD)
+     Lethal alleles / diploid = 2.59 (0.02 SE; 0.68 SD)
+
+Year 12; Census 3
+     N[Extinct] =    180, P[E] =  0.180
+     N[Surviving] =  820, P[S] =  0.820
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 51.10 (1.12 SE; 35.35 SD)
+  Means across extant populations only:
+     Population size =          62.20 (1.01 SE; 28.95 SD)
+     GD(expected heterozygosity) =  0.8615 (0.0018 SE; 0.0524 SD)
+     Observed heterozygosity =  0.9051 (0.0022 SE; 0.0634 SD)
+     Number of extant alleles = 13.06 (0.11 SE; 3.20 SD)
+     Number of mt haplotypes =  5.29 (0.05 SE; 1.47 SD)
+     Lethal alleles / diploid = 2.60 (0.02 SE; 0.68 SD)
+
+Year 12; Census 4
+     N[Extinct] =    181, P[E] =  0.181
+     N[Surviving] =  819, P[S] =  0.819
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 47.83 (1.09 SE; 34.50 SD)
+  Means across extant populations only:
+     Population size =          58.29 (1.02 SE; 29.13 SD)
+     GD(expected heterozygosity) =  0.8607 (0.0018 SE; 0.0522 SD)
+     Observed heterozygosity =  0.9048 (0.0023 SE; 0.0648 SD)
+     Number of extant alleles = 12.90 (0.11 SE; 3.19 SD)
+     Number of mt haplotypes =  5.24 (0.05 SE; 1.47 SD)
+     Lethal alleles / diploid = 2.59 (0.02 SE; 0.69 SD)
+
+Year 13; Census 1
+     N[Extinct] =    206, P[E] =  0.206
+     N[Surviving] =  794, P[S] =  0.794
+     N[1st extinct] =  25, P[1st extinct] =  0.025
+     Mean size (all populations) = 52.24 (1.19 SE; 37.72 SD)
+  Means across extant populations only:
+     Population size =          65.70 (1.07 SE; 30.19 SD)
+     GD(expected heterozygosity) =  0.8499 (0.0021 SE; 0.0581 SD)
+     Observed heterozygosity =  0.8921 (0.0026 SE; 0.0725 SD)
+     Number of extant alleles = 12.07 (0.11 SE; 2.96 SD)
+     Number of mt haplotypes =  4.91 (0.05 SE; 1.43 SD)
+     Lethal alleles / diploid = 2.52 (0.02 SE; 0.70 SD)
+
+Year 13; Census 2
+     N[Extinct] =    206, P[E] =  0.206
+     N[Surviving] =  794, P[S] =  0.794
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 52.24 (1.19 SE; 37.72 SD)
+  Means across extant populations only:
+     Population size =          65.70 (1.07 SE; 30.19 SD)
+     GD(expected heterozygosity) =  0.8499 (0.0021 SE; 0.0581 SD)
+     Observed heterozygosity =  0.8921 (0.0026 SE; 0.0725 SD)
+     Number of extant alleles = 12.07 (0.11 SE; 2.96 SD)
+     Number of mt haplotypes =  4.91 (0.05 SE; 1.43 SD)
+     Lethal alleles / diploid = 2.52 (0.02 SE; 0.70 SD)
+
+Year 13; Census 3
+     N[Extinct] =    206, P[E] =  0.206
+     N[Surviving] =  794, P[S] =  0.794
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 48.10 (1.13 SE; 35.60 SD)
+  Means across extant populations only:
+     Population size =          60.48 (1.03 SE; 29.16 SD)
+     GD(expected heterozygosity) =  0.8513 (0.0020 SE; 0.0563 SD)
+     Observed heterozygosity =  0.8938 (0.0025 SE; 0.0716 SD)
+     Number of extant alleles = 12.07 (0.11 SE; 2.96 SD)
+     Number of mt haplotypes =  4.91 (0.05 SE; 1.43 SD)
+     Lethal alleles / diploid = 2.52 (0.02 SE; 0.70 SD)
+
+Year 13; Census 4
+     N[Extinct] =    208, P[E] =  0.208
+     N[Surviving] =  792, P[S] =  0.792
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 45.11 (1.09 SE; 34.59 SD)
+  Means across extant populations only:
+     Population size =          56.87 (1.03 SE; 29.07 SD)
+     GD(expected heterozygosity) =  0.8501 (0.0020 SE; 0.0569 SD)
+     Observed heterozygosity =  0.8926 (0.0026 SE; 0.0734 SD)
+     Number of extant alleles = 11.90 (0.10 SE; 2.95 SD)
+     Number of mt haplotypes =  4.85 (0.05 SE; 1.41 SD)
+     Lethal alleles / diploid = 2.52 (0.02 SE; 0.70 SD)
+
+Year 14; Census 1
+     N[Extinct] =    253, P[E] =  0.253
+     N[Surviving] =  747, P[S] =  0.747
+     N[1st extinct] =  45, P[1st extinct] =  0.045
+     Mean size (all populations) = 48.46 (1.19 SE; 37.55 SD)
+  Means across extant populations only:
+     Population size =          64.71 (1.06 SE; 29.01 SD)
+     GD(expected heterozygosity) =  0.8388 (0.0023 SE; 0.0629 SD)
+     Observed heterozygosity =  0.8770 (0.0029 SE; 0.0796 SD)
+     Number of extant alleles = 11.25 (0.10 SE; 2.73 SD)
+     Number of mt haplotypes =  4.57 (0.05 SE; 1.33 SD)
+     Lethal alleles / diploid = 2.42 (0.02 SE; 0.68 SD)
+
+Year 14; Census 2
+     N[Extinct] =    253, P[E] =  0.253
+     N[Surviving] =  747, P[S] =  0.747
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 48.46 (1.19 SE; 37.55 SD)
+  Means across extant populations only:
+     Population size =          64.71 (1.06 SE; 29.01 SD)
+     GD(expected heterozygosity) =  0.8388 (0.0023 SE; 0.0629 SD)
+     Observed heterozygosity =  0.8770 (0.0029 SE; 0.0796 SD)
+     Number of extant alleles = 11.25 (0.10 SE; 2.73 SD)
+     Number of mt haplotypes =  4.57 (0.05 SE; 1.33 SD)
+     Lethal alleles / diploid = 2.42 (0.02 SE; 0.68 SD)
+
+Year 14; Census 3
+     N[Extinct] =    253, P[E] =  0.253
+     N[Surviving] =  747, P[S] =  0.747
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 44.61 (1.12 SE; 35.27 SD)
+  Means across extant populations only:
+     Population size =          59.57 (1.02 SE; 27.93 SD)
+     GD(expected heterozygosity) =  0.8400 (0.0022 SE; 0.0603 SD)
+     Observed heterozygosity =  0.8788 (0.0029 SE; 0.0796 SD)
+     Number of extant alleles = 11.25 (0.10 SE; 2.73 SD)
+     Number of mt haplotypes =  4.57 (0.05 SE; 1.33 SD)
+     Lethal alleles / diploid = 2.43 (0.02 SE; 0.68 SD)
+
+Year 14; Census 4
+     N[Extinct] =    255, P[E] =  0.255
+     N[Surviving] =  745, P[S] =  0.745
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 41.72 (1.08 SE; 34.13 SD)
+  Means across extant populations only:
+     Population size =          55.84 (1.02 SE; 27.95 SD)
+     GD(expected heterozygosity) =  0.8394 (0.0022 SE; 0.0610 SD)
+     Observed heterozygosity =  0.8788 (0.0030 SE; 0.0813 SD)
+     Number of extant alleles = 11.14 (0.10 SE; 2.74 SD)
+     Number of mt haplotypes =  4.53 (0.05 SE; 1.32 SD)
+     Lethal alleles / diploid = 2.43 (0.03 SE; 0.69 SD)
+
+Year 15; Census 1
+     N[Extinct] =    292, P[E] =  0.292
+     N[Surviving] =  708, P[S] =  0.708
+     N[1st extinct] =  37, P[1st extinct] =  0.037
+     Mean size (all populations) = 45.95 (1.22 SE; 38.69 SD)
+  Means across extant populations only:
+     Population size =          64.74 (1.13 SE; 30.07 SD)
+     GD(expected heterozygosity) =  0.8283 (0.0024 SE; 0.0632 SD)
+     Observed heterozygosity =  0.8704 (0.0030 SE; 0.0797 SD)
+     Number of extant alleles = 10.47 (0.10 SE; 2.57 SD)
+     Number of mt haplotypes =  4.28 (0.05 SE; 1.28 SD)
+     Lethal alleles / diploid = 2.31 (0.03 SE; 0.68 SD)
+
+Year 15; Census 2
+     N[Extinct] =    292, P[E] =  0.292
+     N[Surviving] =  708, P[S] =  0.708
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 45.95 (1.22 SE; 38.69 SD)
+  Means across extant populations only:
+     Population size =          64.74 (1.13 SE; 30.07 SD)
+     GD(expected heterozygosity) =  0.8283 (0.0024 SE; 0.0632 SD)
+     Observed heterozygosity =  0.8704 (0.0030 SE; 0.0797 SD)
+     Number of extant alleles = 10.47 (0.10 SE; 2.57 SD)
+     Number of mt haplotypes =  4.28 (0.05 SE; 1.28 SD)
+     Lethal alleles / diploid = 2.31 (0.03 SE; 0.68 SD)
+
+Year 15; Census 3
+     N[Extinct] =    292, P[E] =  0.292
+     N[Surviving] =  708, P[S] =  0.708
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 42.28 (1.15 SE; 36.37 SD)
+  Means across extant populations only:
+     Population size =          59.56 (1.09 SE; 29.07 SD)
+     GD(expected heterozygosity) =  0.8294 (0.0024 SE; 0.0628 SD)
+     Observed heterozygosity =  0.8717 (0.0030 SE; 0.0807 SD)
+     Number of extant alleles = 10.47 (0.10 SE; 2.57 SD)
+     Number of mt haplotypes =  4.28 (0.05 SE; 1.28 SD)
+     Lethal alleles / diploid = 2.32 (0.03 SE; 0.68 SD)
+
+Year 15; Census 4
+     N[Extinct] =    293, P[E] =  0.293
+     N[Surviving] =  707, P[S] =  0.707
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 39.59 (1.11 SE; 35.18 SD)
+  Means across extant populations only:
+     Population size =          55.86 (1.09 SE; 29.10 SD)
+     GD(expected heterozygosity) =  0.8282 (0.0024 SE; 0.0639 SD)
+     Observed heterozygosity =  0.8719 (0.0032 SE; 0.0843 SD)
+     Number of extant alleles = 10.34 (0.10 SE; 2.56 SD)
+     Number of mt haplotypes =  4.24 (0.05 SE; 1.26 SD)
+     Lethal alleles / diploid = 2.32 (0.03 SE; 0.70 SD)
+
+Year 16; Census 1
+     N[Extinct] =    324, P[E] =  0.324
+     N[Surviving] =  676, P[S] =  0.676
+     N[1st extinct] =  31, P[1st extinct] =  0.031
+     Mean size (all populations) = 42.97 (1.22 SE; 38.46 SD)
+  Means across extant populations only:
+     Population size =          63.40 (1.15 SE; 29.98 SD)
+     GD(expected heterozygosity) =  0.8160 (0.0027 SE; 0.0699 SD)
+     Observed heterozygosity =  0.8567 (0.0036 SE; 0.0937 SD)
+     Number of extant alleles = 9.80 (0.10 SE; 2.52 SD)
+     Number of mt haplotypes =  4.04 (0.05 SE; 1.22 SD)
+     Lethal alleles / diploid = 2.21 (0.03 SE; 0.69 SD)
+
+Year 16; Census 2
+     N[Extinct] =    324, P[E] =  0.324
+     N[Surviving] =  676, P[S] =  0.676
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 42.97 (1.22 SE; 38.46 SD)
+  Means across extant populations only:
+     Population size =          63.40 (1.15 SE; 29.98 SD)
+     GD(expected heterozygosity) =  0.8160 (0.0027 SE; 0.0699 SD)
+     Observed heterozygosity =  0.8567 (0.0036 SE; 0.0937 SD)
+     Number of extant alleles = 9.80 (0.10 SE; 2.52 SD)
+     Number of mt haplotypes =  4.04 (0.05 SE; 1.22 SD)
+     Lethal alleles / diploid = 2.21 (0.03 SE; 0.69 SD)
+
+Year 16; Census 3
+     N[Extinct] =    324, P[E] =  0.324
+     N[Surviving] =  676, P[S] =  0.676
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 39.52 (1.14 SE; 36.04 SD)
+  Means across extant populations only:
+     Population size =          58.30 (1.11 SE; 28.83 SD)
+     GD(expected heterozygosity) =  0.8173 (0.0027 SE; 0.0690 SD)
+     Observed heterozygosity =  0.8597 (0.0036 SE; 0.0947 SD)
+     Number of extant alleles = 9.80 (0.10 SE; 2.52 SD)
+     Number of mt haplotypes =  4.04 (0.05 SE; 1.22 SD)
+     Lethal alleles / diploid = 2.22 (0.03 SE; 0.69 SD)
+
+Year 16; Census 4
+     N[Extinct] =    325, P[E] =  0.325
+     N[Surviving] =  675, P[S] =  0.675
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 36.99 (1.10 SE; 34.81 SD)
+  Means across extant populations only:
+     Population size =          54.65 (1.11 SE; 28.90 SD)
+     GD(expected heterozygosity) =  0.8157 (0.0027 SE; 0.0701 SD)
+     Observed heterozygosity =  0.8595 (0.0037 SE; 0.0954 SD)
+     Number of extant alleles = 9.69 (0.10 SE; 2.52 SD)
+     Number of mt haplotypes =  4.00 (0.05 SE; 1.21 SD)
+     Lethal alleles / diploid = 2.22 (0.03 SE; 0.70 SD)
+
+Year 17; Census 1
+     N[Extinct] =    364, P[E] =  0.364
+     N[Surviving] =  636, P[S] =  0.636
+     N[1st extinct] =  39, P[1st extinct] =  0.039
+     Mean size (all populations) = 40.68 (1.24 SE; 39.16 SD)
+  Means across extant populations only:
+     Population size =          63.82 (1.22 SE; 30.64 SD)
+     GD(expected heterozygosity) =  0.8062 (0.0029 SE; 0.0719 SD)
+     Observed heterozygosity =  0.8458 (0.0038 SE; 0.0962 SD)
+     Number of extant alleles = 9.23 (0.09 SE; 2.38 SD)
+     Number of mt haplotypes =  3.82 (0.05 SE; 1.17 SD)
+     Lethal alleles / diploid = 2.10 (0.03 SE; 0.68 SD)
+
+Year 17; Census 2
+     N[Extinct] =    364, P[E] =  0.364
+     N[Surviving] =  636, P[S] =  0.636
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 40.68 (1.24 SE; 39.16 SD)
+  Means across extant populations only:
+     Population size =          63.82 (1.22 SE; 30.64 SD)
+     GD(expected heterozygosity) =  0.8062 (0.0029 SE; 0.0719 SD)
+     Observed heterozygosity =  0.8458 (0.0038 SE; 0.0962 SD)
+     Number of extant alleles = 9.23 (0.09 SE; 2.38 SD)
+     Number of mt haplotypes =  3.82 (0.05 SE; 1.17 SD)
+     Lethal alleles / diploid = 2.10 (0.03 SE; 0.68 SD)
+
+Year 17; Census 3
+     N[Extinct] =    364, P[E] =  0.364
+     N[Surviving] =  636, P[S] =  0.636
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 37.36 (1.16 SE; 36.71 SD)
+  Means across extant populations only:
+     Population size =          58.60 (1.18 SE; 29.63 SD)
+     GD(expected heterozygosity) =  0.8070 (0.0028 SE; 0.0716 SD)
+     Observed heterozygosity =  0.8473 (0.0039 SE; 0.0982 SD)
+     Number of extant alleles = 9.23 (0.09 SE; 2.38 SD)
+     Number of mt haplotypes =  3.82 (0.05 SE; 1.17 SD)
+     Lethal alleles / diploid = 2.11 (0.03 SE; 0.68 SD)
+
+Year 17; Census 4
+     N[Extinct] =    364, P[E] =  0.364
+     N[Surviving] =  636, P[S] =  0.636
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 35.01 (1.12 SE; 35.37 SD)
+  Means across extant populations only:
+     Population size =          54.92 (1.17 SE; 29.62 SD)
+     GD(expected heterozygosity) =  0.8056 (0.0029 SE; 0.0728 SD)
+     Observed heterozygosity =  0.8477 (0.0040 SE; 0.1000 SD)
+     Number of extant alleles = 9.11 (0.09 SE; 2.37 SD)
+     Number of mt haplotypes =  3.78 (0.05 SE; 1.18 SD)
+     Lethal alleles / diploid = 2.11 (0.03 SE; 0.69 SD)
+
+Year 18; Census 1
+     N[Extinct] =    401, P[E] =  0.401
+     N[Surviving] =  599, P[S] =  0.599
+     N[1st extinct] =  37, P[1st extinct] =  0.037
+     Mean size (all populations) = 37.79 (1.21 SE; 38.25 SD)
+  Means across extant populations only:
+     Population size =          62.95 (1.20 SE; 29.37 SD)
+     GD(expected heterozygosity) =  0.7965 (0.0032 SE; 0.0780 SD)
+     Observed heterozygosity =  0.8403 (0.0039 SE; 0.0953 SD)
+     Number of extant alleles = 8.78 (0.09 SE; 2.22 SD)
+     Number of mt haplotypes =  3.62 (0.05 SE; 1.12 SD)
+     Lethal alleles / diploid = 2.01 (0.03 SE; 0.69 SD)
+
+Year 18; Census 2
+     N[Extinct] =    401, P[E] =  0.401
+     N[Surviving] =  599, P[S] =  0.599
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 37.79 (1.21 SE; 38.25 SD)
+  Means across extant populations only:
+     Population size =          62.95 (1.20 SE; 29.37 SD)
+     GD(expected heterozygosity) =  0.7965 (0.0032 SE; 0.0780 SD)
+     Observed heterozygosity =  0.8403 (0.0039 SE; 0.0953 SD)
+     Number of extant alleles = 8.78 (0.09 SE; 2.22 SD)
+     Number of mt haplotypes =  3.62 (0.05 SE; 1.12 SD)
+     Lethal alleles / diploid = 2.01 (0.03 SE; 0.69 SD)
+
+Year 18; Census 3
+     N[Extinct] =    401, P[E] =  0.401
+     N[Surviving] =  599, P[S] =  0.599
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 34.69 (1.13 SE; 35.73 SD)
+  Means across extant populations only:
+     Population size =          57.77 (1.16 SE; 28.30 SD)
+     GD(expected heterozygosity) =  0.7973 (0.0031 SE; 0.0764 SD)
+     Observed heterozygosity =  0.8414 (0.0040 SE; 0.0969 SD)
+     Number of extant alleles = 8.78 (0.09 SE; 2.22 SD)
+     Number of mt haplotypes =  3.62 (0.05 SE; 1.12 SD)
+     Lethal alleles / diploid = 2.02 (0.03 SE; 0.69 SD)
+
+Year 18; Census 4
+     N[Extinct] =    403, P[E] =  0.403
+     N[Surviving] =  597, P[S] =  0.597
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 32.47 (1.09 SE; 34.32 SD)
+  Means across extant populations only:
+     Population size =          54.26 (1.15 SE; 28.18 SD)
+     GD(expected heterozygosity) =  0.7962 (0.0032 SE; 0.0774 SD)
+     Observed heterozygosity =  0.8419 (0.0041 SE; 0.1001 SD)
+     Number of extant alleles = 8.71 (0.09 SE; 2.20 SD)
+     Number of mt haplotypes =  3.60 (0.05 SE; 1.11 SD)
+     Lethal alleles / diploid = 2.02 (0.03 SE; 0.68 SD)
+
+Year 19; Census 1
+     N[Extinct] =    437, P[E] =  0.437
+     N[Surviving] =  563, P[S] =  0.563
+     N[1st extinct] =  34, P[1st extinct] =  0.034
+     Mean size (all populations) = 34.51 (1.18 SE; 37.36 SD)
+  Means across extant populations only:
+     Population size =          61.16 (1.23 SE; 29.21 SD)
+     GD(expected heterozygosity) =  0.7866 (0.0034 SE; 0.0816 SD)
+     Observed heterozygosity =  0.8277 (0.0042 SE; 0.1002 SD)
+     Number of extant alleles = 8.40 (0.09 SE; 2.08 SD)
+     Number of mt haplotypes =  3.47 (0.05 SE; 1.10 SD)
+     Lethal alleles / diploid = 1.91 (0.03 SE; 0.66 SD)
+
+Year 19; Census 2
+     N[Extinct] =    437, P[E] =  0.437
+     N[Surviving] =  563, P[S] =  0.563
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 34.51 (1.18 SE; 37.36 SD)
+  Means across extant populations only:
+     Population size =          61.16 (1.23 SE; 29.21 SD)
+     GD(expected heterozygosity) =  0.7866 (0.0034 SE; 0.0816 SD)
+     Observed heterozygosity =  0.8277 (0.0042 SE; 0.1002 SD)
+     Number of extant alleles = 8.40 (0.09 SE; 2.08 SD)
+     Number of mt haplotypes =  3.47 (0.05 SE; 1.10 SD)
+     Lethal alleles / diploid = 1.91 (0.03 SE; 0.66 SD)
+
+Year 19; Census 3
+     N[Extinct] =    437, P[E] =  0.437
+     N[Surviving] =  563, P[S] =  0.563
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 31.72 (1.10 SE; 34.88 SD)
+  Means across extant populations only:
+     Population size =          56.19 (1.18 SE; 28.08 SD)
+     GD(expected heterozygosity) =  0.7878 (0.0034 SE; 0.0812 SD)
+     Observed heterozygosity =  0.8304 (0.0043 SE; 0.1025 SD)
+     Number of extant alleles = 8.40 (0.09 SE; 2.08 SD)
+     Number of mt haplotypes =  3.47 (0.05 SE; 1.10 SD)
+     Lethal alleles / diploid = 1.92 (0.03 SE; 0.67 SD)
+
+Year 19; Census 4
+     N[Extinct] =    439, P[E] =  0.439
+     N[Surviving] =  561, P[S] =  0.561
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 29.54 (1.06 SE; 33.43 SD)
+  Means across extant populations only:
+     Population size =          52.51 (1.19 SE; 28.08 SD)
+     GD(expected heterozygosity) =  0.7872 (0.0034 SE; 0.0806 SD)
+     Observed heterozygosity =  0.8306 (0.0044 SE; 0.1038 SD)
+     Number of extant alleles = 8.32 (0.09 SE; 2.08 SD)
+     Number of mt haplotypes =  3.46 (0.05 SE; 1.09 SD)
+     Lethal alleles / diploid = 1.92 (0.03 SE; 0.68 SD)
+
+Year 20; Census 1
+     N[Extinct] =    466, P[E] =  0.466
+     N[Surviving] =  534, P[S] =  0.534
+     N[1st extinct] =  27, P[1st extinct] =  0.027
+     Mean size (all populations) = 32.08 (1.17 SE; 37.08 SD)
+  Means across extant populations only:
+     Population size =          59.93 (1.30 SE; 30.15 SD)
+     GD(expected heterozygosity) =  0.7750 (0.0037 SE; 0.0858 SD)
+     Observed heterozygosity =  0.8185 (0.0043 SE; 0.0998 SD)
+     Number of extant alleles = 7.91 (0.09 SE; 2.07 SD)
+     Number of mt haplotypes =  3.34 (0.05 SE; 1.10 SD)
+     Lethal alleles / diploid = 1.84 (0.03 SE; 0.68 SD)
+
+Year 20; Census 2
+     N[Extinct] =    466, P[E] =  0.466
+     N[Surviving] =  534, P[S] =  0.534
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 32.08 (1.17 SE; 37.08 SD)
+  Means across extant populations only:
+     Population size =          59.93 (1.30 SE; 30.15 SD)
+     GD(expected heterozygosity) =  0.7750 (0.0037 SE; 0.0858 SD)
+     Observed heterozygosity =  0.8185 (0.0043 SE; 0.0998 SD)
+     Number of extant alleles = 7.91 (0.09 SE; 2.07 SD)
+     Number of mt haplotypes =  3.34 (0.05 SE; 1.10 SD)
+     Lethal alleles / diploid = 1.84 (0.03 SE; 0.68 SD)
+
+Year 20; Census 3
+     N[Extinct] =    466, P[E] =  0.466
+     N[Surviving] =  534, P[S] =  0.534
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 29.36 (1.09 SE; 34.60 SD)
+  Means across extant populations only:
+     Population size =          54.85 (1.26 SE; 29.09 SD)
+     GD(expected heterozygosity) =  0.7765 (0.0037 SE; 0.0851 SD)
+     Observed heterozygosity =  0.8223 (0.0044 SE; 0.1021 SD)
+     Number of extant alleles = 7.91 (0.09 SE; 2.07 SD)
+     Number of mt haplotypes =  3.34 (0.05 SE; 1.10 SD)
+     Lethal alleles / diploid = 1.85 (0.03 SE; 0.68 SD)
+
+Year 20; Census 4
+     N[Extinct] =    469, P[E] =  0.469
+     N[Surviving] =  531, P[S] =  0.531
+     N[1st extinct] =  3, P[1st extinct] =  0.003
+     Mean size (all populations) = 27.41 (1.05 SE; 33.15 SD)
+  Means across extant populations only:
+     Population size =          51.47 (1.25 SE; 28.88 SD)
+     GD(expected heterozygosity) =  0.7755 (0.0039 SE; 0.0900 SD)
+     Observed heterozygosity =  0.8222 (0.0048 SE; 0.1097 SD)
+     Number of extant alleles = 7.86 (0.09 SE; 2.07 SD)
+     Number of mt haplotypes =  3.30 (0.05 SE; 1.09 SD)
+     Lethal alleles / diploid = 1.85 (0.03 SE; 0.68 SD)
+
+Year 21; Census 1
+     N[Extinct] =    502, P[E] =  0.502
+     N[Surviving] =  498, P[S] =  0.498
+     N[1st extinct] =  33, P[1st extinct] =  0.033
+     Mean size (all populations) = 28.56 (1.13 SE; 35.72 SD)
+  Means across extant populations only:
+     Population size =          57.18 (1.37 SE; 30.48 SD)
+     GD(expected heterozygosity) =  0.7669 (0.0037 SE; 0.0815 SD)
+     Observed heterozygosity =  0.8113 (0.0046 SE; 0.1020 SD)
+     Number of extant alleles = 7.54 (0.09 SE; 1.92 SD)
+     Number of mt haplotypes =  3.19 (0.05 SE; 1.06 SD)
+     Lethal alleles / diploid = 1.77 (0.03 SE; 0.65 SD)
+
+Year 21; Census 2
+     N[Extinct] =    502, P[E] =  0.502
+     N[Surviving] =  498, P[S] =  0.498
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 28.56 (1.13 SE; 35.72 SD)
+  Means across extant populations only:
+     Population size =          57.18 (1.37 SE; 30.48 SD)
+     GD(expected heterozygosity) =  0.7669 (0.0037 SE; 0.0815 SD)
+     Observed heterozygosity =  0.8113 (0.0046 SE; 0.1020 SD)
+     Number of extant alleles = 7.54 (0.09 SE; 1.92 SD)
+     Number of mt haplotypes =  3.19 (0.05 SE; 1.06 SD)
+     Lethal alleles / diploid = 1.77 (0.03 SE; 0.65 SD)
+
+Year 21; Census 3
+     N[Extinct] =    502, P[E] =  0.502
+     N[Surviving] =  498, P[S] =  0.498
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 26.17 (1.05 SE; 33.27 SD)
+  Means across extant populations only:
+     Population size =          52.37 (1.31 SE; 29.20 SD)
+     GD(expected heterozygosity) =  0.7679 (0.0037 SE; 0.0819 SD)
+     Observed heterozygosity =  0.8142 (0.0047 SE; 0.1057 SD)
+     Number of extant alleles = 7.54 (0.09 SE; 1.92 SD)
+     Number of mt haplotypes =  3.19 (0.05 SE; 1.06 SD)
+     Lethal alleles / diploid = 1.78 (0.03 SE; 0.66 SD)
+
+Year 21; Census 4
+     N[Extinct] =    503, P[E] =  0.503
+     N[Surviving] =  497, P[S] =  0.497
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 24.32 (1.00 SE; 31.77 SD)
+  Means across extant populations only:
+     Population size =          48.77 (1.30 SE; 28.99 SD)
+     GD(expected heterozygosity) =  0.7662 (0.0037 SE; 0.0834 SD)
+     Observed heterozygosity =  0.8136 (0.0049 SE; 0.1096 SD)
+     Number of extant alleles = 7.43 (0.09 SE; 1.90 SD)
+     Number of mt haplotypes =  3.17 (0.05 SE; 1.06 SD)
+     Lethal alleles / diploid = 1.78 (0.03 SE; 0.67 SD)
+
+Year 22; Census 1
+     N[Extinct] =    541, P[E] =  0.541
+     N[Surviving] =  459, P[S] =  0.459
+     N[1st extinct] =  38, P[1st extinct] =  0.038
+     Mean size (all populations) = 25.85 (1.10 SE; 34.86 SD)
+  Means across extant populations only:
+     Population size =          56.13 (1.44 SE; 30.83 SD)
+     GD(expected heterozygosity) =  0.7519 (0.0043 SE; 0.0921 SD)
+     Observed heterozygosity =  0.7923 (0.0054 SE; 0.1161 SD)
+     Number of extant alleles = 7.10 (0.09 SE; 1.87 SD)
+     Number of mt haplotypes =  3.05 (0.05 SE; 1.06 SD)
+     Lethal alleles / diploid = 1.69 (0.03 SE; 0.67 SD)
+
+Year 22; Census 2
+     N[Extinct] =    541, P[E] =  0.541
+     N[Surviving] =  459, P[S] =  0.459
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 25.85 (1.10 SE; 34.86 SD)
+  Means across extant populations only:
+     Population size =          56.13 (1.44 SE; 30.83 SD)
+     GD(expected heterozygosity) =  0.7519 (0.0043 SE; 0.0921 SD)
+     Observed heterozygosity =  0.7923 (0.0054 SE; 0.1161 SD)
+     Number of extant alleles = 7.10 (0.09 SE; 1.87 SD)
+     Number of mt haplotypes =  3.05 (0.05 SE; 1.06 SD)
+     Lethal alleles / diploid = 1.69 (0.03 SE; 0.67 SD)
+
+Year 22; Census 3
+     N[Extinct] =    541, P[E] =  0.541
+     N[Surviving] =  459, P[S] =  0.459
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 23.61 (1.03 SE; 32.42 SD)
+  Means across extant populations only:
+     Population size =          51.25 (1.38 SE; 29.60 SD)
+     GD(expected heterozygosity) =  0.7537 (0.0042 SE; 0.0904 SD)
+     Observed heterozygosity =  0.7959 (0.0056 SE; 0.1195 SD)
+     Number of extant alleles = 7.10 (0.09 SE; 1.87 SD)
+     Number of mt haplotypes =  3.05 (0.05 SE; 1.06 SD)
+     Lethal alleles / diploid = 1.71 (0.03 SE; 0.67 SD)
+
+Year 22; Census 4
+     N[Extinct] =    543, P[E] =  0.543
+     N[Surviving] =  457, P[S] =  0.457
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 22.09 (0.98 SE; 30.98 SD)
+  Means across extant populations only:
+     Population size =          48.15 (1.36 SE; 29.13 SD)
+     GD(expected heterozygosity) =  0.7526 (0.0042 SE; 0.0908 SD)
+     Observed heterozygosity =  0.7951 (0.0056 SE; 0.1208 SD)
+     Number of extant alleles = 7.05 (0.09 SE; 1.87 SD)
+     Number of mt haplotypes =  3.04 (0.05 SE; 1.05 SD)
+     Lethal alleles / diploid = 1.70 (0.03 SE; 0.68 SD)
+
+Year 23; Census 1
+     N[Extinct] =    588, P[E] =  0.588
+     N[Surviving] =  412, P[S] =  0.412
+     N[1st extinct] =  45, P[1st extinct] =  0.045
+     Mean size (all populations) = 23.61 (1.07 SE; 33.78 SD)
+  Means across extant populations only:
+     Population size =          57.02 (1.45 SE; 29.49 SD)
+     GD(expected heterozygosity) =  0.7435 (0.0045 SE; 0.0918 SD)
+     Observed heterozygosity =  0.7873 (0.0058 SE; 0.1169 SD)
+     Number of extant alleles = 6.81 (0.09 SE; 1.74 SD)
+     Number of mt haplotypes =  2.97 (0.05 SE; 1.04 SD)
+     Lethal alleles / diploid = 1.62 (0.03 SE; 0.66 SD)
+
+Year 23; Census 2
+     N[Extinct] =    588, P[E] =  0.588
+     N[Surviving] =  412, P[S] =  0.412
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 23.61 (1.07 SE; 33.78 SD)
+  Means across extant populations only:
+     Population size =          57.02 (1.45 SE; 29.49 SD)
+     GD(expected heterozygosity) =  0.7435 (0.0045 SE; 0.0918 SD)
+     Observed heterozygosity =  0.7873 (0.0058 SE; 0.1169 SD)
+     Number of extant alleles = 6.81 (0.09 SE; 1.74 SD)
+     Number of mt haplotypes =  2.97 (0.05 SE; 1.04 SD)
+     Lethal alleles / diploid = 1.62 (0.03 SE; 0.66 SD)
+
+Year 23; Census 3
+     N[Extinct] =    588, P[E] =  0.588
+     N[Surviving] =  412, P[S] =  0.412
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 21.54 (0.99 SE; 31.32 SD)
+  Means across extant populations only:
+     Population size =          51.98 (1.40 SE; 28.34 SD)
+     GD(expected heterozygosity) =  0.7450 (0.0045 SE; 0.0904 SD)
+     Observed heterozygosity =  0.7877 (0.0060 SE; 0.1212 SD)
+     Number of extant alleles = 6.81 (0.09 SE; 1.74 SD)
+     Number of mt haplotypes =  2.97 (0.05 SE; 1.04 SD)
+     Lethal alleles / diploid = 1.64 (0.03 SE; 0.67 SD)
+
+Year 23; Census 4
+     N[Extinct] =    589, P[E] =  0.589
+     N[Surviving] =  411, P[S] =  0.411
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 20.18 (0.95 SE; 29.89 SD)
+  Means across extant populations only:
+     Population size =          48.82 (1.38 SE; 27.93 SD)
+     GD(expected heterozygosity) =  0.7427 (0.0046 SE; 0.0935 SD)
+     Observed heterozygosity =  0.7856 (0.0062 SE; 0.1266 SD)
+     Number of extant alleles = 6.74 (0.09 SE; 1.77 SD)
+     Number of mt haplotypes =  2.95 (0.05 SE; 1.04 SD)
+     Lethal alleles / diploid = 1.63 (0.03 SE; 0.68 SD)
+
+Year 24; Census 1
+     N[Extinct] =    626, P[E] =  0.626
+     N[Surviving] =  374, P[S] =  0.374
+     N[1st extinct] =  37, P[1st extinct] =  0.037
+     Mean size (all populations) = 20.76 (1.01 SE; 31.82 SD)
+  Means across extant populations only:
+     Population size =          55.22 (1.47 SE; 28.45 SD)
+     GD(expected heterozygosity) =  0.7321 (0.0049 SE; 0.0956 SD)
+     Observed heterozygosity =  0.7744 (0.0063 SE; 0.1225 SD)
+     Number of extant alleles = 6.48 (0.09 SE; 1.76 SD)
+     Number of mt haplotypes =  2.85 (0.05 SE; 1.00 SD)
+     Lethal alleles / diploid = 1.56 (0.03 SE; 0.67 SD)
+
+Year 24; Census 2
+     N[Extinct] =    626, P[E] =  0.626
+     N[Surviving] =  374, P[S] =  0.374
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 20.76 (1.01 SE; 31.82 SD)
+  Means across extant populations only:
+     Population size =          55.22 (1.47 SE; 28.45 SD)
+     GD(expected heterozygosity) =  0.7321 (0.0049 SE; 0.0956 SD)
+     Observed heterozygosity =  0.7744 (0.0063 SE; 0.1225 SD)
+     Number of extant alleles = 6.48 (0.09 SE; 1.76 SD)
+     Number of mt haplotypes =  2.85 (0.05 SE; 1.00 SD)
+     Lethal alleles / diploid = 1.56 (0.03 SE; 0.67 SD)
+
+Year 24; Census 3
+     N[Extinct] =    626, P[E] =  0.626
+     N[Surviving] =  374, P[S] =  0.374
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 18.96 (0.93 SE; 29.45 SD)
+  Means across extant populations only:
+     Population size =          50.40 (1.40 SE; 27.16 SD)
+     GD(expected heterozygosity) =  0.7324 (0.0050 SE; 0.0971 SD)
+     Observed heterozygosity =  0.7734 (0.0067 SE; 0.1301 SD)
+     Number of extant alleles = 6.48 (0.09 SE; 1.76 SD)
+     Number of mt haplotypes =  2.85 (0.05 SE; 1.00 SD)
+     Lethal alleles / diploid = 1.57 (0.03 SE; 0.67 SD)
+
+Year 24; Census 4
+     N[Extinct] =    626, P[E] =  0.626
+     N[Surviving] =  374, P[S] =  0.374
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 17.61 (0.88 SE; 27.92 SD)
+  Means across extant populations only:
+     Population size =          46.84 (1.39 SE; 26.81 SD)
+     GD(expected heterozygosity) =  0.7312 (0.0051 SE; 0.0984 SD)
+     Observed heterozygosity =  0.7738 (0.0068 SE; 0.1323 SD)
+     Number of extant alleles = 6.42 (0.09 SE; 1.75 SD)
+     Number of mt haplotypes =  2.84 (0.05 SE; 1.00 SD)
+     Lethal alleles / diploid = 1.57 (0.03 SE; 0.67 SD)
+
+Year 25; Census 1
+     N[Extinct] =    653, P[E] =  0.653
+     N[Surviving] =  347, P[S] =  0.347
+     N[1st extinct] =  27, P[1st extinct] =  0.027
+     Mean size (all populations) = 18.53 (0.96 SE; 30.49 SD)
+  Means across extant populations only:
+     Population size =          53.15 (1.56 SE; 29.02 SD)
+     GD(expected heterozygosity) =  0.7230 (0.0054 SE; 0.1001 SD)
+     Observed heterozygosity =  0.7633 (0.0069 SE; 0.1294 SD)
+     Number of extant alleles = 6.20 (0.09 SE; 1.67 SD)
+     Number of mt haplotypes =  2.77 (0.05 SE; 0.96 SD)
+     Lethal alleles / diploid = 1.48 (0.03 SE; 0.64 SD)
+
+Year 25; Census 2
+     N[Extinct] =    653, P[E] =  0.653
+     N[Surviving] =  347, P[S] =  0.347
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 18.53 (0.96 SE; 30.49 SD)
+  Means across extant populations only:
+     Population size =          53.15 (1.56 SE; 29.02 SD)
+     GD(expected heterozygosity) =  0.7230 (0.0054 SE; 0.1001 SD)
+     Observed heterozygosity =  0.7633 (0.0069 SE; 0.1294 SD)
+     Number of extant alleles = 6.20 (0.09 SE; 1.67 SD)
+     Number of mt haplotypes =  2.77 (0.05 SE; 0.96 SD)
+     Lethal alleles / diploid = 1.48 (0.03 SE; 0.64 SD)
+
+Year 25; Census 3
+     N[Extinct] =    653, P[E] =  0.653
+     N[Surviving] =  347, P[S] =  0.347
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 16.88 (0.89 SE; 28.16 SD)
+  Means across extant populations only:
+     Population size =          48.41 (1.48 SE; 27.61 SD)
+     GD(expected heterozygosity) =  0.7245 (0.0053 SE; 0.0981 SD)
+     Observed heterozygosity =  0.7655 (0.0069 SE; 0.1286 SD)
+     Number of extant alleles = 6.20 (0.09 SE; 1.67 SD)
+     Number of mt haplotypes =  2.77 (0.05 SE; 0.96 SD)
+     Lethal alleles / diploid = 1.49 (0.03 SE; 0.65 SD)
+
+Year 25; Census 4
+     N[Extinct] =    653, P[E] =  0.653
+     N[Surviving] =  347, P[S] =  0.347
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 15.67 (0.84 SE; 26.71 SD)
+  Means across extant populations only:
+     Population size =          44.96 (1.46 SE; 27.24 SD)
+     GD(expected heterozygosity) =  0.7207 (0.0057 SE; 0.1061 SD)
+     Observed heterozygosity =  0.7647 (0.0070 SE; 0.1310 SD)
+     Number of extant alleles = 6.16 (0.09 SE; 1.67 SD)
+     Number of mt haplotypes =  2.75 (0.05 SE; 0.97 SD)
+     Lethal alleles / diploid = 1.49 (0.04 SE; 0.66 SD)
+
+Year 26; Census 1
+     N[Extinct] =    688, P[E] =  0.688
+     N[Surviving] =  312, P[S] =  0.312
+     N[1st extinct] =  35, P[1st extinct] =  0.035
+     Mean size (all populations) = 16.42 (0.93 SE; 29.55 SD)
+  Means across extant populations only:
+     Population size =          52.37 (1.72 SE; 30.33 SD)
+     GD(expected heterozygosity) =  0.7111 (0.0065 SE; 0.1140 SD)
+     Observed heterozygosity =  0.7536 (0.0076 SE; 0.1334 SD)
+     Number of extant alleles = 5.98 (0.09 SE; 1.68 SD)
+     Number of mt haplotypes =  2.69 (0.06 SE; 0.99 SD)
+     Lethal alleles / diploid = 1.43 (0.04 SE; 0.67 SD)
+
+Year 26; Census 2
+     N[Extinct] =    688, P[E] =  0.688
+     N[Surviving] =  312, P[S] =  0.312
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 16.42 (0.93 SE; 29.55 SD)
+  Means across extant populations only:
+     Population size =          52.37 (1.72 SE; 30.33 SD)
+     GD(expected heterozygosity) =  0.7111 (0.0065 SE; 0.1140 SD)
+     Observed heterozygosity =  0.7536 (0.0076 SE; 0.1334 SD)
+     Number of extant alleles = 5.98 (0.09 SE; 1.68 SD)
+     Number of mt haplotypes =  2.69 (0.06 SE; 0.99 SD)
+     Lethal alleles / diploid = 1.43 (0.04 SE; 0.67 SD)
+
+Year 26; Census 3
+     N[Extinct] =    688, P[E] =  0.688
+     N[Surviving] =  312, P[S] =  0.312
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 14.98 (0.86 SE; 27.34 SD)
+  Means across extant populations only:
+     Population size =          47.73 (1.64 SE; 28.90 SD)
+     GD(expected heterozygosity) =  0.7123 (0.0064 SE; 0.1127 SD)
+     Observed heterozygosity =  0.7545 (0.0076 SE; 0.1344 SD)
+     Number of extant alleles = 5.98 (0.09 SE; 1.68 SD)
+     Number of mt haplotypes =  2.69 (0.06 SE; 0.99 SD)
+     Lethal alleles / diploid = 1.44 (0.04 SE; 0.67 SD)
+
+Year 26; Census 4
+     N[Extinct] =    691, P[E] =  0.691
+     N[Surviving] =  309, P[S] =  0.309
+     N[1st extinct] =  3, P[1st extinct] =  0.003
+     Mean size (all populations) = 13.96 (0.82 SE; 26.00 SD)
+  Means across extant populations only:
+     Population size =          44.91 (1.61 SE; 28.32 SD)
+     GD(expected heterozygosity) =  0.7118 (0.0065 SE; 0.1138 SD)
+     Observed heterozygosity =  0.7536 (0.0078 SE; 0.1380 SD)
+     Number of extant alleles = 5.94 (0.09 SE; 1.66 SD)
+     Number of mt haplotypes =  2.67 (0.06 SE; 1.00 SD)
+     Lethal alleles / diploid = 1.44 (0.04 SE; 0.66 SD)
+
+Year 27; Census 1
+     N[Extinct] =    722, P[E] =  0.722
+     N[Surviving] =  278, P[S] =  0.278
+     N[1st extinct] =  31, P[1st extinct] =  0.031
+     Mean size (all populations) = 14.33 (0.89 SE; 28.09 SD)
+  Means across extant populations only:
+     Population size =          51.32 (1.84 SE; 30.70 SD)
+     GD(expected heterozygosity) =  0.7047 (0.0062 SE; 0.1036 SD)
+     Observed heterozygosity =  0.7464 (0.0076 SE; 0.1259 SD)
+     Number of extant alleles = 5.76 (0.10 SE; 1.59 SD)
+     Number of mt haplotypes =  2.61 (0.06 SE; 0.99 SD)
+     Lethal alleles / diploid = 1.35 (0.04 SE; 0.65 SD)
+
+Year 27; Census 2
+     N[Extinct] =    722, P[E] =  0.722
+     N[Surviving] =  278, P[S] =  0.278
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 14.33 (0.89 SE; 28.09 SD)
+  Means across extant populations only:
+     Population size =          51.32 (1.84 SE; 30.70 SD)
+     GD(expected heterozygosity) =  0.7047 (0.0062 SE; 0.1036 SD)
+     Observed heterozygosity =  0.7464 (0.0076 SE; 0.1259 SD)
+     Number of extant alleles = 5.76 (0.10 SE; 1.59 SD)
+     Number of mt haplotypes =  2.61 (0.06 SE; 0.99 SD)
+     Lethal alleles / diploid = 1.35 (0.04 SE; 0.65 SD)
+
+Year 27; Census 3
+     N[Extinct] =    722, P[E] =  0.722
+     N[Surviving] =  278, P[S] =  0.278
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 13.04 (0.82 SE; 25.95 SD)
+  Means across extant populations only:
+     Population size =          46.67 (1.76 SE; 29.27 SD)
+     GD(expected heterozygosity) =  0.7056 (0.0062 SE; 0.1030 SD)
+     Observed heterozygosity =  0.7472 (0.0077 SE; 0.1286 SD)
+     Number of extant alleles = 5.76 (0.10 SE; 1.59 SD)
+     Number of mt haplotypes =  2.61 (0.06 SE; 0.99 SD)
+     Lethal alleles / diploid = 1.35 (0.04 SE; 0.65 SD)
+
+Year 27; Census 4
+     N[Extinct] =    723, P[E] =  0.723
+     N[Surviving] =  277, P[S] =  0.277
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 12.13 (0.78 SE; 24.55 SD)
+  Means across extant populations only:
+     Population size =          43.54 (1.71 SE; 28.46 SD)
+     GD(expected heterozygosity) =  0.7036 (0.0063 SE; 0.1045 SD)
+     Observed heterozygosity =  0.7459 (0.0079 SE; 0.1316 SD)
+     Number of extant alleles = 5.70 (0.10 SE; 1.59 SD)
+     Number of mt haplotypes =  2.60 (0.06 SE; 1.00 SD)
+     Lethal alleles / diploid = 1.35 (0.04 SE; 0.65 SD)
+
+Year 28; Census 1
+     N[Extinct] =    756, P[E] =  0.756
+     N[Surviving] =  244, P[S] =  0.244
+     N[1st extinct] =  33, P[1st extinct] =  0.033
+     Mean size (all populations) = 12.20 (0.81 SE; 25.52 SD)
+  Means across extant populations only:
+     Population size =          49.68 (1.82 SE; 28.48 SD)
+     GD(expected heterozygosity) =  0.6973 (0.0067 SE; 0.1039 SD)
+     Observed heterozygosity =  0.7368 (0.0087 SE; 0.1360 SD)
+     Number of extant alleles = 5.57 (0.10 SE; 1.56 SD)
+     Number of mt haplotypes =  2.53 (0.06 SE; 0.96 SD)
+     Lethal alleles / diploid = 1.30 (0.04 SE; 0.66 SD)
+
+Year 28; Census 2
+     N[Extinct] =    756, P[E] =  0.756
+     N[Surviving] =  244, P[S] =  0.244
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 12.20 (0.81 SE; 25.52 SD)
+  Means across extant populations only:
+     Population size =          49.68 (1.82 SE; 28.48 SD)
+     GD(expected heterozygosity) =  0.6973 (0.0067 SE; 0.1039 SD)
+     Observed heterozygosity =  0.7368 (0.0087 SE; 0.1360 SD)
+     Number of extant alleles = 5.57 (0.10 SE; 1.56 SD)
+     Number of mt haplotypes =  2.53 (0.06 SE; 0.96 SD)
+     Lethal alleles / diploid = 1.30 (0.04 SE; 0.66 SD)
+
+Year 28; Census 3
+     N[Extinct] =    756, P[E] =  0.756
+     N[Surviving] =  244, P[S] =  0.244
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 11.06 (0.74 SE; 23.49 SD)
+  Means across extant populations only:
+     Population size =          44.99 (1.74 SE; 27.17 SD)
+     GD(expected heterozygosity) =  0.6984 (0.0066 SE; 0.1024 SD)
+     Observed heterozygosity =  0.7389 (0.0087 SE; 0.1365 SD)
+     Number of extant alleles = 5.57 (0.10 SE; 1.56 SD)
+     Number of mt haplotypes =  2.53 (0.06 SE; 0.96 SD)
+     Lethal alleles / diploid = 1.31 (0.04 SE; 0.67 SD)
+
+Year 28; Census 4
+     N[Extinct] =    757, P[E] =  0.757
+     N[Surviving] =  243, P[S] =  0.243
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 10.25 (0.70 SE; 22.18 SD)
+  Means across extant populations only:
+     Population size =          41.85 (1.70 SE; 26.55 SD)
+     GD(expected heterozygosity) =  0.6956 (0.0068 SE; 0.1061 SD)
+     Observed heterozygosity =  0.7406 (0.0089 SE; 0.1383 SD)
+     Number of extant alleles = 5.53 (0.10 SE; 1.56 SD)
+     Number of mt haplotypes =  2.51 (0.06 SE; 0.95 SD)
+     Lethal alleles / diploid = 1.30 (0.04 SE; 0.67 SD)
+
+Year 29; Census 1
+     N[Extinct] =    781, P[E] =  0.781
+     N[Surviving] =  219, P[S] =  0.219
+     N[1st extinct] =  24, P[1st extinct] =  0.024
+     Mean size (all populations) = 10.65 (0.76 SE; 23.88 SD)
+  Means across extant populations only:
+     Population size =          48.30 (1.90 SE; 28.05 SD)
+     GD(expected heterozygosity) =  0.6842 (0.0076 SE; 0.1120 SD)
+     Observed heterozygosity =  0.7203 (0.0097 SE; 0.1431 SD)
+     Number of extant alleles = 5.42 (0.10 SE; 1.48 SD)
+     Number of mt haplotypes =  2.42 (0.06 SE; 0.90 SD)
+     Lethal alleles / diploid = 1.20 (0.04 SE; 0.65 SD)
+
+Year 29; Census 2
+     N[Extinct] =    781, P[E] =  0.781
+     N[Surviving] =  219, P[S] =  0.219
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 10.65 (0.76 SE; 23.88 SD)
+  Means across extant populations only:
+     Population size =          48.30 (1.90 SE; 28.05 SD)
+     GD(expected heterozygosity) =  0.6842 (0.0076 SE; 0.1120 SD)
+     Observed heterozygosity =  0.7203 (0.0097 SE; 0.1431 SD)
+     Number of extant alleles = 5.42 (0.10 SE; 1.48 SD)
+     Number of mt haplotypes =  2.42 (0.06 SE; 0.90 SD)
+     Lethal alleles / diploid = 1.20 (0.04 SE; 0.65 SD)
+
+Year 29; Census 3
+     N[Extinct] =    781, P[E] =  0.781
+     N[Surviving] =  219, P[S] =  0.219
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 9.62 (0.69 SE; 21.92 SD)
+  Means across extant populations only:
+     Population size =          43.60 (1.81 SE; 26.76 SD)
+     GD(expected heterozygosity) =  0.6862 (0.0073 SE; 0.1083 SD)
+     Observed heterozygosity =  0.7235 (0.0096 SE; 0.1423 SD)
+     Number of extant alleles = 5.42 (0.10 SE; 1.48 SD)
+     Number of mt haplotypes =  2.42 (0.06 SE; 0.90 SD)
+     Lethal alleles / diploid = 1.20 (0.04 SE; 0.65 SD)
+
+Year 29; Census 4
+     N[Extinct] =    782, P[E] =  0.782
+     N[Surviving] =  218, P[S] =  0.218
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 8.90 (0.65 SE; 20.69 SD)
+  Means across extant populations only:
+     Population size =          40.55 (1.77 SE; 26.13 SD)
+     GD(expected heterozygosity) =  0.6831 (0.0076 SE; 0.1120 SD)
+     Observed heterozygosity =  0.7230 (0.0097 SE; 0.1427 SD)
+     Number of extant alleles = 5.39 (0.10 SE; 1.49 SD)
+     Number of mt haplotypes =  2.39 (0.06 SE; 0.90 SD)
+     Lethal alleles / diploid = 1.20 (0.04 SE; 0.64 SD)
+
+Year 30; Census 1
+     N[Extinct] =    806, P[E] =  0.806
+     N[Surviving] =  194, P[S] =  0.194
+     N[1st extinct] =  24, P[1st extinct] =  0.024
+     Mean size (all populations) = 9.43 (0.74 SE; 23.27 SD)
+  Means across extant populations only:
+     Population size =          48.31 (2.17 SE; 30.28 SD)
+     GD(expected heterozygosity) =  0.6752 (0.0089 SE; 0.1245 SD)
+     Observed heterozygosity =  0.7192 (0.0114 SE; 0.1583 SD)
+     Number of extant alleles = 5.30 (0.11 SE; 1.50 SD)
+     Number of mt haplotypes =  2.36 (0.06 SE; 0.88 SD)
+     Lethal alleles / diploid = 1.13 (0.05 SE; 0.63 SD)
+
+Year 30; Census 2
+     N[Extinct] =    806, P[E] =  0.806
+     N[Surviving] =  194, P[S] =  0.194
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 9.43 (0.74 SE; 23.27 SD)
+  Means across extant populations only:
+     Population size =          48.31 (2.17 SE; 30.28 SD)
+     GD(expected heterozygosity) =  0.6752 (0.0089 SE; 0.1245 SD)
+     Observed heterozygosity =  0.7192 (0.0114 SE; 0.1583 SD)
+     Number of extant alleles = 5.30 (0.11 SE; 1.50 SD)
+     Number of mt haplotypes =  2.36 (0.06 SE; 0.88 SD)
+     Lethal alleles / diploid = 1.13 (0.05 SE; 0.63 SD)
+
+Year 30; Census 3
+     N[Extinct] =    806, P[E] =  0.806
+     N[Surviving] =  194, P[S] =  0.194
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 8.53 (0.68 SE; 21.41 SD)
+  Means across extant populations only:
+     Population size =          43.69 (2.07 SE; 28.81 SD)
+     GD(expected heterozygosity) =  0.6760 (0.0090 SE; 0.1251 SD)
+     Observed heterozygosity =  0.7203 (0.0116 SE; 0.1622 SD)
+     Number of extant alleles = 5.30 (0.11 SE; 1.50 SD)
+     Number of mt haplotypes =  2.36 (0.06 SE; 0.88 SD)
+     Lethal alleles / diploid = 1.14 (0.05 SE; 0.64 SD)
+
+Year 30; Census 4
+     N[Extinct] =    807, P[E] =  0.807
+     N[Surviving] =  193, P[S] =  0.193
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 7.98 (0.65 SE; 20.40 SD)
+  Means across extant populations only:
+     Population size =          41.08 (2.03 SE; 28.26 SD)
+     GD(expected heterozygosity) =  0.6750 (0.0089 SE; 0.1233 SD)
+     Observed heterozygosity =  0.7213 (0.0118 SE; 0.1645 SD)
+     Number of extant alleles = 5.26 (0.11 SE; 1.50 SD)
+     Number of mt haplotypes =  2.34 (0.06 SE; 0.89 SD)
+     Lethal alleles / diploid = 1.14 (0.05 SE; 0.65 SD)
+
+Year 31; Census 1
+     N[Extinct] =    829, P[E] =  0.829
+     N[Surviving] =  171, P[S] =  0.171
+     N[1st extinct] =  22, P[1st extinct] =  0.022
+     Mean size (all populations) = 8.04 (0.67 SE; 21.12 SD)
+  Means across extant populations only:
+     Population size =          46.72 (2.17 SE; 28.36 SD)
+     GD(expected heterozygosity) =  0.6688 (0.0093 SE; 0.1213 SD)
+     Observed heterozygosity =  0.7168 (0.0116 SE; 0.1513 SD)
+     Number of extant alleles = 5.14 (0.11 SE; 1.46 SD)
+     Number of mt haplotypes =  2.31 (0.07 SE; 0.88 SD)
+     Lethal alleles / diploid = 1.07 (0.04 SE; 0.57 SD)
+
+Year 31; Census 2
+     N[Extinct] =    829, P[E] =  0.829
+     N[Surviving] =  171, P[S] =  0.171
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 8.04 (0.67 SE; 21.12 SD)
+  Means across extant populations only:
+     Population size =          46.72 (2.17 SE; 28.36 SD)
+     GD(expected heterozygosity) =  0.6688 (0.0093 SE; 0.1213 SD)
+     Observed heterozygosity =  0.7168 (0.0116 SE; 0.1513 SD)
+     Number of extant alleles = 5.14 (0.11 SE; 1.46 SD)
+     Number of mt haplotypes =  2.31 (0.07 SE; 0.88 SD)
+     Lethal alleles / diploid = 1.07 (0.04 SE; 0.57 SD)
+
+Year 31; Census 3
+     N[Extinct] =    829, P[E] =  0.829
+     N[Surviving] =  171, P[S] =  0.171
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 7.27 (0.61 SE; 19.38 SD)
+  Means across extant populations only:
+     Population size =          42.19 (2.06 SE; 26.92 SD)
+     GD(expected heterozygosity) =  0.6720 (0.0091 SE; 0.1196 SD)
+     Observed heterozygosity =  0.7222 (0.0117 SE; 0.1534 SD)
+     Number of extant alleles = 5.14 (0.11 SE; 1.46 SD)
+     Number of mt haplotypes =  2.31 (0.07 SE; 0.88 SD)
+     Lethal alleles / diploid = 1.08 (0.04 SE; 0.59 SD)
+
+Year 31; Census 4
+     N[Extinct] =    831, P[E] =  0.831
+     N[Surviving] =  169, P[S] =  0.169
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 6.72 (0.58 SE; 18.20 SD)
+  Means across extant populations only:
+     Population size =          39.39 (2.00 SE; 26.00 SD)
+     GD(expected heterozygosity) =  0.6717 (0.0091 SE; 0.1188 SD)
+     Observed heterozygosity =  0.7208 (0.0120 SE; 0.1559 SD)
+     Number of extant alleles = 5.12 (0.11 SE; 1.46 SD)
+     Number of mt haplotypes =  2.28 (0.07 SE; 0.89 SD)
+     Lethal alleles / diploid = 1.08 (0.05 SE; 0.59 SD)
+
+Year 32; Census 1
+     N[Extinct] =    848, P[E] =  0.848
+     N[Surviving] =  152, P[S] =  0.152
+     N[1st extinct] =  17, P[1st extinct] =  0.017
+     Mean size (all populations) = 6.88 (0.61 SE; 19.39 SD)
+  Means across extant populations only:
+     Population size =          44.89 (2.25 SE; 27.74 SD)
+     GD(expected heterozygosity) =  0.6606 (0.0105 SE; 0.1295 SD)
+     Observed heterozygosity =  0.7068 (0.0127 SE; 0.1563 SD)
+     Number of extant alleles = 4.94 (0.12 SE; 1.46 SD)
+     Number of mt haplotypes =  2.22 (0.07 SE; 0.86 SD)
+     Lethal alleles / diploid = 1.02 (0.05 SE; 0.56 SD)
+
+Year 32; Census 2
+     N[Extinct] =    848, P[E] =  0.848
+     N[Surviving] =  152, P[S] =  0.152
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 6.88 (0.61 SE; 19.39 SD)
+  Means across extant populations only:
+     Population size =          44.89 (2.25 SE; 27.74 SD)
+     GD(expected heterozygosity) =  0.6606 (0.0105 SE; 0.1295 SD)
+     Observed heterozygosity =  0.7068 (0.0127 SE; 0.1563 SD)
+     Number of extant alleles = 4.94 (0.12 SE; 1.46 SD)
+     Number of mt haplotypes =  2.22 (0.07 SE; 0.86 SD)
+     Lethal alleles / diploid = 1.02 (0.05 SE; 0.56 SD)
+
+Year 32; Census 3
+     N[Extinct] =    848, P[E] =  0.848
+     N[Surviving] =  152, P[S] =  0.152
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 6.24 (0.56 SE; 17.81 SD)
+  Means across extant populations only:
+     Population size =          40.67 (2.13 SE; 26.27 SD)
+     GD(expected heterozygosity) =  0.6621 (0.0104 SE; 0.1283 SD)
+     Observed heterozygosity =  0.7101 (0.0128 SE; 0.1582 SD)
+     Number of extant alleles = 4.94 (0.12 SE; 1.46 SD)
+     Number of mt haplotypes =  2.22 (0.07 SE; 0.86 SD)
+     Lethal alleles / diploid = 1.03 (0.05 SE; 0.57 SD)
+
+Year 32; Census 4
+     N[Extinct] =    851, P[E] =  0.851
+     N[Surviving] =  149, P[S] =  0.149
+     N[1st extinct] =  3, P[1st extinct] =  0.003
+     Mean size (all populations) = 5.71 (0.53 SE; 16.64 SD)
+  Means across extant populations only:
+     Population size =          37.94 (2.07 SE; 25.29 SD)
+     GD(expected heterozygosity) =  0.6622 (0.0106 SE; 0.1299 SD)
+     Observed heterozygosity =  0.7052 (0.0131 SE; 0.1598 SD)
+     Number of extant alleles = 4.95 (0.12 SE; 1.44 SD)
+     Number of mt haplotypes =  2.21 (0.07 SE; 0.84 SD)
+     Lethal alleles / diploid = 1.01 (0.05 SE; 0.55 SD)
+
+Year 33; Census 1
+     N[Extinct] =    869, P[E] =  0.869
+     N[Surviving] =  131, P[S] =  0.131
+     N[1st extinct] =  18, P[1st extinct] =  0.018
+     Mean size (all populations) = 5.78 (0.55 SE; 17.44 SD)
+  Means across extant populations only:
+     Population size =          43.82 (2.24 SE; 25.65 SD)
+     GD(expected heterozygosity) =  0.6565 (0.0112 SE; 0.1287 SD)
+     Observed heterozygosity =  0.6903 (0.0144 SE; 0.1652 SD)
+     Number of extant alleles = 4.84 (0.11 SE; 1.30 SD)
+     Number of mt haplotypes =  2.21 (0.07 SE; 0.82 SD)
+     Lethal alleles / diploid = 0.96 (0.05 SE; 0.54 SD)
+
+Year 33; Census 2
+     N[Extinct] =    869, P[E] =  0.869
+     N[Surviving] =  131, P[S] =  0.131
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 5.78 (0.55 SE; 17.44 SD)
+  Means across extant populations only:
+     Population size =          43.82 (2.24 SE; 25.65 SD)
+     GD(expected heterozygosity) =  0.6565 (0.0112 SE; 0.1287 SD)
+     Observed heterozygosity =  0.6903 (0.0144 SE; 0.1652 SD)
+     Number of extant alleles = 4.84 (0.11 SE; 1.30 SD)
+     Number of mt haplotypes =  2.21 (0.07 SE; 0.82 SD)
+     Lethal alleles / diploid = 0.96 (0.05 SE; 0.54 SD)
+
+Year 33; Census 3
+     N[Extinct] =    869, P[E] =  0.869
+     N[Surviving] =  131, P[S] =  0.131
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 5.20 (0.50 SE; 15.87 SD)
+  Means across extant populations only:
+     Population size =          39.41 (2.10 SE; 24.03 SD)
+     GD(expected heterozygosity) =  0.6587 (0.0111 SE; 0.1276 SD)
+     Observed heterozygosity =  0.6956 (0.0146 SE; 0.1669 SD)
+     Number of extant alleles = 4.84 (0.11 SE; 1.30 SD)
+     Number of mt haplotypes =  2.21 (0.07 SE; 0.82 SD)
+     Lethal alleles / diploid = 0.97 (0.05 SE; 0.54 SD)
+
+Year 33; Census 4
+     N[Extinct] =    871, P[E] =  0.871
+     N[Surviving] =  129, P[S] =  0.129
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 4.78 (0.47 SE; 14.80 SD)
+  Means across extant populations only:
+     Population size =          36.77 (2.02 SE; 22.92 SD)
+     GD(expected heterozygosity) =  0.6573 (0.0117 SE; 0.1333 SD)
+     Observed heterozygosity =  0.6945 (0.0153 SE; 0.1740 SD)
+     Number of extant alleles = 4.75 (0.12 SE; 1.32 SD)
+     Number of mt haplotypes =  2.20 (0.07 SE; 0.83 SD)
+     Lethal alleles / diploid = 0.97 (0.05 SE; 0.54 SD)
+
+Year 34; Census 1
+     N[Extinct] =    890, P[E] =  0.890
+     N[Surviving] =  110, P[S] =  0.110
+     N[1st extinct] =  19, P[1st extinct] =  0.019
+     Mean size (all populations) = 4.83 (0.51 SE; 16.26 SD)
+  Means across extant populations only:
+     Population size =          43.55 (2.56 SE; 26.86 SD)
+     GD(expected heterozygosity) =  0.6545 (0.0132 SE; 0.1383 SD)
+     Observed heterozygosity =  0.6963 (0.0151 SE; 0.1586 SD)
+     Number of extant alleles = 4.76 (0.12 SE; 1.26 SD)
+     Number of mt haplotypes =  2.14 (0.08 SE; 0.82 SD)
+     Lethal alleles / diploid = 0.84 (0.04 SE; 0.42 SD)
+
+Year 34; Census 2
+     N[Extinct] =    890, P[E] =  0.890
+     N[Surviving] =  110, P[S] =  0.110
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 4.83 (0.51 SE; 16.26 SD)
+  Means across extant populations only:
+     Population size =          43.55 (2.56 SE; 26.86 SD)
+     GD(expected heterozygosity) =  0.6545 (0.0132 SE; 0.1383 SD)
+     Observed heterozygosity =  0.6963 (0.0151 SE; 0.1586 SD)
+     Number of extant alleles = 4.76 (0.12 SE; 1.26 SD)
+     Number of mt haplotypes =  2.14 (0.08 SE; 0.82 SD)
+     Lethal alleles / diploid = 0.84 (0.04 SE; 0.42 SD)
+
+Year 34; Census 3
+     N[Extinct] =    890, P[E] =  0.890
+     N[Surviving] =  110, P[S] =  0.110
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 4.36 (0.47 SE; 14.87 SD)
+  Means across extant populations only:
+     Population size =          39.28 (2.42 SE; 25.37 SD)
+     GD(expected heterozygosity) =  0.6529 (0.0132 SE; 0.1387 SD)
+     Observed heterozygosity =  0.6958 (0.0154 SE; 0.1618 SD)
+     Number of extant alleles = 4.76 (0.12 SE; 1.26 SD)
+     Number of mt haplotypes =  2.14 (0.08 SE; 0.82 SD)
+     Lethal alleles / diploid = 0.85 (0.04 SE; 0.41 SD)
+
+Year 34; Census 4
+     N[Extinct] =    890, P[E] =  0.890
+     N[Surviving] =  110, P[S] =  0.110
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 4.04 (0.44 SE; 13.97 SD)
+  Means across extant populations only:
+     Population size =          36.38 (2.34 SE; 24.52 SD)
+     GD(expected heterozygosity) =  0.6525 (0.0133 SE; 0.1400 SD)
+     Observed heterozygosity =  0.6983 (0.0161 SE; 0.1693 SD)
+     Number of extant alleles = 4.73 (0.12 SE; 1.26 SD)
+     Number of mt haplotypes =  2.13 (0.08 SE; 0.83 SD)
+     Lethal alleles / diploid = 0.85 (0.04 SE; 0.41 SD)
+
+Year 35; Census 1
+     N[Extinct] =    907, P[E] =  0.907
+     N[Surviving] =  93, P[S] =  0.093
+     N[1st extinct] =  17, P[1st extinct] =  0.017
+     Mean size (all populations) = 4.26 (0.50 SE; 15.93 SD)
+  Means across extant populations only:
+     Population size =          45.38 (3.06 SE; 29.50 SD)
+     GD(expected heterozygosity) =  0.6356 (0.0161 SE; 0.1555 SD)
+     Observed heterozygosity =  0.6833 (0.0184 SE; 0.1772 SD)
+     Number of extant alleles = 4.59 (0.14 SE; 1.32 SD)
+     Number of mt haplotypes =  1.98 (0.08 SE; 0.81 SD)
+     Lethal alleles / diploid = 0.81 (0.05 SE; 0.44 SD)
+
+Year 35; Census 2
+     N[Extinct] =    907, P[E] =  0.907
+     N[Surviving] =  93, P[S] =  0.093
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 4.26 (0.50 SE; 15.93 SD)
+  Means across extant populations only:
+     Population size =          45.38 (3.06 SE; 29.50 SD)
+     GD(expected heterozygosity) =  0.6356 (0.0161 SE; 0.1555 SD)
+     Observed heterozygosity =  0.6833 (0.0184 SE; 0.1772 SD)
+     Number of extant alleles = 4.59 (0.14 SE; 1.32 SD)
+     Number of mt haplotypes =  1.98 (0.08 SE; 0.81 SD)
+     Lethal alleles / diploid = 0.81 (0.05 SE; 0.44 SD)
+
+Year 35; Census 3
+     N[Extinct] =    907, P[E] =  0.907
+     N[Surviving] =  93, P[S] =  0.093
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 3.84 (0.46 SE; 14.57 SD)
+  Means across extant populations only:
+     Population size =          40.83 (2.89 SE; 27.91 SD)
+     GD(expected heterozygosity) =  0.6380 (0.0160 SE; 0.1541 SD)
+     Observed heterozygosity =  0.6888 (0.0182 SE; 0.1752 SD)
+     Number of extant alleles = 4.59 (0.14 SE; 1.32 SD)
+     Number of mt haplotypes =  1.98 (0.08 SE; 0.81 SD)
+     Lethal alleles / diploid = 0.82 (0.05 SE; 0.44 SD)
+
+Year 35; Census 4
+     N[Extinct] =    907, P[E] =  0.907
+     N[Surviving] =  93, P[S] =  0.093
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 3.61 (0.44 SE; 13.91 SD)
+  Means across extant populations only:
+     Population size =          38.40 (2.84 SE; 27.42 SD)
+     GD(expected heterozygosity) =  0.6376 (0.0160 SE; 0.1543 SD)
+     Observed heterozygosity =  0.6908 (0.0184 SE; 0.1771 SD)
+     Number of extant alleles = 4.55 (0.13 SE; 1.28 SD)
+     Number of mt haplotypes =  1.98 (0.08 SE; 0.81 SD)
+     Lethal alleles / diploid = 0.82 (0.05 SE; 0.44 SD)
+
+Year 36; Census 1
+     N[Extinct] =    921, P[E] =  0.921
+     N[Surviving] =  79, P[S] =  0.079
+     N[1st extinct] =  14, P[1st extinct] =  0.014
+     Mean size (all populations) = 3.50 (0.45 SE; 14.10 SD)
+  Means across extant populations only:
+     Population size =          44.01 (3.06 SE; 27.20 SD)
+     GD(expected heterozygosity) =  0.6186 (0.0177 SE; 0.1569 SD)
+     Observed heterozygosity =  0.6691 (0.0202 SE; 0.1794 SD)
+     Number of extant alleles = 4.46 (0.14 SE; 1.25 SD)
+     Number of mt haplotypes =  1.94 (0.09 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.75 (0.05 SE; 0.41 SD)
+
+Year 36; Census 2
+     N[Extinct] =    921, P[E] =  0.921
+     N[Surviving] =  79, P[S] =  0.079
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 3.50 (0.45 SE; 14.10 SD)
+  Means across extant populations only:
+     Population size =          44.01 (3.06 SE; 27.20 SD)
+     GD(expected heterozygosity) =  0.6186 (0.0177 SE; 0.1569 SD)
+     Observed heterozygosity =  0.6691 (0.0202 SE; 0.1794 SD)
+     Number of extant alleles = 4.46 (0.14 SE; 1.25 SD)
+     Number of mt haplotypes =  1.94 (0.09 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.75 (0.05 SE; 0.41 SD)
+
+Year 36; Census 3
+     N[Extinct] =    921, P[E] =  0.921
+     N[Surviving] =  79, P[S] =  0.079
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 3.16 (0.41 SE; 12.89 SD)
+  Means across extant populations only:
+     Population size =          39.68 (2.89 SE; 25.69 SD)
+     GD(expected heterozygosity) =  0.6245 (0.0172 SE; 0.1528 SD)
+     Observed heterozygosity =  0.6782 (0.0201 SE; 0.1783 SD)
+     Number of extant alleles = 4.46 (0.14 SE; 1.25 SD)
+     Number of mt haplotypes =  1.94 (0.09 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.77 (0.05 SE; 0.42 SD)
+
+Year 36; Census 4
+     N[Extinct] =    921, P[E] =  0.921
+     N[Surviving] =  79, P[S] =  0.079
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 2.93 (0.39 SE; 12.19 SD)
+  Means across extant populations only:
+     Population size =          36.85 (2.84 SE; 25.27 SD)
+     GD(expected heterozygosity) =  0.6215 (0.0181 SE; 0.1605 SD)
+     Observed heterozygosity =  0.6704 (0.0215 SE; 0.1907 SD)
+     Number of extant alleles = 4.44 (0.14 SE; 1.28 SD)
+     Number of mt haplotypes =  1.94 (0.09 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.77 (0.05 SE; 0.43 SD)
+
+Year 37; Census 1
+     N[Extinct] =    932, P[E] =  0.932
+     N[Surviving] =  68, P[S] =  0.068
+     N[1st extinct] =  11, P[1st extinct] =  0.011
+     Mean size (all populations) = 2.89 (0.40 SE; 12.69 SD)
+  Means across extant populations only:
+     Population size =          42.19 (3.25 SE; 26.81 SD)
+     GD(expected heterozygosity) =  0.6074 (0.0184 SE; 0.1516 SD)
+     Observed heterozygosity =  0.6478 (0.0217 SE; 0.1793 SD)
+     Number of extant alleles = 4.31 (0.14 SE; 1.18 SD)
+     Number of mt haplotypes =  1.88 (0.09 SE; 0.78 SD)
+     Lethal alleles / diploid = 0.71 (0.05 SE; 0.40 SD)
+
+Year 37; Census 2
+     N[Extinct] =    932, P[E] =  0.932
+     N[Surviving] =  68, P[S] =  0.068
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 2.89 (0.40 SE; 12.69 SD)
+  Means across extant populations only:
+     Population size =          42.19 (3.25 SE; 26.81 SD)
+     GD(expected heterozygosity) =  0.6074 (0.0184 SE; 0.1516 SD)
+     Observed heterozygosity =  0.6478 (0.0217 SE; 0.1793 SD)
+     Number of extant alleles = 4.31 (0.14 SE; 1.18 SD)
+     Number of mt haplotypes =  1.88 (0.09 SE; 0.78 SD)
+     Lethal alleles / diploid = 0.71 (0.05 SE; 0.40 SD)
+
+Year 37; Census 3
+     N[Extinct] =    932, P[E] =  0.932
+     N[Surviving] =  68, P[S] =  0.068
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 2.58 (0.36 SE; 11.54 SD)
+  Means across extant populations only:
+     Population size =          37.66 (3.08 SE; 25.39 SD)
+     GD(expected heterozygosity) =  0.6120 (0.0177 SE; 0.1463 SD)
+     Observed heterozygosity =  0.6548 (0.0211 SE; 0.1737 SD)
+     Number of extant alleles = 4.31 (0.14 SE; 1.18 SD)
+     Number of mt haplotypes =  1.88 (0.09 SE; 0.78 SD)
+     Lethal alleles / diploid = 0.72 (0.05 SE; 0.40 SD)
+
+Year 37; Census 4
+     N[Extinct] =    932, P[E] =  0.932
+     N[Surviving] =  68, P[S] =  0.068
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 2.40 (0.34 SE; 10.80 SD)
+  Means across extant populations only:
+     Population size =          34.99 (2.93 SE; 24.14 SD)
+     GD(expected heterozygosity) =  0.6110 (0.0175 SE; 0.1442 SD)
+     Observed heterozygosity =  0.6583 (0.0210 SE; 0.1732 SD)
+     Number of extant alleles = 4.28 (0.14 SE; 1.16 SD)
+     Number of mt haplotypes =  1.85 (0.09 SE; 0.78 SD)
+     Lethal alleles / diploid = 0.71 (0.05 SE; 0.40 SD)
+
+Year 38; Census 1
+     N[Extinct] =    941, P[E] =  0.941
+     N[Surviving] =  59, P[S] =  0.059
+     N[1st extinct] =  9, P[1st extinct] =  0.009
+     Mean size (all populations) = 2.59 (0.39 SE; 12.47 SD)
+  Means across extant populations only:
+     Population size =          43.46 (3.85 SE; 29.54 SD)
+     GD(expected heterozygosity) =  0.6008 (0.0193 SE; 0.1484 SD)
+     Observed heterozygosity =  0.6605 (0.0216 SE; 0.1660 SD)
+     Number of extant alleles = 4.12 (0.15 SE; 1.16 SD)
+     Number of mt haplotypes =  1.80 (0.10 SE; 0.76 SD)
+     Lethal alleles / diploid = 0.68 (0.06 SE; 0.42 SD)
+
+Year 38; Census 2
+     N[Extinct] =    941, P[E] =  0.941
+     N[Surviving] =  59, P[S] =  0.059
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 2.59 (0.39 SE; 12.47 SD)
+  Means across extant populations only:
+     Population size =          43.46 (3.85 SE; 29.54 SD)
+     GD(expected heterozygosity) =  0.6008 (0.0193 SE; 0.1484 SD)
+     Observed heterozygosity =  0.6605 (0.0216 SE; 0.1660 SD)
+     Number of extant alleles = 4.12 (0.15 SE; 1.16 SD)
+     Number of mt haplotypes =  1.80 (0.10 SE; 0.76 SD)
+     Lethal alleles / diploid = 0.68 (0.06 SE; 0.42 SD)
+
+Year 38; Census 3
+     N[Extinct] =    941, P[E] =  0.941
+     N[Surviving] =  59, P[S] =  0.059
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 2.33 (0.36 SE; 11.40 SD)
+  Means across extant populations only:
+     Population size =          39.03 (3.64 SE; 27.93 SD)
+     GD(expected heterozygosity) =  0.6055 (0.0191 SE; 0.1466 SD)
+     Observed heterozygosity =  0.6707 (0.0218 SE; 0.1678 SD)
+     Number of extant alleles = 4.12 (0.15 SE; 1.16 SD)
+     Number of mt haplotypes =  1.80 (0.10 SE; 0.76 SD)
+     Lethal alleles / diploid = 0.69 (0.05 SE; 0.41 SD)
+
+Year 38; Census 4
+     N[Extinct] =    941, P[E] =  0.941
+     N[Surviving] =  59, P[S] =  0.059
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 2.20 (0.34 SE; 10.89 SD)
+  Means across extant populations only:
+     Population size =          36.83 (3.55 SE; 27.27 SD)
+     GD(expected heterozygosity) =  0.6095 (0.0187 SE; 0.1438 SD)
+     Observed heterozygosity =  0.6760 (0.0216 SE; 0.1663 SD)
+     Number of extant alleles = 4.08 (0.15 SE; 1.16 SD)
+     Number of mt haplotypes =  1.80 (0.10 SE; 0.76 SD)
+     Lethal alleles / diploid = 0.68 (0.05 SE; 0.41 SD)
+
+Year 39; Census 1
+     N[Extinct] =    952, P[E] =  0.952
+     N[Surviving] =  48, P[S] =  0.048
+     N[1st extinct] =  11, P[1st extinct] =  0.011
+     Mean size (all populations) = 2.10 (0.35 SE; 11.03 SD)
+  Means across extant populations only:
+     Population size =          43.31 (3.99 SE; 27.64 SD)
+     GD(expected heterozygosity) =  0.5925 (0.0230 SE; 0.1590 SD)
+     Observed heterozygosity =  0.6423 (0.0266 SE; 0.1844 SD)
+     Number of extant alleles = 4.06 (0.17 SE; 1.16 SD)
+     Number of mt haplotypes =  1.83 (0.11 SE; 0.78 SD)
+     Lethal alleles / diploid = 0.60 (0.06 SE; 0.43 SD)
+
+Year 39; Census 2
+     N[Extinct] =    952, P[E] =  0.952
+     N[Surviving] =  48, P[S] =  0.048
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 2.10 (0.35 SE; 11.03 SD)
+  Means across extant populations only:
+     Population size =          43.31 (3.99 SE; 27.64 SD)
+     GD(expected heterozygosity) =  0.5925 (0.0230 SE; 0.1590 SD)
+     Observed heterozygosity =  0.6423 (0.0266 SE; 0.1844 SD)
+     Number of extant alleles = 4.06 (0.17 SE; 1.16 SD)
+     Number of mt haplotypes =  1.83 (0.11 SE; 0.78 SD)
+     Lethal alleles / diploid = 0.60 (0.06 SE; 0.43 SD)
+
+Year 39; Census 3
+     N[Extinct] =    952, P[E] =  0.952
+     N[Surviving] =  48, P[S] =  0.048
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 1.88 (0.32 SE; 10.01 SD)
+  Means across extant populations only:
+     Population size =          38.75 (3.74 SE; 25.89 SD)
+     GD(expected heterozygosity) =  0.5971 (0.0229 SE; 0.1588 SD)
+     Observed heterozygosity =  0.6499 (0.0269 SE; 0.1866 SD)
+     Number of extant alleles = 4.06 (0.17 SE; 1.16 SD)
+     Number of mt haplotypes =  1.83 (0.11 SE; 0.78 SD)
+     Lethal alleles / diploid = 0.60 (0.06 SE; 0.44 SD)
+
+Year 39; Census 4
+     N[Extinct] =    952, P[E] =  0.952
+     N[Surviving] =  48, P[S] =  0.048
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 1.73 (0.29 SE; 9.26 SD)
+  Means across extant populations only:
+     Population size =          35.71 (3.48 SE; 24.14 SD)
+     GD(expected heterozygosity) =  0.5928 (0.0229 SE; 0.1587 SD)
+     Observed heterozygosity =  0.6481 (0.0270 SE; 0.1871 SD)
+     Number of extant alleles = 4.02 (0.16 SE; 1.14 SD)
+     Number of mt haplotypes =  1.83 (0.11 SE; 0.78 SD)
+     Lethal alleles / diploid = 0.60 (0.06 SE; 0.44 SD)
+
+Year 40; Census 1
+     N[Extinct] =    959, P[E] =  0.959
+     N[Surviving] =  41, P[S] =  0.041
+     N[1st extinct] =  7, P[1st extinct] =  0.007
+     Mean size (all populations) = 1.73 (0.31 SE; 9.67 SD)
+  Means across extant populations only:
+     Population size =          41.88 (3.86 SE; 24.73 SD)
+     GD(expected heterozygosity) =  0.5918 (0.0248 SE; 0.1586 SD)
+     Observed heterozygosity =  0.6336 (0.0297 SE; 0.1899 SD)
+     Number of extant alleles = 3.95 (0.16 SE; 1.00 SD)
+     Number of mt haplotypes =  1.83 (0.10 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.58 (0.07 SE; 0.48 SD)
+
+Year 40; Census 2
+     N[Extinct] =    959, P[E] =  0.959
+     N[Surviving] =  41, P[S] =  0.041
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 1.73 (0.31 SE; 9.67 SD)
+  Means across extant populations only:
+     Population size =          41.88 (3.86 SE; 24.73 SD)
+     GD(expected heterozygosity) =  0.5918 (0.0248 SE; 0.1586 SD)
+     Observed heterozygosity =  0.6336 (0.0297 SE; 0.1899 SD)
+     Number of extant alleles = 3.95 (0.16 SE; 1.00 SD)
+     Number of mt haplotypes =  1.83 (0.10 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.58 (0.07 SE; 0.48 SD)
+
+Year 40; Census 3
+     N[Extinct] =    959, P[E] =  0.959
+     N[Surviving] =  41, P[S] =  0.041
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 1.55 (0.28 SE; 8.78 SD)
+  Means across extant populations only:
+     Population size =          37.56 (3.62 SE; 23.20 SD)
+     GD(expected heterozygosity) =  0.5940 (0.0251 SE; 0.1610 SD)
+     Observed heterozygosity =  0.6297 (0.0307 SE; 0.1964 SD)
+     Number of extant alleles = 3.95 (0.16 SE; 1.00 SD)
+     Number of mt haplotypes =  1.83 (0.10 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.58 (0.07 SE; 0.48 SD)
+
+Year 40; Census 4
+     N[Extinct] =    960, P[E] =  0.960
+     N[Surviving] =  40, P[S] =  0.040
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 1.41 (0.26 SE; 8.10 SD)
+  Means across extant populations only:
+     Population size =          34.98 (3.44 SE; 21.78 SD)
+     GD(expected heterozygosity) =  0.5897 (0.0265 SE; 0.1677 SD)
+     Observed heterozygosity =  0.6204 (0.0321 SE; 0.2031 SD)
+     Number of extant alleles = 3.98 (0.16 SE; 1.00 SD)
+     Number of mt haplotypes =  1.83 (0.10 SE; 0.64 SD)
+     Lethal alleles / diploid = 0.55 (0.07 SE; 0.45 SD)
+
+Year 41; Census 1
+     N[Extinct] =    967, P[E] =  0.967
+     N[Surviving] =  33, P[S] =  0.033
+     N[1st extinct] =  7, P[1st extinct] =  0.007
+     Mean size (all populations) = 1.44 (0.27 SE; 8.60 SD)
+  Means across extant populations only:
+     Population size =          42.82 (3.81 SE; 21.89 SD)
+     GD(expected heterozygosity) =  0.5936 (0.0274 SE; 0.1572 SD)
+     Observed heterozygosity =  0.6380 (0.0333 SE; 0.1912 SD)
+     Number of extant alleles = 3.91 (0.15 SE; 0.88 SD)
+     Number of mt haplotypes =  1.82 (0.11 SE; 0.64 SD)
+     Lethal alleles / diploid = 0.50 (0.08 SE; 0.49 SD)
+
+Year 41; Census 2
+     N[Extinct] =    967, P[E] =  0.967
+     N[Surviving] =  33, P[S] =  0.033
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 1.44 (0.27 SE; 8.60 SD)
+  Means across extant populations only:
+     Population size =          42.82 (3.81 SE; 21.89 SD)
+     GD(expected heterozygosity) =  0.5936 (0.0274 SE; 0.1572 SD)
+     Observed heterozygosity =  0.6380 (0.0333 SE; 0.1912 SD)
+     Number of extant alleles = 3.91 (0.15 SE; 0.88 SD)
+     Number of mt haplotypes =  1.82 (0.11 SE; 0.64 SD)
+     Lethal alleles / diploid = 0.50 (0.08 SE; 0.49 SD)
+
+Year 41; Census 3
+     N[Extinct] =    967, P[E] =  0.967
+     N[Surviving] =  33, P[S] =  0.033
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 1.28 (0.24 SE; 7.74 SD)
+  Means across extant populations only:
+     Population size =          37.97 (3.62 SE; 20.81 SD)
+     GD(expected heterozygosity) =  0.5949 (0.0266 SE; 0.1528 SD)
+     Observed heterozygosity =  0.6323 (0.0329 SE; 0.1892 SD)
+     Number of extant alleles = 3.91 (0.15 SE; 0.88 SD)
+     Number of mt haplotypes =  1.82 (0.11 SE; 0.64 SD)
+     Lethal alleles / diploid = 0.50 (0.08 SE; 0.48 SD)
+
+Year 41; Census 4
+     N[Extinct] =    968, P[E] =  0.968
+     N[Surviving] =  32, P[S] =  0.032
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 1.15 (0.22 SE; 7.04 SD)
+  Means across extant populations only:
+     Population size =          35.25 (3.33 SE; 18.81 SD)
+     GD(expected heterozygosity) =  0.5876 (0.0267 SE; 0.1508 SD)
+     Observed heterozygosity =  0.6356 (0.0329 SE; 0.1863 SD)
+     Number of extant alleles = 3.84 (0.15 SE; 0.85 SD)
+     Number of mt haplotypes =  1.81 (0.11 SE; 0.64 SD)
+     Lethal alleles / diploid = 0.49 (0.09 SE; 0.50 SD)
+
+Year 42; Census 1
+     N[Extinct] =    970, P[E] =  0.970
+     N[Surviving] =  30, P[S] =  0.030
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 1.25 (0.28 SE; 8.71 SD)
+  Means across extant populations only:
+     Population size =          41.23 (5.50 SE; 30.14 SD)
+     GD(expected heterozygosity) =  0.5798 (0.0281 SE; 0.1541 SD)
+     Observed heterozygosity =  0.6333 (0.0340 SE; 0.1865 SD)
+     Number of extant alleles = 3.63 (0.18 SE; 1.00 SD)
+     Number of mt haplotypes =  1.77 (0.11 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.35 (0.05 SE; 0.28 SD)
+
+Year 42; Census 2
+     N[Extinct] =    970, P[E] =  0.970
+     N[Surviving] =  30, P[S] =  0.030
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 1.25 (0.28 SE; 8.71 SD)
+  Means across extant populations only:
+     Population size =          41.23 (5.50 SE; 30.14 SD)
+     GD(expected heterozygosity) =  0.5798 (0.0281 SE; 0.1541 SD)
+     Observed heterozygosity =  0.6333 (0.0340 SE; 0.1865 SD)
+     Number of extant alleles = 3.63 (0.18 SE; 1.00 SD)
+     Number of mt haplotypes =  1.77 (0.11 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.35 (0.05 SE; 0.28 SD)
+
+Year 42; Census 3
+     N[Extinct] =    970, P[E] =  0.970
+     N[Surviving] =  30, P[S] =  0.030
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 1.11 (0.25 SE; 7.96 SD)
+  Means across extant populations only:
+     Population size =          36.53 (5.29 SE; 29.00 SD)
+     GD(expected heterozygosity) =  0.5803 (0.0282 SE; 0.1547 SD)
+     Observed heterozygosity =  0.6267 (0.0347 SE; 0.1901 SD)
+     Number of extant alleles = 3.63 (0.18 SE; 1.00 SD)
+     Number of mt haplotypes =  1.77 (0.11 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.34 (0.05 SE; 0.28 SD)
+
+Year 42; Census 4
+     N[Extinct] =    970, P[E] =  0.970
+     N[Surviving] =  30, P[S] =  0.030
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 1.05 (0.25 SE; 7.75 SD)
+  Means across extant populations only:
+     Population size =          34.80 (5.34 SE; 29.22 SD)
+     GD(expected heterozygosity) =  0.5761 (0.0289 SE; 0.1581 SD)
+     Observed heterozygosity =  0.6280 (0.0358 SE; 0.1962 SD)
+     Number of extant alleles = 3.63 (0.18 SE; 1.00 SD)
+     Number of mt haplotypes =  1.77 (0.11 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.35 (0.05 SE; 0.28 SD)
+
+Year 43; Census 1
+     N[Extinct] =    974, P[E] =  0.974
+     N[Surviving] =  26, P[S] =  0.026
+     N[1st extinct] =  4, P[1st extinct] =  0.004
+     Mean size (all populations) = 1.00 (0.24 SE; 7.50 SD)
+  Means across extant populations only:
+     Population size =          37.96 (5.49 SE; 27.98 SD)
+     GD(expected heterozygosity) =  0.5424 (0.0364 SE; 0.1858 SD)
+     Observed heterozygosity =  0.5752 (0.0394 SE; 0.2011 SD)
+     Number of extant alleles = 3.42 (0.19 SE; 0.99 SD)
+     Number of mt haplotypes =  1.77 (0.12 SE; 0.59 SD)
+     Lethal alleles / diploid = 0.29 (0.05 SE; 0.26 SD)
+
+Year 43; Census 2
+     N[Extinct] =    974, P[E] =  0.974
+     N[Surviving] =  26, P[S] =  0.026
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 1.00 (0.24 SE; 7.50 SD)
+  Means across extant populations only:
+     Population size =          37.96 (5.49 SE; 27.98 SD)
+     GD(expected heterozygosity) =  0.5424 (0.0364 SE; 0.1858 SD)
+     Observed heterozygosity =  0.5752 (0.0394 SE; 0.2011 SD)
+     Number of extant alleles = 3.42 (0.19 SE; 0.99 SD)
+     Number of mt haplotypes =  1.77 (0.12 SE; 0.59 SD)
+     Lethal alleles / diploid = 0.29 (0.05 SE; 0.26 SD)
+
+Year 43; Census 3
+     N[Extinct] =    974, P[E] =  0.974
+     N[Surviving] =  26, P[S] =  0.026
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.88 (0.21 SE; 6.79 SD)
+  Means across extant populations only:
+     Population size =          33.38 (5.22 SE; 26.62 SD)
+     GD(expected heterozygosity) =  0.5481 (0.0356 SE; 0.1814 SD)
+     Observed heterozygosity =  0.5848 (0.0394 SE; 0.2009 SD)
+     Number of extant alleles = 3.42 (0.19 SE; 0.99 SD)
+     Number of mt haplotypes =  1.77 (0.12 SE; 0.59 SD)
+     Lethal alleles / diploid = 0.30 (0.05 SE; 0.27 SD)
+
+Year 43; Census 4
+     N[Extinct] =    975, P[E] =  0.975
+     N[Surviving] =  25, P[S] =  0.025
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 0.82 (0.20 SE; 6.41 SD)
+  Means across extant populations only:
+     Population size =          32.36 (5.08 SE; 25.42 SD)
+     GD(expected heterozygosity) =  0.5504 (0.0363 SE; 0.1813 SD)
+     Observed heterozygosity =  0.5948 (0.0408 SE; 0.2038 SD)
+     Number of extant alleles = 3.48 (0.19 SE; 0.96 SD)
+     Number of mt haplotypes =  1.72 (0.12 SE; 0.61 SD)
+     Lethal alleles / diploid = 0.31 (0.05 SE; 0.26 SD)
+
+Year 44; Census 1
+     N[Extinct] =    980, P[E] =  0.980
+     N[Surviving] =  20, P[S] =  0.020
+     N[1st extinct] =  5, P[1st extinct] =  0.005
+     Mean size (all populations) = 0.73 (0.20 SE; 6.48 SD)
+  Means across extant populations only:
+     Population size =          35.65 (6.68 SE; 29.88 SD)
+     GD(expected heterozygosity) =  0.5444 (0.0419 SE; 0.1873 SD)
+     Observed heterozygosity =  0.5911 (0.0501 SE; 0.2241 SD)
+     Number of extant alleles = 3.40 (0.22 SE; 0.99 SD)
+     Number of mt haplotypes =  1.70 (0.13 SE; 0.57 SD)
+     Lethal alleles / diploid = 0.26 (0.05 SE; 0.23 SD)
+
+Year 44; Census 2
+     N[Extinct] =    980, P[E] =  0.980
+     N[Surviving] =  20, P[S] =  0.020
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.73 (0.20 SE; 6.48 SD)
+  Means across extant populations only:
+     Population size =          35.65 (6.68 SE; 29.88 SD)
+     GD(expected heterozygosity) =  0.5444 (0.0419 SE; 0.1873 SD)
+     Observed heterozygosity =  0.5911 (0.0501 SE; 0.2241 SD)
+     Number of extant alleles = 3.40 (0.22 SE; 0.99 SD)
+     Number of mt haplotypes =  1.70 (0.13 SE; 0.57 SD)
+     Lethal alleles / diploid = 0.26 (0.05 SE; 0.23 SD)
+
+Year 44; Census 3
+     N[Extinct] =    980, P[E] =  0.980
+     N[Surviving] =  20, P[S] =  0.020
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.66 (0.19 SE; 5.96 SD)
+  Means across extant populations only:
+     Population size =          32.20 (6.31 SE; 28.24 SD)
+     GD(expected heterozygosity) =  0.5394 (0.0424 SE; 0.1894 SD)
+     Observed heterozygosity =  0.5754 (0.0503 SE; 0.2249 SD)
+     Number of extant alleles = 3.40 (0.22 SE; 0.99 SD)
+     Number of mt haplotypes =  1.70 (0.13 SE; 0.57 SD)
+     Lethal alleles / diploid = 0.26 (0.05 SE; 0.21 SD)
+
+Year 44; Census 4
+     N[Extinct] =    980, P[E] =  0.980
+     N[Surviving] =  20, P[S] =  0.020
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.60 (0.18 SE; 5.55 SD)
+  Means across extant populations only:
+     Population size =          29.35 (6.05 SE; 27.06 SD)
+     GD(expected heterozygosity) =  0.5392 (0.0425 SE; 0.1899 SD)
+     Observed heterozygosity =  0.5799 (0.0502 SE; 0.2245 SD)
+     Number of extant alleles = 3.40 (0.22 SE; 0.99 SD)
+     Number of mt haplotypes =  1.70 (0.13 SE; 0.57 SD)
+     Lethal alleles / diploid = 0.26 (0.05 SE; 0.23 SD)
+
+Year 45; Census 1
+     N[Extinct] =    984, P[E] =  0.984
+     N[Surviving] =  16, P[S] =  0.016
+     N[1st extinct] =  4, P[1st extinct] =  0.004
+     Mean size (all populations) = 0.62 (0.19 SE; 5.94 SD)
+  Means across extant populations only:
+     Population size =          37.44 (7.41 SE; 29.65 SD)
+     GD(expected heterozygosity) =  0.5510 (0.0341 SE; 0.1364 SD)
+     Observed heterozygosity =  0.5652 (0.0379 SE; 0.1515 SD)
+     Number of extant alleles = 3.44 (0.22 SE; 0.89 SD)
+     Number of mt haplotypes =  1.81 (0.14 SE; 0.54 SD)
+     Lethal alleles / diploid = 0.27 (0.07 SE; 0.26 SD)
+
+Year 45; Census 2
+     N[Extinct] =    984, P[E] =  0.984
+     N[Surviving] =  16, P[S] =  0.016
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.62 (0.19 SE; 5.94 SD)
+  Means across extant populations only:
+     Population size =          37.44 (7.41 SE; 29.65 SD)
+     GD(expected heterozygosity) =  0.5510 (0.0341 SE; 0.1364 SD)
+     Observed heterozygosity =  0.5652 (0.0379 SE; 0.1515 SD)
+     Number of extant alleles = 3.44 (0.22 SE; 0.89 SD)
+     Number of mt haplotypes =  1.81 (0.14 SE; 0.54 SD)
+     Lethal alleles / diploid = 0.27 (0.07 SE; 0.26 SD)
+
+Year 45; Census 3
+     N[Extinct] =    984, P[E] =  0.984
+     N[Surviving] =  16, P[S] =  0.016
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.55 (0.17 SE; 5.40 SD)
+  Means across extant populations only:
+     Population size =          33.25 (6.97 SE; 27.88 SD)
+     GD(expected heterozygosity) =  0.5542 (0.0342 SE; 0.1369 SD)
+     Observed heterozygosity =  0.5715 (0.0376 SE; 0.1503 SD)
+     Number of extant alleles = 3.44 (0.22 SE; 0.89 SD)
+     Number of mt haplotypes =  1.81 (0.14 SE; 0.54 SD)
+     Lethal alleles / diploid = 0.28 (0.07 SE; 0.26 SD)
+
+Year 45; Census 4
+     N[Extinct] =    985, P[E] =  0.985
+     N[Surviving] =  15, P[S] =  0.015
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 0.50 (0.16 SE; 4.98 SD)
+  Means across extant populations only:
+     Population size =          32.53 (6.60 SE; 25.58 SD)
+     GD(expected heterozygosity) =  0.5534 (0.0354 SE; 0.1372 SD)
+     Observed heterozygosity =  0.5815 (0.0390 SE; 0.1510 SD)
+     Number of extant alleles = 3.47 (0.24 SE; 0.92 SD)
+     Number of mt haplotypes =  1.80 (0.14 SE; 0.56 SD)
+     Lethal alleles / diploid = 0.23 (0.05 SE; 0.18 SD)
+
+Year 46; Census 1
+     N[Extinct] =    987, P[E] =  0.987
+     N[Surviving] =  13, P[S] =  0.013
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 0.46 (0.16 SE; 4.90 SD)
+  Means across extant populations only:
+     Population size =          35.31 (7.16 SE; 25.83 SD)
+     GD(expected heterozygosity) =  0.5040 (0.0585 SE; 0.2110 SD)
+     Observed heterozygosity =  0.5295 (0.0603 SE; 0.2173 SD)
+     Number of extant alleles = 3.38 (0.31 SE; 1.12 SD)
+     Number of mt haplotypes =  1.85 (0.15 SE; 0.55 SD)
+     Lethal alleles / diploid = 0.24 (0.06 SE; 0.20 SD)
+
+Year 46; Census 2
+     N[Extinct] =    987, P[E] =  0.987
+     N[Surviving] =  13, P[S] =  0.013
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.46 (0.16 SE; 4.90 SD)
+  Means across extant populations only:
+     Population size =          35.31 (7.16 SE; 25.83 SD)
+     GD(expected heterozygosity) =  0.5040 (0.0585 SE; 0.2110 SD)
+     Observed heterozygosity =  0.5295 (0.0603 SE; 0.2173 SD)
+     Number of extant alleles = 3.38 (0.31 SE; 1.12 SD)
+     Number of mt haplotypes =  1.85 (0.15 SE; 0.55 SD)
+     Lethal alleles / diploid = 0.24 (0.06 SE; 0.20 SD)
+
+Year 46; Census 3
+     N[Extinct] =    987, P[E] =  0.987
+     N[Surviving] =  13, P[S] =  0.013
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.41 (0.14 SE; 4.39 SD)
+  Means across extant populations only:
+     Population size =          31.08 (6.63 SE; 23.91 SD)
+     GD(expected heterozygosity) =  0.5119 (0.0579 SE; 0.2089 SD)
+     Observed heterozygosity =  0.5404 (0.0596 SE; 0.2150 SD)
+     Number of extant alleles = 3.38 (0.31 SE; 1.12 SD)
+     Number of mt haplotypes =  1.85 (0.15 SE; 0.55 SD)
+     Lethal alleles / diploid = 0.23 (0.05 SE; 0.19 SD)
+
+Year 46; Census 4
+     N[Extinct] =    988, P[E] =  0.988
+     N[Surviving] =  12, P[S] =  0.012
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 0.38 (0.13 SE; 4.14 SD)
+  Means across extant populations only:
+     Population size =          31.17 (6.49 SE; 22.49 SD)
+     GD(expected heterozygosity) =  0.5322 (0.0592 SE; 0.2049 SD)
+     Observed heterozygosity =  0.5559 (0.0623 SE; 0.2158 SD)
+     Number of extant alleles = 3.50 (0.31 SE; 1.09 SD)
+     Number of mt haplotypes =  1.83 (0.17 SE; 0.58 SD)
+     Lethal alleles / diploid = 0.22 (0.06 SE; 0.20 SD)
+
+Year 47; Census 1
+     N[Extinct] =    990, P[E] =  0.990
+     N[Surviving] =  10, P[S] =  0.010
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 0.35 (0.13 SE; 4.20 SD)
+  Means across extant populations only:
+     Population size =          35.10 (7.75 SE; 24.49 SD)
+     GD(expected heterozygosity) =  0.5783 (0.0362 SE; 0.1145 SD)
+     Observed heterozygosity =  0.6044 (0.0305 SE; 0.0965 SD)
+     Number of extant alleles = 3.40 (0.27 SE; 0.84 SD)
+     Number of mt haplotypes =  1.80 (0.20 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.23 (0.06 SE; 0.20 SD)
+
+Year 47; Census 2
+     N[Extinct] =    990, P[E] =  0.990
+     N[Surviving] =  10, P[S] =  0.010
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.35 (0.13 SE; 4.20 SD)
+  Means across extant populations only:
+     Population size =          35.10 (7.75 SE; 24.49 SD)
+     GD(expected heterozygosity) =  0.5783 (0.0362 SE; 0.1145 SD)
+     Observed heterozygosity =  0.6044 (0.0305 SE; 0.0965 SD)
+     Number of extant alleles = 3.40 (0.27 SE; 0.84 SD)
+     Number of mt haplotypes =  1.80 (0.20 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.23 (0.06 SE; 0.20 SD)
+
+Year 47; Census 3
+     N[Extinct] =    990, P[E] =  0.990
+     N[Surviving] =  10, P[S] =  0.010
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.30 (0.12 SE; 3.72 SD)
+  Means across extant populations only:
+     Population size =          30.30 (7.26 SE; 22.95 SD)
+     GD(expected heterozygosity) =  0.5786 (0.0382 SE; 0.1209 SD)
+     Observed heterozygosity =  0.5862 (0.0319 SE; 0.1008 SD)
+     Number of extant alleles = 3.40 (0.27 SE; 0.84 SD)
+     Number of mt haplotypes =  1.80 (0.20 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.25 (0.06 SE; 0.20 SD)
+
+Year 47; Census 4
+     N[Extinct] =    990, P[E] =  0.990
+     N[Surviving] =  10, P[S] =  0.010
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.27 (0.10 SE; 3.23 SD)
+  Means across extant populations only:
+     Population size =          26.70 (6.14 SE; 19.43 SD)
+     GD(expected heterozygosity) =  0.5794 (0.0362 SE; 0.1143 SD)
+     Observed heterozygosity =  0.6011 (0.0370 SE; 0.1171 SD)
+     Number of extant alleles = 3.40 (0.27 SE; 0.84 SD)
+     Number of mt haplotypes =  1.80 (0.20 SE; 0.63 SD)
+     Lethal alleles / diploid = 0.26 (0.07 SE; 0.22 SD)
+
+Year 48; Census 1
+     N[Extinct] =    991, P[E] =  0.991
+     N[Surviving] =  9, P[S] =  0.009
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 0.28 (0.11 SE; 3.42 SD)
+  Means across extant populations only:
+     Population size =          30.56 (6.86 SE; 20.57 SD)
+     GD(expected heterozygosity) =  0.5984 (0.0299 SE; 0.0896 SD)
+     Observed heterozygosity =  0.6172 (0.0483 SE; 0.1449 SD)
+     Number of extant alleles = 3.44 (0.24 SE; 0.73 SD)
+     Number of mt haplotypes =  1.67 (0.24 SE; 0.71 SD)
+     Lethal alleles / diploid = 0.31 (0.08 SE; 0.25 SD)
+
+Year 48; Census 2
+     N[Extinct] =    991, P[E] =  0.991
+     N[Surviving] =  9, P[S] =  0.009
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.28 (0.11 SE; 3.42 SD)
+  Means across extant populations only:
+     Population size =          30.56 (6.86 SE; 20.57 SD)
+     GD(expected heterozygosity) =  0.5984 (0.0299 SE; 0.0896 SD)
+     Observed heterozygosity =  0.6172 (0.0483 SE; 0.1449 SD)
+     Number of extant alleles = 3.44 (0.24 SE; 0.73 SD)
+     Number of mt haplotypes =  1.67 (0.24 SE; 0.71 SD)
+     Lethal alleles / diploid = 0.31 (0.08 SE; 0.25 SD)
+
+Year 48; Census 3
+     N[Extinct] =    991, P[E] =  0.991
+     N[Surviving] =  9, P[S] =  0.009
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.25 (0.10 SE; 3.05 SD)
+  Means across extant populations only:
+     Population size =          27.11 (6.16 SE; 18.48 SD)
+     GD(expected heterozygosity) =  0.5955 (0.0301 SE; 0.0904 SD)
+     Observed heterozygosity =  0.6163 (0.0500 SE; 0.1499 SD)
+     Number of extant alleles = 3.44 (0.24 SE; 0.73 SD)
+     Number of mt haplotypes =  1.67 (0.24 SE; 0.71 SD)
+     Lethal alleles / diploid = 0.32 (0.09 SE; 0.27 SD)
+
+Year 48; Census 4
+     N[Extinct] =    991, P[E] =  0.991
+     N[Surviving] =  9, P[S] =  0.009
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.23 (0.09 SE; 2.84 SD)
+  Means across extant populations only:
+     Population size =          25.11 (5.78 SE; 17.34 SD)
+     GD(expected heterozygosity) =  0.5930 (0.0330 SE; 0.0991 SD)
+     Observed heterozygosity =  0.6105 (0.0553 SE; 0.1659 SD)
+     Number of extant alleles = 3.44 (0.24 SE; 0.73 SD)
+     Number of mt haplotypes =  1.67 (0.24 SE; 0.71 SD)
+     Lethal alleles / diploid = 0.33 (0.09 SE; 0.27 SD)
+
+Year 49; Census 1
+     N[Extinct] =    993, P[E] =  0.993
+     N[Surviving] =  7, P[S] =  0.007
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 0.26 (0.11 SE; 3.59 SD)
+  Means across extant populations only:
+     Population size =          37.43 (8.60 SE; 22.74 SD)
+     GD(expected heterozygosity) =  0.5451 (0.0536 SE; 0.1419 SD)
+     Observed heterozygosity =  0.6100 (0.0821 SE; 0.2172 SD)
+     Number of extant alleles = 3.29 (0.29 SE; 0.76 SD)
+     Number of mt haplotypes =  1.57 (0.30 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.26 (0.11 SE; 0.29 SD)
+
+Year 49; Census 2
+     N[Extinct] =    993, P[E] =  0.993
+     N[Surviving] =  7, P[S] =  0.007
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.26 (0.11 SE; 3.59 SD)
+  Means across extant populations only:
+     Population size =          37.43 (8.60 SE; 22.74 SD)
+     GD(expected heterozygosity) =  0.5451 (0.0536 SE; 0.1419 SD)
+     Observed heterozygosity =  0.6100 (0.0821 SE; 0.2172 SD)
+     Number of extant alleles = 3.29 (0.29 SE; 0.76 SD)
+     Number of mt haplotypes =  1.57 (0.30 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.26 (0.11 SE; 0.29 SD)
+
+Year 49; Census 3
+     N[Extinct] =    993, P[E] =  0.993
+     N[Surviving] =  7, P[S] =  0.007
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.23 (0.10 SE; 3.17 SD)
+  Means across extant populations only:
+     Population size =          32.00 (8.38 SE; 22.16 SD)
+     GD(expected heterozygosity) =  0.5515 (0.0503 SE; 0.1332 SD)
+     Observed heterozygosity =  0.5996 (0.0795 SE; 0.2104 SD)
+     Number of extant alleles = 3.29 (0.29 SE; 0.76 SD)
+     Number of mt haplotypes =  1.57 (0.30 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.26 (0.10 SE; 0.25 SD)
+
+Year 49; Census 4
+     N[Extinct] =    993, P[E] =  0.993
+     N[Surviving] =  7, P[S] =  0.007
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.21 (0.10 SE; 3.04 SD)
+  Means across extant populations only:
+     Population size =          30.29 (8.28 SE; 21.91 SD)
+     GD(expected heterozygosity) =  0.5464 (0.0537 SE; 0.1420 SD)
+     Observed heterozygosity =  0.6049 (0.0770 SE; 0.2038 SD)
+     Number of extant alleles = 3.29 (0.29 SE; 0.76 SD)
+     Number of mt haplotypes =  1.57 (0.30 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.24 (0.10 SE; 0.26 SD)
+
+Year 50; Census 1
+     N[Extinct] =    993, P[E] =  0.993
+     N[Surviving] =  7, P[S] =  0.007
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.22 (0.11 SE; 3.47 SD)
+  Means across extant populations only:
+     Population size =          31.00 (11.31 SE; 29.92 SD)
+     GD(expected heterozygosity) =  0.5481 (0.0413 SE; 0.1092 SD)
+     Observed heterozygosity =  0.6075 (0.0604 SE; 0.1599 SD)
+     Number of extant alleles = 3.29 (0.29 SE; 0.76 SD)
+     Number of mt haplotypes =  1.57 (0.30 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.23 (0.11 SE; 0.28 SD)
+
+Year 50; Census 2
+     N[Extinct] =    993, P[E] =  0.993
+     N[Surviving] =  7, P[S] =  0.007
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.22 (0.11 SE; 3.47 SD)
+  Means across extant populations only:
+     Population size =          31.00 (11.31 SE; 29.92 SD)
+     GD(expected heterozygosity) =  0.5481 (0.0413 SE; 0.1092 SD)
+     Observed heterozygosity =  0.6075 (0.0604 SE; 0.1599 SD)
+     Number of extant alleles = 3.29 (0.29 SE; 0.76 SD)
+     Number of mt haplotypes =  1.57 (0.30 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.23 (0.11 SE; 0.28 SD)
+
+Year 50; Census 3
+     N[Extinct] =    993, P[E] =  0.993
+     N[Surviving] =  7, P[S] =  0.007
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.20 (0.10 SE; 3.20 SD)
+  Means across extant populations only:
+     Population size =          28.43 (10.48 SE; 27.74 SD)
+     GD(expected heterozygosity) =  0.5478 (0.0405 SE; 0.1073 SD)
+     Observed heterozygosity =  0.6133 (0.0627 SE; 0.1660 SD)
+     Number of extant alleles = 3.29 (0.29 SE; 0.76 SD)
+     Number of mt haplotypes =  1.57 (0.30 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.24 (0.11 SE; 0.28 SD)
+
+Year 50; Census 4
+     N[Extinct] =    993, P[E] =  0.993
+     N[Surviving] =  7, P[S] =  0.007
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.19 (0.10 SE; 3.06 SD)
+  Means across extant populations only:
+     Population size =          26.86 (10.13 SE; 26.80 SD)
+     GD(expected heterozygosity) =  0.5444 (0.0418 SE; 0.1106 SD)
+     Observed heterozygosity =  0.6084 (0.0593 SE; 0.1569 SD)
+     Number of extant alleles = 3.29 (0.29 SE; 0.76 SD)
+     Number of mt haplotypes =  1.43 (0.30 SE; 0.79 SD)
+     Lethal alleles / diploid = 0.25 (0.11 SE; 0.28 SD)
+
+Year 51; Census 1
+     N[Extinct] =    995, P[E] =  0.995
+     N[Surviving] =  5, P[S] =  0.005
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 0.19 (0.10 SE; 3.19 SD)
+  Means across extant populations only:
+     Population size =          38.40 (11.86 SE; 26.52 SD)
+     GD(expected heterozygosity) =  0.5268 (0.0689 SE; 0.1542 SD)
+     Observed heterozygosity =  0.6084 (0.0883 SE; 0.1973 SD)
+     Number of extant alleles = 3.60 (0.24 SE; 0.55 SD)
+     Number of mt haplotypes =  1.40 (0.40 SE; 0.89 SD)
+     Lethal alleles / diploid = 0.16 (0.08 SE; 0.18 SD)
+
+Year 51; Census 2
+     N[Extinct] =    995, P[E] =  0.995
+     N[Surviving] =  5, P[S] =  0.005
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.19 (0.10 SE; 3.19 SD)
+  Means across extant populations only:
+     Population size =          38.40 (11.86 SE; 26.52 SD)
+     GD(expected heterozygosity) =  0.5268 (0.0689 SE; 0.1542 SD)
+     Observed heterozygosity =  0.6084 (0.0883 SE; 0.1973 SD)
+     Number of extant alleles = 3.60 (0.24 SE; 0.55 SD)
+     Number of mt haplotypes =  1.40 (0.40 SE; 0.89 SD)
+     Lethal alleles / diploid = 0.16 (0.08 SE; 0.18 SD)
+
+Year 51; Census 3
+     N[Extinct] =    995, P[E] =  0.995
+     N[Surviving] =  5, P[S] =  0.005
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.17 (0.09 SE; 2.86 SD)
+  Means across extant populations only:
+     Population size =          34.00 (10.96 SE; 24.51 SD)
+     GD(expected heterozygosity) =  0.5201 (0.0698 SE; 0.1561 SD)
+     Observed heterozygosity =  0.6017 (0.0873 SE; 0.1953 SD)
+     Number of extant alleles = 3.60 (0.24 SE; 0.55 SD)
+     Number of mt haplotypes =  1.40 (0.40 SE; 0.89 SD)
+     Lethal alleles / diploid = 0.17 (0.08 SE; 0.18 SD)
+
+Year 51; Census 4
+     N[Extinct] =    995, P[E] =  0.995
+     N[Surviving] =  5, P[S] =  0.005
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.15 (0.08 SE; 2.47 SD)
+  Means across extant populations only:
+     Population size =          29.00 (9.73 SE; 21.75 SD)
+     GD(expected heterozygosity) =  0.5258 (0.0723 SE; 0.1617 SD)
+     Observed heterozygosity =  0.6107 (0.0939 SE; 0.2099 SD)
+     Number of extant alleles = 3.60 (0.24 SE; 0.55 SD)
+     Number of mt haplotypes =  1.40 (0.40 SE; 0.89 SD)
+     Lethal alleles / diploid = 0.16 (0.08 SE; 0.17 SD)
+
+Year 52; Census 1
+     N[Extinct] =    995, P[E] =  0.995
+     N[Surviving] =  5, P[S] =  0.005
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.17 (0.11 SE; 3.39 SD)
+  Means across extant populations only:
+     Population size =          33.80 (17.03 SE; 38.09 SD)
+     GD(expected heterozygosity) =  0.4921 (0.0712 SE; 0.1591 SD)
+     Observed heterozygosity =  0.5396 (0.0496 SE; 0.1109 SD)
+     Number of extant alleles = 3.40 (0.40 SE; 0.89 SD)
+     Number of mt haplotypes =  1.20 (0.20 SE; 0.45 SD)
+     Lethal alleles / diploid = 0.16 (0.08 SE; 0.17 SD)
+
+Year 52; Census 2
+     N[Extinct] =    995, P[E] =  0.995
+     N[Surviving] =  5, P[S] =  0.005
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.17 (0.11 SE; 3.39 SD)
+  Means across extant populations only:
+     Population size =          33.80 (17.03 SE; 38.09 SD)
+     GD(expected heterozygosity) =  0.4921 (0.0712 SE; 0.1591 SD)
+     Observed heterozygosity =  0.5396 (0.0496 SE; 0.1109 SD)
+     Number of extant alleles = 3.40 (0.40 SE; 0.89 SD)
+     Number of mt haplotypes =  1.20 (0.20 SE; 0.45 SD)
+     Lethal alleles / diploid = 0.16 (0.08 SE; 0.17 SD)
+
+Year 52; Census 3
+     N[Extinct] =    995, P[E] =  0.995
+     N[Surviving] =  5, P[S] =  0.005
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.15 (0.10 SE; 3.12 SD)
+  Means across extant populations only:
+     Population size =          30.60 (15.95 SE; 35.66 SD)
+     GD(expected heterozygosity) =  0.5040 (0.0777 SE; 0.1738 SD)
+     Observed heterozygosity =  0.5806 (0.0793 SE; 0.1773 SD)
+     Number of extant alleles = 3.40 (0.40 SE; 0.89 SD)
+     Number of mt haplotypes =  1.20 (0.20 SE; 0.45 SD)
+     Lethal alleles / diploid = 0.17 (0.08 SE; 0.18 SD)
+
+Year 52; Census 4
+     N[Extinct] =    996, P[E] =  0.996
+     N[Surviving] =  4, P[S] =  0.004
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 0.15 (0.10 SE; 3.06 SD)
+  Means across extant populations only:
+     Population size =          36.25 (18.55 SE; 37.10 SD)
+     GD(expected heterozygosity) =  0.5265 (0.0925 SE; 0.1851 SD)
+     Observed heterozygosity =  0.5871 (0.1005 SE; 0.2011 SD)
+     Number of extant alleles = 3.50 (0.29 SE; 0.58 SD)
+     Number of mt haplotypes =  1.25 (0.25 SE; 0.50 SD)
+     Lethal alleles / diploid = 0.21 (0.09 SE; 0.17 SD)
+
+Year 53; Census 1
+     N[Extinct] =    996, P[E] =  0.996
+     N[Surviving] =  4, P[S] =  0.004
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.16 (0.12 SE; 3.69 SD)
+  Means across extant populations only:
+     Population size =          39.75 (24.62 SE; 49.24 SD)
+     GD(expected heterozygosity) =  0.4904 (0.0731 SE; 0.1463 SD)
+     Observed heterozygosity =  0.5642 (0.0962 SE; 0.1924 SD)
+     Number of extant alleles = 3.25 (0.25 SE; 0.50 SD)
+     Number of mt haplotypes =  1.25 (0.25 SE; 0.50 SD)
+     Lethal alleles / diploid = 0.20 (0.11 SE; 0.23 SD)
+
+Year 53; Census 2
+     N[Extinct] =    996, P[E] =  0.996
+     N[Surviving] =  4, P[S] =  0.004
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.16 (0.12 SE; 3.69 SD)
+  Means across extant populations only:
+     Population size =          39.75 (24.62 SE; 49.24 SD)
+     GD(expected heterozygosity) =  0.4904 (0.0731 SE; 0.1463 SD)
+     Observed heterozygosity =  0.5642 (0.0962 SE; 0.1924 SD)
+     Number of extant alleles = 3.25 (0.25 SE; 0.50 SD)
+     Number of mt haplotypes =  1.25 (0.25 SE; 0.50 SD)
+     Lethal alleles / diploid = 0.20 (0.11 SE; 0.23 SD)
+
+Year 53; Census 3
+     N[Extinct] =    996, P[E] =  0.996
+     N[Surviving] =  4, P[S] =  0.004
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.15 (0.11 SE; 3.45 SD)
+  Means across extant populations only:
+     Population size =          36.75 (23.31 SE; 46.63 SD)
+     GD(expected heterozygosity) =  0.4840 (0.0809 SE; 0.1617 SD)
+     Observed heterozygosity =  0.5661 (0.0989 SE; 0.1979 SD)
+     Number of extant alleles = 3.25 (0.25 SE; 0.50 SD)
+     Number of mt haplotypes =  1.25 (0.25 SE; 0.50 SD)
+     Lethal alleles / diploid = 0.20 (0.11 SE; 0.23 SD)
+
+Year 53; Census 4
+     N[Extinct] =    996, P[E] =  0.996
+     N[Surviving] =  4, P[S] =  0.004
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.15 (0.11 SE; 3.45 SD)
+  Means across extant populations only:
+     Population size =          36.50 (23.41 SE; 46.82 SD)
+     GD(expected heterozygosity) =  0.4876 (0.0817 SE; 0.1634 SD)
+     Observed heterozygosity =  0.5827 (0.1022 SE; 0.2044 SD)
+     Number of extant alleles = 3.25 (0.25 SE; 0.50 SD)
+     Number of mt haplotypes =  1.25 (0.25 SE; 0.50 SD)
+     Lethal alleles / diploid = 0.21 (0.13 SE; 0.25 SD)
+
+Year 54; Census 1
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  2, P[1st extinct] =  0.002
+     Mean size (all populations) = 0.13 (0.09 SE; 2.98 SD)
+  Means across extant populations only:
+     Population size =          64.50 (16.50 SE; 23.33 SD)
+     GD(expected heterozygosity) =  0.4506 (0.1423 SE; 0.2012 SD)
+     Observed heterozygosity =  0.4668 (0.1752 SE; 0.2477 SD)
+     Number of extant alleles = 3.50 (0.50 SE; 0.71 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.02 (0.02 SE; 0.03 SD)
+
+Year 54; Census 2
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.13 (0.09 SE; 2.98 SD)
+  Means across extant populations only:
+     Population size =          64.50 (16.50 SE; 23.33 SD)
+     GD(expected heterozygosity) =  0.4506 (0.1423 SE; 0.2012 SD)
+     Observed heterozygosity =  0.4668 (0.1752 SE; 0.2477 SD)
+     Number of extant alleles = 3.50 (0.50 SE; 0.71 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.02 (0.02 SE; 0.03 SD)
+
+Year 54; Census 3
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.12 (0.09 SE; 2.72 SD)
+  Means across extant populations only:
+     Population size =          58.50 (16.50 SE; 23.33 SD)
+     GD(expected heterozygosity) =  0.4513 (0.1386 SE; 0.1960 SD)
+     Observed heterozygosity =  0.4629 (0.1771 SE; 0.2505 SD)
+     Number of extant alleles = 3.50 (0.50 SE; 0.71 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.01 (0.01 SE; 0.02 SD)
+
+Year 54; Census 4
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.12 (0.08 SE; 2.61 SD)
+  Means across extant populations only:
+     Population size =          56.50 (14.50 SE; 20.51 SD)
+     GD(expected heterozygosity) =  0.4470 (0.1343 SE; 0.1900 SD)
+     Observed heterozygosity =  0.4598 (0.1740 SE; 0.2461 SD)
+     Number of extant alleles = 3.50 (0.50 SE; 0.71 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.01 (0.01 SE; 0.02 SD)
+
+Year 55; Census 1
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.10 (0.07 SE; 2.25 SD)
+  Means across extant populations only:
+     Population size =          48.50 (13.50 SE; 19.09 SD)
+     GD(expected heterozygosity) =  0.4843 (0.1022 SE; 0.1446 SD)
+     Observed heterozygosity =  0.4574 (0.1717 SE; 0.2428 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 55; Census 2
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.10 (0.07 SE; 2.25 SD)
+  Means across extant populations only:
+     Population size =          48.50 (13.50 SE; 19.09 SD)
+     GD(expected heterozygosity) =  0.4843 (0.1022 SE; 0.1446 SD)
+     Observed heterozygosity =  0.4574 (0.1717 SE; 0.2428 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 55; Census 3
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.09 (0.06 SE; 2.02 SD)
+  Means across extant populations only:
+     Population size =          43.50 (12.50 SE; 17.68 SD)
+     GD(expected heterozygosity) =  0.4713 (0.1217 SE; 0.1721 SD)
+     Observed heterozygosity =  0.4738 (0.1512 SE; 0.2138 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 55; Census 4
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.08 (0.06 SE; 1.80 SD)
+  Means across extant populations only:
+     Population size =          38.00 (13.00 SE; 18.38 SD)
+     GD(expected heterozygosity) =  0.4924 (0.1076 SE; 0.1521 SD)
+     Observed heterozygosity =  0.4937 (0.1337 SE; 0.1891 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 56; Census 1
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.10 (0.08 SE; 2.57 SD)
+  Means across extant populations only:
+     Population size =          50.50 (27.50 SE; 38.89 SD)
+     GD(expected heterozygosity) =  0.5217 (0.1360 SE; 0.1924 SD)
+     Observed heterozygosity =  0.5393 (0.1915 SE; 0.2708 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 56; Census 2
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.10 (0.08 SE; 2.57 SD)
+  Means across extant populations only:
+     Population size =          50.50 (27.50 SE; 38.89 SD)
+     GD(expected heterozygosity) =  0.5217 (0.1360 SE; 0.1924 SD)
+     Observed heterozygosity =  0.5393 (0.1915 SE; 0.2708 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 56; Census 3
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.09 (0.07 SE; 2.37 SD)
+  Means across extant populations only:
+     Population size =          46.50 (25.50 SE; 36.06 SD)
+     GD(expected heterozygosity) =  0.5230 (0.1364 SE; 0.1928 SD)
+     Observed heterozygosity =  0.5278 (0.1944 SE; 0.2750 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 56; Census 4
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.09 (0.07 SE; 2.23 SD)
+  Means across extant populations only:
+     Population size =          43.50 (24.50 SE; 34.65 SD)
+     GD(expected heterozygosity) =  0.5365 (0.1251 SE; 0.1770 SD)
+     Observed heterozygosity =  0.5445 (0.1761 SE; 0.2490 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 57; Census 1
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.07 (0.05 SE; 1.70 SD)
+  Means across extant populations only:
+     Population size =          33.00 (19.00 SE; 26.87 SD)
+     GD(expected heterozygosity) =  0.5696 (0.1104 SE; 0.1561 SD)
+     Observed heterozygosity =  0.5989 (0.1703 SE; 0.2409 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 57; Census 2
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.07 (0.05 SE; 1.70 SD)
+  Means across extant populations only:
+     Population size =          33.00 (19.00 SE; 26.87 SD)
+     GD(expected heterozygosity) =  0.5696 (0.1104 SE; 0.1561 SD)
+     Observed heterozygosity =  0.5989 (0.1703 SE; 0.2409 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 57; Census 3
+     N[Extinct] =    998, P[E] =  0.998
+     N[Surviving] =  2, P[S] =  0.002
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.06 (0.05 SE; 1.58 SD)
+  Means across extant populations only:
+     Population size =          31.00 (17.00 SE; 24.04 SD)
+     GD(expected heterozygosity) =  0.5648 (0.1056 SE; 0.1493 SD)
+     Observed heterozygosity =  0.5997 (0.1711 SE; 0.2420 SD)
+     Number of extant alleles = 3.00 (1.00 SE; 1.41 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 57; Census 4
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 0.05 (0.04 SE; 1.22 SD)
+  Means across extant populations only:
+     Population size =          37.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6863 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.7568 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 4.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 58; Census 1
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.03 (0.03 SE; 0.98 SD)
+  Means across extant populations only:
+     Population size =          31.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.7185 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.8065 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 4.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 58; Census 2
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.03 (0.03 SE; 0.98 SD)
+  Means across extant populations only:
+     Population size =          31.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.7185 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.8065 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 4.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 58; Census 3
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.03 (0.03 SE; 0.79 SD)
+  Means across extant populations only:
+     Population size =          25.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.7144 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.8400 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 4.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 58; Census 4
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.02 (0.02 SE; 0.66 SD)
+  Means across extant populations only:
+     Population size =          21.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6905 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.8095 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 4.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 59; Census 1
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.02 (0.02 SE; 0.76 SD)
+  Means across extant populations only:
+     Population size =          24.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6892 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.7917 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 4.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 59; Census 2
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.02 (0.02 SE; 0.76 SD)
+  Means across extant populations only:
+     Population size =          24.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6892 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.7917 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 4.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 59; Census 3
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.02 (0.02 SE; 0.63 SD)
+  Means across extant populations only:
+     Population size =          20.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6813 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.7500 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 4.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 59; Census 4
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.02 (0.02 SE; 0.51 SD)
+  Means across extant populations only:
+     Population size =          16.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6680 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.6875 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 4.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 60; Census 1
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.09 SD)
+  Means across extant populations only:
+     Population size =          3.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6111 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.6667 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 3.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 60; Census 2
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.09 SD)
+  Means across extant populations only:
+     Population size =          3.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6111 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.6667 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 3.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 60; Census 3
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.09 SD)
+  Means across extant populations only:
+     Population size =          3.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6111 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  0.6667 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 3.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 60; Census 4
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.06 SD)
+  Means across extant populations only:
+     Population size =          2.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6250 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  1.0000 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 3.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 61; Census 1
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.06 SD)
+  Means across extant populations only:
+     Population size =          2.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6250 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  1.0000 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 3.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 61; Census 2
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.06 SD)
+  Means across extant populations only:
+     Population size =          2.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6250 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  1.0000 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 3.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 61; Census 3
+     N[Extinct] =    999, P[E] =  0.999
+     N[Surviving] =  1, P[S] =  0.001
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.06 SD)
+  Means across extant populations only:
+     Population size =          2.00 (0.00 SE; 0.00 SD)
+     GD(expected heterozygosity) =  0.6250 (0.0000 SE; 0.0000 SD)
+     Observed heterozygosity =  1.0000 (0.0000 SE; 0.0000 SD)
+     Number of extant alleles = 3.00 (0.00 SE; 0.00 SD)
+     Number of mt haplotypes =  1.00 (0.00 SE; 0.00 SD)
+     Lethal alleles / diploid = 0.00 (0.00 SE; 0.00 SD)
+
+Year 61; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  1, P[1st extinct] =  0.001
+     Mean size (all populations) = 0.00 (0.00 SE; 0.03 SD)
+
+Year 62; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 62; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 62; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 62; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 63; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 63; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 63; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 63; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 64; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 64; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 64; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 64; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 65; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 65; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 65; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 65; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 66; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 66; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 66; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 66; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 67; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 67; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 67; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 67; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 68; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 68; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 68; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 68; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 69; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 69; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 69; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 69; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 70; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 70; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 70; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 70; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 71; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 71; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 71; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 71; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 72; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 72; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 72; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 72; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 73; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 73; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 73; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 73; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 74; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 74; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 74; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 74; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 75; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 75; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 75; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 75; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 76; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 76; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 76; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 76; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 77; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 77; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 77; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 77; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 78; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 78; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 78; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 78; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 79; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 79; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 79; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 79; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 80; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 80; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 80; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 80; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 81; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 81; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 81; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 81; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 82; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 82; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 82; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 82; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 83; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 83; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 83; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 83; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 84; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 84; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 84; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 84; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 85; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 85; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 85; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 85; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 86; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 86; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 86; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 86; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 87; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 87; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 87; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 87; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 88; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 88; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 88; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 88; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 89; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 89; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 89; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 89; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 90; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 90; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 90; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 90; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 91; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 91; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 91; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 91; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 92; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 92; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 92; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 92; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 93; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 93; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 93; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 93; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 94; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 94; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 94; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 94; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 95; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 95; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 95; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 95; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 96; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 96; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 96; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 96; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 97; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 97; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 97; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 97; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 98; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 98; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 98; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 98; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 99; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 99; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 99; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 99; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 100; Census 1
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 100; Census 2
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 100; Census 3
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+Year 100; Census 4
+     N[Extinct] =    1000, P[E] =  1.000
+     N[Surviving] =  0, P[S] =  0.000
+     N[1st extinct] =  0, P[1st extinct] =  0.000
+     Mean size (all populations) = 0.00 (0.00 SE; 0.00 SD)
+
+
+
+In 1000 simulations of Harvest (3JF, 3JM) for 100 years:
+  1000 went extinct and 0 survived.
+
+This gives a probability of extinction of 1.00000 (0.00000 SE),
+  or a probability of success of          0.00000 (0.00000 SE).
+
+1000 simulations went extinct at least once.
+Median time to first extinction was 21 years.
+
+Of those going extinct,
+    mean time to first extinction was 22.03 years (0.31 SE, 9.76 SD).
+
+Means across all populations (extant and extinct) ...
+Mean final population was 0.00 (0.00 SE; 0.00 SD).
+   Age 0   Adults    Total
+    0.00    0.00      0.00 Males
+    0.00    0.00      0.00 Females
+
+During 21081 simulation-years of harvest and/or supplementation
+  mean growth rate (r) was 0.0836 (0.0027 SE, 0.3871 SD)
+
+Across all years, prior to carrying capacity truncation,
+  mean growth rate (r) was 0.0836 (0.0027 SE, 0.3871 SD)
+
+245107 of 300000 harvests of females could not be completed because of insufficient animals.
+245388 of 300000 harvests of males could not be completed because of insufficient animals.
+
+Genetic statistics across extant populations ...
+*************************************************************************
+

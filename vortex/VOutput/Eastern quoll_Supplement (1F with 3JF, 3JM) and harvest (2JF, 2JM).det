@@ -1,0 +1,32 @@
+Deterministic projections assume no stochastic fluctuations, no inbreeding depression, no limitation of mates, no harvest, and no supplementation.
+
+Scenario: Supplement (1F with 3JF, 3JM) and harvest (2JF, 2JM)
+
+Population 1: MFWS
+
+Deterministic population growth rate:
+(Caution: Deterministic growth rate may not be meaningful if functions were used for some demographic rates.)
+
+     r = 0.5063
+
+     lambda = 1.6591
+
+     R0 = 2.4585
+
+   Generation time for:
+    females = 1.78
+    males = 1.41
+
+Stable age distribution:
+  Age class    females    males
+      0        0.359      0.359
+      1        0.078      0.076
+      2        0.043      0.041
+      3        0.023      0.022
+
+Ratio of adult males to adult females: 0.813
+
+Initial population size, N = 47
+Initial carrying capacity, K = 51
+
+

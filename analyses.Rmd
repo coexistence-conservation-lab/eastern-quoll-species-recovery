@@ -13,53 +13,60 @@ output:
     highlight: pygments
 editor_options:
   chunk_output_type: console
+  
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = file.path(dirname(inputFile), 'tutorial.html')) })
 ---
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(results='hide', warning=FALSE, message=FALSE)
+knitr::opts_chunk$set(results='hide', warning=FALSE, message=FALSE, eval=FALSE)
 ```
 
-```{r caching_setup}
+Reintroductions are powerful tools for tackling biodiversity loss, but resulting populations can be intrinsically small and vulnerable. It is critical to maximise the number of individuals available to contribute to recovery efforts. We investigated whether demographic parameters from a reintroduced population of eastern quolls (*Dasyurus viverrinus*) at [a conservation-fenced reserve](https://www.mfgowoodlandexperiment.org.au/) could reveal threats to long-term persistence, inform thresholds for management interventions, and create targets for removing this endangered species from the [IUCN Red List](https://www.iucnredlist.org/species/6296/21947190).
+
+In these analyses, we:
+
+  1. Calculated demographic population estimates using the [package RMark (Laake 2013)](http://cran.salud.gob.sv/web/packages/RMark/RMark.pdf) to interface with the [program MARK](http://www.phidot.org/software/mark/downloads/) 
+    - Note that this program needs to be installed for the analysis to run.
+  2. Plotted our population viability analysis results (PVA) using the [package vortexR (Pacioni & Mayer 2017)](https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12786) to collate the results generated with the [program Vortex (Lacy & Pollak 2013)](https://scti.tools/vortex/).
+    - Note that this package performs best in R versions 4.1.1 and 4.1.2.
+
+# **Setup**
+
+First, we installed the [pacman Package Management Tool](https://cran.r-project.org/web/packages/pacman/index.html), which allows us to install and load subsequent packages in a condensed and efficient way. 
+
+```{r, eval=FALSE}
+#install.packages(pacman)
+```
+
+```{r}
+# Install and load required packages
+pacman::p_load(AICcmodavg, boot, dplyr, ggplot2, ggpubr, effects, emmeans, 
+               hydroTSM, janitor, lme4, lubridate, mgcv, multcomp, MuMIn, 
+               plotrix, plyr, readxl, reshape2, rJava, RMark, rstudioapi, 
+               scales, stringi, stringr, tidyverse, viridis, vortexR)
+```
+
+We also set the working directly to where this R markdown is saved using the `rstudioapi` package.
+
+```{r}
+# Set the working directory to where this markdown is saved
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+```
+
+Finally, we setup whether to use pre-generated (cached) results, or those generated in the current session.
+
+```{r caching_setup, eval=TRUE}
 # Setup whether to use cached or generated results
 use_cached_results=TRUE
 store_cached_results=TRUE
 ```
 
-<br />
-
-Reintroductions are powerful tools for tackling biodiversity loss, but resulting populations can be intrinsically small and vulnerable. It is therefore critical to maximise the number of individuals available to contribute to recovery efforts. We investigated whether demographic parameters from a reintroduced population of eastern quolls (*Dasyurus viverrinus*) at [a fenced reserve](https://www.mfgowoodlandexperiment.org.au/) could reveal threats to long-term persistence, inform thresholds for management interventions, and create targets for removing this endangered species from the [IUCN Red List](https://www.iucnredlist.org/species/6296/21947190).
-
-In this analysis, we:
-
-  1. Calculated demographic population estimates using the [package RMark (Laake 2013)](http://cran.salud.gob.sv/web/packages/RMark/RMark.pdf) to interface with the [program MARK](http://www.phidot.org/software/mark/downloads/) 
-    - Note that this program needs to be installed for the analysis to run.
-  2. Plotted our population viability analysis results (PVA) using the [package vortexR (Pacioni & Mayer 2017)](https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12786) to collate the results generated with the [program Vortex (Lacy & Pollak 2013)](https://scti.tools/vortex/).
-
----
-
-# Demography
+# **Demography**
 
 ## Data preparation
 
-Firstly, we need to install and load the required packages. The `pacman` package allows you to do this for multiple packages at once, but to use it we first need to manually install the `pacman` package itself.
-
-```{r, eval=FALSE}
-# First, install the pacman package manually if not already installed
-#install.packages(pacman)
-library(pacman)
-
-# Now install (if not already installed) and load the required packages
-pacman::p_load(AICcmodavg, boot, dplyr, ggplot2, ggpubr, effects, emmeans, 
-               hydroTSM, lme4, lubridate, mgcv, multcomp, MuMIn, plotrix, 
-               plyr, readxl, reshape2, RMark, stringi, stringr, tidyverse, 
-               viridis)
-```
-
-Now we can read in our eastern quoll capture data, which is available at [GitHub](https://github.com/ecologibel).
+Here we read in our eastern quoll capture data.
 
 ```{r}
-# Set the working directory to where the current Rmd file is saved 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 # Read in eastern quoll individual data
 ind <- read_excel("eastern quoll CMR data.xlsx", 
                      sheet="individuals") %>%
@@ -68,16 +75,18 @@ ind <- read_excel("eastern quoll CMR data.xlsx",
 # Read in eastern quoll capture data
 cap <- read_excel("eastern quoll CMR data.xlsx", 
                   sheet="captures") %>%
-  dplyr::select(c("quoll_code", "capture_date", "capture_time", "session", 
-                  "age_estimate", "ssr", "condition", "body_weight", 
-                  "number_py", "py_age", "pes_l", "pes_r", "head_length")) %>%
+  dplyr::select(c("quoll_code", "capture_date", "capture_time", 
+                  "session", "age_estimate", "ssr", "condition", 
+                  "body_weight", "number_py", "py_age", "pes_l", 
+                  "pes_r", "head_length")) %>% 
   mutate(session=as.factor(session),
          capture_time=as.factor(capture_time))
 
 # Read in eastern quoll capture session data
 sess <- read_excel("eastern quoll CMR data.xlsx", 
                    sheet="sessions") %>%
-  dplyr::select(c("year", "session", "session_label", "date", "season"))
+  dplyr::select(c("year", "session", "session_label", 
+                  "date", "season"))
 
 # Join individual, capture, and session data
 ind_cap <- left_join(ind, cap, by="quoll_code")
@@ -93,10 +102,11 @@ ind_cap_sess <- left_join(ind_cap, sess, by="session") %>%
 
 The [program MARK](http://www.phidot.org/software/mark/downloads/) calculates population estimates that account for encounter histories (`ch`) of every individual ever encountered in the population. Encounter histories are represented by a string for each individual, where each number in the string represents a trap session, where each individual is either encountered (1) or not (0). For example:
 
-    ch                freq sex
-1   0000000000110000    1   F
-2   0001101100000000    1   M
-3   0000110111000000    1   F
+ch|encounter history|frequency|sex
+--|--------|--|--
+1|0000000000110000|2|F
+2|0001101100000000|4|M
+3|0000110111000000|5|F
 
 We generate encounter histories for our individuals here.
 
@@ -121,8 +131,8 @@ ind_cap_sess <- left_join(ind_cap_sess, aggregated_dates,
 table(ind_cap_sess$night, ind_cap_sess$session)
 
 # Build capture history by joining identities and capture_dates,
-history <- data.frame(table("quoll_code"=ind_cap_sess$quoll_code,
-                            "capture_date"=ind_cap_sess$capture_date))
+history <- data.frame(table("quoll_code" = ind_cap_sess$quoll_code,
+                            "capture_date" = ind_cap_sess$capture_date))
 
 # removing duplicate captures within each trap night
 history <- acast(history, quoll_code~capture_date, value.var="Freq")
@@ -133,10 +143,10 @@ history$ch <- as.character(do.call(paste0, history))
 sex <- data.frame(unique(ind_cap_sess[,c("quoll_code", "sex")]))
 sex <- subset(sex, quoll_code!=0)
 rownames(sex) <- sex$quoll_code
-sex <- sex[, 2, drop=F]
+sex <- sex[, 2, drop=FALSE]
 history <- merge(history, sex, by=0)
 history$freq <- 1
-encounters_ch <- history[,c("ch","freq","sex")]
+encounters_ch <- history[,c("ch", "freq", "sex")]
 ```
 
 ```{r}
@@ -196,8 +206,6 @@ seasons <- data.frame(unique(seasons))
 month_factor <- factor(seasons$months)
 ```
 
-<br />
-
 ### Trap effectiveness
 
 When we set traps in the field, they can be triggered and closed by the wind, or taken up by non-target species (in our case, eastern bettongs and brushtail possums). This affects the number of traps available for target animals (in our case, eastern quolls) to be caught in, and can thereby affect our population estimates. We created a "trap effectiveness" covariate to account for this in our models.
@@ -206,9 +214,11 @@ When we set traps in the field, they can be triggered and closed by the wind, or
 # Read in trap effectiveness data
 trap_effect <- read_excel("eastern quoll CMR data.xlsx", 
                      sheet="trap_effectiveness") %>%
-  dplyr::select(c("session", "session_date", "traps_checked", "defective_traps", 
-                  "effective_traps", "ssr", "cleanskins", "quolls_minus_ssr",
-                  "nontarget_bettong", "nontarget_btp", "nontarget_other")) %>%
+  dplyr::select(c("session", "session_date", "traps_checked", 
+                  "defective_traps", "effective_traps", "ssr", 
+                  "cleanskins", "quolls_minus_ssr",
+                  "nontarget_bettong", "nontarget_btp", 
+                  "nontarget_other")) %>%
   replace_na()
 
 # Trim session and night of extra letters
@@ -315,13 +325,12 @@ print(ddl$p)
 ddl$p$min_temp <- as.vector(scale(ddl$p$min_temp))
 ddl$p$traps <- as.vector(scale(ddl$p$traps))
 
-ddl$c <- left_join(ddl$c,seasons,by=c("session"="months_factor")) #joins the seasons dataset
-ddl$c <- cbind(ddl$c,trap_effect_c) #check the order
-ddl$c$min_temp <- as.vector(scale(ddl$c$min_temp))
-ddl$c$traps <- as.vector(scale(ddl$c$traps))
+# Combine dfs
+ddl$c <- left_join(ddl$c,seasons,by=c("session"="months_factor")) 
+ddl$c <- cbind(ddl$c,trap_effect_c) #check the order 
+ddl$c$min_temp <- as.vector(scale(ddl$c$min_temp)) 
+ddl$c$traps <- as.vector(scale(ddl$c$traps)) 
 ```
-
-<br />
 
 ### Models where sex is not considered
 
@@ -406,8 +415,6 @@ mod.11=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
             model.name="mod11-p(rain)!=c(rain)")
 ```
 
-<br />
-
 ### Combining the results
 
 Our best model was model 7, where capture (`p`) and recapture probabilities (`c`) varied between primary and secondary sessions (i.e., by trap night).
@@ -434,7 +441,6 @@ if (store_cached_results) {
   save(both.results, file="quoll.both.results_June2022.RData")
   write.csv(both.results$real,file="quoll.both.results.tableJune2022.csv")
 }
-
 ```
 
 ```{r}
@@ -448,18 +454,15 @@ load(file="quoll.both.top.modJune2022.RData")
 load(file="quoll.both.results_June2022.RData")
 ```
 
-<br />
-
 ### Models with sexes as groups
 
 We will now run the models separately for each sex.
 
 ```{r, eval=!use_cached_results}
-
-#first we should remove models from R so we don't get them mixed with these models
+# Remove models from R so we don't mix them up with new models
 mt <- collect.models(table=TRUE, adjust=FALSE)
 mod_list <- model.table(mt, model.name=FALSE)$model
-rm(list=mod_list) #removes all the models
+rm(list=mod_list) 
 
 dp=process.data(encounters_ch, model="RDPdfClosed",
                 time.intervals=time.intervals, groups="sex")
@@ -471,19 +474,18 @@ ddl=make.design.data(dp)
 ddl$p <- left_join(ddl$p, seasons, by=c("session"="months_factor"))
 ddl$p$night<-ifelse(ddl$p$Time==0,"A","B")
 
-ddl$p <- left_join(ddl$p, trap_effect, by=c("session","night")) #check the order
+ddl$p <- left_join(ddl$p, trap_effect, by=c("session","night")) 
 ddl$p$min_temp <- as.vector(scale(ddl$p$min_temp))
 ddl$p$traps <- as.vector(scale(ddl$p$traps))
 
-ddl$c <- left_join(ddl$c,seasons, by=c("session"="months_factor")) #joins the seasons
-ddl$c <- left_join(ddl$c, trap_effect_c, by=c("session")) #check the order
+# Combine dfs
+ddl$c <- left_join(ddl$c,seasons, by=c("session"="months_factor"))
+ddl$c <- left_join(ddl$c, trap_effect_c, by=c("session")) 
 ddl$c$min_temp <- as.vector(scale(ddl$c$min_temp))
 ddl$c$traps <- as.vector(scale(ddl$c$traps))
 ```
 
-<br />
-
-#### *Models*
+#### Models
 
 ```{r, eval=!use_cached_results}
 setwd("MARK")
@@ -563,17 +565,17 @@ mod.11=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
             model.name="mod11-p(rain)!=c(rain)(sex)")
 ```
 
-Collect models:
-
 Our best model was also model 7 where capture probability (`p`) and recapture probability (`c`) vary between primary and secondary sessions (i.e., trap nights). Now we save the results and combine the data for both and sexes for plotting.
 
 ```{r, eval=!use_cached_results}
+# Set the working directory to where this markdown is saved
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
+# Collate the models
 model.table <- collect.models(, adjust=FALSE, table=TRUE) #creates model table
 
 # Display the table
-model.table
+print(model.table)
 
 sexes.table <- model.table(model.table, model.name=FALSE)
 top.mod.sexes <- get(sexes.table$model[1]) #selects the top model
@@ -588,8 +590,6 @@ if (store_cached_results) {
   write.csv(sexes.results$real, file="quoll.sexes.results.tableJune2022.csv")
 }
 ```
-
-<br />
 
 ## Plots
 
@@ -632,27 +632,29 @@ if (use_cached_results) {
 
 pop <- ggplot(plotdat, aes(x=months, y=estimate, 
                    shape=group, fill=group, group=group, col=group)) + 
-  geom_vline(xintercept=seq(8.5, max(plotdat$months), 12), lty=3, col="darkgrey") + 
+  geom_vline(xintercept=seq(8.5, max(plotdat$months), 12), 
+             lty=3, col="darkgrey") + 
   geom_errorbar(aes(ymin=lcl, ymax=ucl), width=0)  + 
   geom_line(aes(group=group), lty=2, show.legend=FALSE) +
   geom_point(aes(group=group), cex=4) + 
   annotate(geom="text", x=seq(0, max(plotdat$months), 12), 
            y=60, label=unique(seasons$year), 
            hjust=0, colour="darkgrey", size=3) + 
-  theme(axis.line=element_line(colour="black"),
-        legend.position=c(0.11, 0.76),
-        legend.title=element_blank(),
-        legend.text=element_text(size=8),
-        legend.key=element_rect(colour="transparent", fill="transparent"),
-        panel.grid.major=element_blank(),
-        panel.grid.minor=element_blank(),
-        panel.border=element_blank(),
-        panel.background=element_rect(fill="white"),
-        axis.text.y=element_text(angle=0, vjust=0.5, colour="black"),
-        axis.text.x=element_text(angle=90, vjust=0.5, hjust=1, colour="black"),
-        axis.ticks.x=element_blank(),
-        plot.margin=margin(0.1, 0.1, 0.1, 0.1, "cm"),
-        strip.text.y=element_blank()) +
+  theme(axis.line = element_line(colour="black"),
+        legend.position = c(0.11, 0.76),
+        legend.title = element_blank(),
+        legend.text = element_text(size=8),
+        legend.key = element_rect(colour="transparent", fill="transparent"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_rect(fill="white"),
+        axis.text.y = element_text(angle=0, vjust=0.5, colour="black"),
+        axis.text.x = element_text(angle=90, vjust=0.5, 
+                                   hjust=1, colour="black"),
+        axis.ticks.x = element_blank(),
+        plot.margin = margin(0.1, 0.1, 0.1, 0.1, "cm"),
+        strip.text.y = element_blank()) +
   scale_y_continuous(limits=c(0, 60), labels=function(x) formatC(x, width=6)) +
   scale_x_continuous(breaks=unique(as.numeric(as.character(plotdat$months))),
                      labels=unique(plotdat$session),
@@ -665,17 +667,15 @@ pop <- ggplot(plotdat, aes(x=months, y=estimate,
   ylab("Estimated eastern quoll population size (N)") + 
   labs(shape="session", col="session", fill="session") +
   annotate(geom="text", x=63, y=4, label="a", fontface="bold", size=6)
-pop
+print(pop)
 ```
 
 ```{r, include=FALSE}
 jpeg(file="Figure 2a.jpeg", 
      width=5500, height=3500, units="px", res=800)
-pop
+print(pop)
 dev.off()
 ```
-
-<br />
 
 ### Body weight
 
@@ -743,8 +743,6 @@ write.csv(effects, file="quoll.weights.effectsJune2022.csv")
 save(effects, file="quoll.weights.effects.Rdata")
 ```
 
-<br />
-
 #### Plot
 
 Here we generate a plot of mean body weights for `females`, `males`, and `both` across sessions.
@@ -753,7 +751,8 @@ Here we generate a plot of mean body weights for `females`, `males`, and `both` 
 load(file="quoll.weights.effects.Rdata")
 
 weight <- ggplot(effects, aes(x=months, y=fit, 
-                              shape=group, fill=group, col=group), label=group)  + 
+                              shape=group, fill=group, 
+                              col=group), label=group) + 
   geom_vline(xintercept=seq(8.5, max(effects$months), 12), 
              lty=3, colour="darkgrey") + 
   geom_errorbar(aes(ymin=lower, ymax=upper), 
@@ -761,19 +760,20 @@ weight <- ggplot(effects, aes(x=months, y=fit,
   geom_line(aes(group=group), lty=2, 
             position=position_dodge(2.5), show.legend=FALSE) + 
   geom_point(aes(group=group), position=position_dodge(2.5), cex=4) + 
-  theme(axis.line=element_line(colour="black"),
-        legend.position=c(0.67, 0.75),
-        legend.title=element_blank(),
-        legend.key=element_rect(colour="transparent", fill="transparent"),
-        panel.grid.major=element_blank(),
-        panel.grid.minor=element_blank(),
-        panel.border=element_blank(),
-        panel.background=element_rect(fill="white"),
-        axis.text.y=element_text(angle=0, vjust=0.5, colour="black"),
-        axis.text.x=element_text(angle=90, vjust=0.5, hjust=1, colour="black"),
-        axis.ticks.x=element_blank(),
-        plot.margin=margin(0.1, 0.1, 0.1, 0.1, "cm"),
-        strip.text.y=element_blank()) +
+  theme(axis.line = element_line(colour="black"),
+        legend.position = c(0.67, 0.75),
+        legend.title = element_blank(),
+        legend.key = element_rect(colour="transparent", fill="transparent"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_rect(fill="white"),
+        axis.text.y = element_text(angle=0, vjust=0.5, colour="black"),
+        axis.text.x = element_text(angle=90, vjust=0.5, 
+                                 hjust=1, colour="black"),
+        axis.ticks.x = element_blank(),
+        plot.margin = margin(0.1, 0.1, 0.1, 0.1, "cm"),
+        strip.text.y = element_blank()) +
   scale_x_continuous(breaks=unique(as.numeric(as.character(effects$months))),
                      labels=unique(effects$session_label), 
                      limits=c(-1, max(effects$months + 2))) + 
@@ -785,13 +785,13 @@ weight <- ggplot(effects, aes(x=months, y=fit,
   xlab("Trap session") + ylab("Mean eastern quoll weight (kg)") +
   labs(shape="group", fill="group", colour="group") +
   annotate(geom="text", x=63, y=0.67, label="b", fontface="bold", size=6)
-weight
+print(weight)
 ```
 
 ```{r, include=FALSE}
 jpeg(file="Figure 2b.jpeg", 
      width=5500, height=3500, units="px", res=800)
-weight
+print(weight)
 dev.off()
 ```
 
@@ -805,22 +805,18 @@ pop_pub <- pop + xlab("") +
 weight_pub <- weight + theme(legend.position='none')
 
 pop_weight <- ggarrange(pop_pub, weight_pub, ncol=1, nrow=2, widths=c(2, 1.2))
-pop_weight
+print(pop_weight)
 
 jpeg(file="Figure 2.jpeg", width=4750, height=5500, units="px", res=800)
-pop_weight
+print(pop_weight)
 dev.off()
 ```
-
-<br />
 
 ### Linear regression
 
 Here we fitted a linear model with body `weight` (kg) against estimated population size (`N`), to find a significant negative relationship (*p* = 0.034).
 
 ```{r}
-pacman::p_load(dplyr, lme4, tidyverse)
-
 N <- read.csv("quoll.predictedplotdata_June2022.csv")
 N <- N[with(N, order(group, months)),]
 kg <- read.csv("quoll.weights.effectsJune2022.csv")
@@ -834,8 +830,6 @@ mod <- lm(weight~pop, data=data)
 summary(mod)
 anova(mod)
 ```
-
-<br />
 
 ### Density and carrying capacity
 
@@ -868,9 +862,7 @@ std.error(max$estimate)
 max$estimate
 ```
 
-<br />
-
-# Viability
+# **Viability**
 
 The [package vortexR (Pacioni & Mayer 2017)](https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12786) automates the process of collating, plotting, and analysis (e.g., pairwise scenario comparisons, linear regression) on outputs of population viability analyses (PVAs) conducted with the [program Vortex (Lacy & Pollak 2013)](https://scti.tools/vortex/). First, we:
 
@@ -882,11 +874,8 @@ The [package vortexR (Pacioni & Mayer 2017)](https://besjournals.onlinelibrary.w
 Note that this package performs best in R versions 4.1.1 and 4.1.2.
 
 ```{r}
-pacman::p_load(ggplot2, janitor, rJava, rstudioapi, scales, stringr, tidyverse, vortexR) #requires R 4.1.1
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 pop <- collate_dat('Eastern quoll', 1000, save2disk=TRUE,
-                   dir_in="C:/Users/belsp/G/Projects/Quoll/Recovery/Vortex/VOutput", 
+                   dir_in="vortex/VOutput", 
                    dir_out="Processed data", verbose=FALSE) %>%
   clean_names() %>% na.omit() %>%
   mutate(census=as.numeric(as.character(year)),
@@ -906,32 +895,32 @@ pva <- ggplot(pop, aes(x=year, y=n_all, col=Scenario,
                        ymin=n_all - se_n_extant, 
                        ymax=n_all + se_n_extant)) +
   geom_line(size=0.5) +
-  theme(axis.line=element_line(colour="black"),
-        legend.key=element_rect(colour="transparent", fill="transparent"),
-        legend.text=element_text(size=8),
-        legend.position="bottom", legend.direction="vertical",
-        panel.grid.major=element_blank(),
-        panel.grid.minor=element_blank(),
-        panel.background=element_rect(fill="white")) +
+  theme(axis.line = element_line(colour="black"),
+        legend.key = element_rect(colour="transparent", fill="transparent"),
+        legend.text = element_text(size=8),
+        legend.position = "bottom", legend.direction="vertical",
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.background = element_rect(fill="white")) +
   scale_color_manual(values=c("#FFDB6D", "#D16103",
                               "#478841", "#81CED4", "#04647E"), 
                               labels=function(x) str_wrap(x, width=50)) +
   guides(color=guide_legend(nrow=3, byrow=TRUE)) +
-  xlim(0, 50) +
-  xlab("Year") +
+  xlim(0, 50) + xlab("Year") +
   ylab("Simulated eastern quoll population size (N)")
-pva
-```
-
-Finally, we can export the figure as a .jpeg file.
-
-```{r}
-jpeg(file="Figure 3.jpeg", 
-     width=5200, height=3850, units="px", res=800)
-pva
-dev.off()
+print(pva)
 ```
 
 ```{r, include=FALSE}
+jpeg(file="Figure 3.jpeg", 
+     width=5200, height=3850, units="px", res=800)
+print(pva)
+dev.off()
+```
+
+# **Session information**
+
+```{r}
+# Display version information for R, OS, and packages
 sessionInfo()
 ```

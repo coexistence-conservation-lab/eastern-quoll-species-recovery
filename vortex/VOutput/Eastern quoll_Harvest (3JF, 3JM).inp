@@ -1,0 +1,114 @@
+VORTEX 10.5.5.0 -- simulation of population dynamics
+
+Project: Eastern quoll
+
+Project Notes: Scenario settings	
+      Number of iterations	1000
+      Number of years	100
+Extinction definition	1 sex remains
+
+Reproductive system	Reproductive system	Polygynous
+	Age of first offspring	1
+	Maximum lifespan	3
+	Maximum litters per year	1
+	Maximum progeny per litter	6
+	Sex ratio at birth#	1:01
+	Maximum age of female reproduction	3
+	Maximum age of male reproduction	2
+
+Reproductive rates	Adult females breeding	100%
+
+Mortality rates
+	Mortality rate <age 1	70%
+	Mortality rate >age 1	10%
+	Carrying capacity	51
+Mate monopolisation	Males in breeding pool	25.51%
+Abundance	Initial population size	48
+Harvest	Frequency	-
+	Survival	-
+	Harvest sex ratio	-
+Supplementation	Frequency	-
+	Survival of individuals	-
+	Sex ratio	-
+Genetics	Maximum female mates	3
+
+Scenario: Harvest (3JF, 3JM)
+
+25/10/2022
+
+  1 populations simulated for 100 years for 1000 iterations
+
+
+Sequence of events in each time cycle:
+  EV
+  Age
+  Ktruncation
+  Breed
+  Census
+  Supplement
+  Census
+  rCalc
+  Harvest
+  Census
+  Mortality
+  Census
+
+Extinction defined as no males or no females.
+
+Species Description Notes: Coarse
+
+Inbreeding depression with a genetic load consisting of 
+  6.29 total lethal equivalents per individual, of which
+  50% are due to recessive lethals,
+  and the remainder are lethal equivalents not subjected to removal by selection.
+
+Populations:
+
+  MFWS
+
+Individual state variables
+  IS1: DependentOffspring    Initialization: 0    Birth function: 0    Transition: =IS1
+
+
+Reproductive System:
+
+  Polygyny, with new selection of mates each year
+  Females breed from age 1 to age 3
+  Males breed from age 1 to age 2
+  Maximum age of survival: 3
+  Sex ratio (percent males) at birth: 50
+
+Correlation of EV between reproduction and survival = 0.5
+
+EV sampled from binomial distributions.
+
+
+Population specific rates for MFWS
+
+  Percent of adult females breeding each year: 100
+    with EV(SD): 10
+  Percent of adult males in the pool of breeders: 100
+  Normal distribution of brood size with mean: 5 with SD: 1
+
+  Female annual mortality rates (as percents):
+    Age 0 to 1:    64.17 with EV(SD): 19.92
+    After age 1:    8.77 with EV(SD): 6.25
+
+  Male annual mortality rates (as percents):
+    Age 0 to 1:    64.93 with EV(SD): 19.87
+    After age 1:    10.69 with EV(SD): 5.6
+
+  Initial population size:
+        Age       0     1     2     3   Total
+  Females      17     4     2     1    24
+   Males        17     3     2     1    23
+
+  Carrying capacity: 51
+    with EV(SD):  0
+
+  Harvest from year 1 through year 100 by increments of 1
+        Age      0       1 
+    Females      3       0 
+      Males      3       0 
+
+
