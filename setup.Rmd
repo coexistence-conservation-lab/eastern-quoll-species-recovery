@@ -1,0 +1,238 @@
+---
+title: "Setup"
+author: "Wilson B A"
+date: "Aug 7, 2025"
+output: 
+  html_document:
+    toc: true
+    number_sections: true
+    top_depth: 3
+    toc_float:
+      collapsed: true
+    theme: cerulean
+    highlight: pygments
+    self_contained: true
+editor_options:
+  chunk_output_type: console
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = file.path(dirname(inputFile), 'setup.html')) })
+---
+
+This standalone `setup.Rmd` installs commonly used packages and defines custom objects, functions, and conditional behaviours. Review this file to ensure you're familiar with the setup and its components.
+
+```{r force_eval, eval = TRUE}
+# Ensures this Rmd runs, even if the parent Rmd has eval = FALSE
+knitr::opts_chunk$set(eval = TRUE)
+```
+
+# **Install programs**
+
+To run the demographic population estimation, you will need to install the [program MARK](http://www.phidot.org/software/mark/downloads/) so the [package RMark (Laake 2013)](http://cran.salud.gob.sv/web/packages/RMark/RMark.pdf) can interface with it. 
+
+# **Install packages** 
+
+## Manually install packages
+
+This chunk manually installs packages which can't be installed using the `pacman` loader in the second chunk (e.g., `remotes` for compiling packages from GitHub). 
+
+```{r, eval = FALSE, results = 'hide', warning = FALSE, message = FALSE}
+# Manually install `pacman` loader
+install.packages(pacman)
+```
+
+## Install and load packages
+
+This script installs and loads (1) *project-related* packages, and (2) *commonly used* packages. Replace `beepr` in L42 below with packages required for your analyses.
+
+```{r, eval = FALSE, results = 'hide', message = FALSE, warning = FALSE}
+# Install and load project-related packages
+pacman::p_load(AICcmodavg, boot, effects, emmeans, hydroTSM, 
+               mgcv, multcomp, plotrix, plyr, reshape2, rJava, 
+               RMark, rstudioapi, stringi, stringr, vortexR)
+```
+
+```{r, results = 'hide', message = FALSE, warning = FALSE}
+# Install and load commonly used packages
+               # Import and export 
+pacman::p_load(openxlsx, readxl, writexl, yaml, 
+               # Mapping 
+               ggmap, sf, 
+               # Plotting 
+               corrplot, ggpubr, scales, viridis, 
+               # Reporting 
+               english, kableExtra, rlang, rprojroot, 
+                # Statistical analyses 
+               lme4, MuMIn, 
+               # Workflow utilities 
+               beepr, cli, crayon, glue, here, 
+                # Wrangling 
+               janitor, tidyverse) 
+
+# Ensure dplyr::select is active to avoid masking by other packages
+select <- dplyr::select
+```
+
+## Set up `beepr`
+
+Add "`; beep(sound)`" after a line of code to enable a sound notification. This will notify you when long-running code (which you can mark with a 🐢 symbol) finishes evaluating. 
+
+```{r}
+# Assign beepr sound (options include coin, complete, facebook, 
+# fanfare, mario, ping, ready, shotgun, sword, treasure, and wilhelm)
+sound <- "coin"
+```
+
+# **Set environment** 
+
+## Conditional behaviours 
+
+Define *conditional behaviours* to control whether downstream code is run or included in the knitted output. 
+
+```{r}
+# Assign which behaviours to run when knitting the markdown
+knit_options <- list(draft = FALSE, # TRUE runs 'draft' chunks
+                     plots = FALSE,  # TRUE runs 'plot' chunks
+                     use_cached_results = FALSE, # TRUE uses cached results
+                     store_cached_results = FALSE) # TRUE stores cached results
+```
+
+### Chunk header condition
+
+If `draft = FALSE`, any chunks with the header option `eval = knit_options$draft` will be skipped during knitting. 
+
+```{r, eval = knit_options$draft}
+# This code only runs if draft = TRUE
+```
+
+### Conditional code
+
+If you want the chunk to knit but only run part of the code when `draft = TRUE`, wrap it in this `if` block: 
+
+```{r}
+# This code only runs if draft = TRUE but the chunk will still knit
+if (knit_options$draft) {
+  # your code
+}
+```
+
+## Paths 
+
+```{r}
+# Define paths for objects
+raw_data       <- "input/raw data.xlsx"
+processed_data <- "output/processed data.xlsx"
+```
+
+## Settings 
+
+```{r}
+# Global setting to deactivate sci notation
+options(scipen = 100, digits = 4)
+```
+
+# **Set resources** 
+
+## Functions 
+
+### Format text 
+Use `format_text()` to parse the format of **bold**, *italic*, and inline `code` formatting from spreadsheets and displays a styled table.
+
+```{r}
+# Define function to read a spreadsheet and format it in a table
+format_text <- function(path, sheet) 
+  {read_excel(path, sheet = sheet) %>%
+     # Parse font formatting using named regex replacements
+     mutate(across(everything(), ~stringr::str_replace_all(as.character(.x), 
+         # Parse **bold** to <strong> 
+       c("\\*\\*([^*]+)\\*\\*" = "<strong>\\1</strong>",  
+         # Parse *italic* to <em> 
+         "\\*([^*]+)\\*"       = "<em>\\1</em>", 
+         # Parse `code` to <code> 
+         "`([^`]+)`"           = "<code>\\1</code>")))) %>%
+     # Optional: wrap column in <code> if not already
+     #mutate(Code = paste0("<code>", Code, "</code>")) %>%
+     # Print as a clean table
+     kbl(align = "l", escape  = FALSE) %>%
+     kable_styling(full_width = FALSE, position = "left")}
+```
+
+### Generate citation file
+
+Use `generate_citation()` to extract metadata from `analyses.Rmd` and generate a `citation.cff` file that future users can read and export (e.g., via [GitHub](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)). This function is supported by two helper functions: `extract_metadata()` and `write_cff_from_rmd()`. 
+
+```{r}
+# Define main markdown
+main_rmd <- "analyses.Rmd" 
+
+# Define function to extract repo metadata
+extract_metadata <- function(rmd = main_rmd) {
+  if (!requireNamespace("rmarkdown", quietly = TRUE)) 
+    stop("Please install the 'rmarkdown' package.")
+  
+  meta <- rmarkdown::yaml_front_matter(rmd)
+
+  # Evaluate if in inline R format; otherwise return as-is
+  date_val <- tryCatch({
+    if (grepl("^`r\\s.+`$", meta$date)) {
+      expr <- gsub("^`r\\s|`$", "", meta$date)
+      as.character(eval(parse(text = expr)))} else {
+      as.character(meta$date)}},
+    error = function(e) NA_character_)
+
+  repo <- tryCatch(system("git config --get remote.origin.url", 
+                          intern = TRUE), error = function(e) "")
+  repo_url <- sub("git@github.com:", "https://github.com/", repo)
+  repo_url <- sub(".git$", "", repo_url)
+
+  list(title = meta$title, author = meta$author, 
+       date = date_val, repo = repo_url, license = "MIT")}
+
+# Define function to write a citation.cff file
+write_cff_from_rmd <- function(rmd = main_rmd,
+                               cff_path = here::here("metadata/citation.cff")) 
+  {if (!requireNamespace("glue", quietly = TRUE)) 
+    stop("Please install ", "the 'glue' package.")
+  meta <- extract_metadata(rmd)
+  dir.create(dirname(cff_path), showWarnings = FALSE, recursive = TRUE)
+  if (file.exists(cff_path)) file.remove(cff_path)
+  cff <- glue::glue(
+    "cff-version: 1.2.0\n",
+    "message: \"If you use this code, please cite the following.\"\n",
+    "title: \"{meta$title}\"\n",
+    "authors:\n",
+    "  - name: {meta$author}\n",
+    "date-released: {meta$date}\n",
+    "repository-code: {meta$repo}\n",
+    "license: {meta$license}\n")
+  writeLines(cff, cff_path, useBytes = TRUE)
+  message(glue::glue("{cff_path} written"))}
+
+# Define function to print the citation details
+generate_citation <- function(rmd = main_rmd) {
+  if (!requireNamespace("crayon", quietly = TRUE)) 
+    stop("Please install the 'crayon' package.")
+  if (!requireNamespace("glue", quietly = TRUE)) 
+    stop("Please install the 'glue' package.")
+
+  meta <- extract_metadata(rmd)
+  bold <- crayon::bold
+
+  # Always show the full date string in parentheses after the author(s)
+  author_date <- glue::glue("{meta$author} ({meta$date})")
+
+  citation <- glue::glue(
+    "\nIf you use this code, please cite the following:\n\n",
+    "{bold(author_date)} {meta$title}. ",
+    "Coexistence Conservation Lab, Fenner School of Environment and Society, ",
+    "The Australian National University, Canberra.\n",
+    "{bold('Available at:')} {meta$repo}\n",
+    "{bold('Date released:')} {meta$date}\n",
+    "{bold('License:')} {meta$license}\n\n",
+    "For more information, visit https://www.coexistenceconservationlab.org/")
+  cat(citation)}
+
+# Create citation file 
+invisible(write_cff_from_rmd())
+
+# Print citation details
+generate_citation()
+```

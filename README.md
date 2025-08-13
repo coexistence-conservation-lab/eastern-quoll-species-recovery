@@ -1,10 +1,8 @@
 # **Eastern quoll species recovery**
 
-Here we describe the analyses we conducted for our article [Wilson *et al.* (2023) Roadmap to recovery revealed through the reintroduction of an IUCN Red List species](https://link.springer.com/article/10.1007/s10531-022-02496-5), published in Biodiversity and Conservation.
+Here we present the workflows and datasets used in the analyses conducted for the journal article [Wilson *et al.* (2023)](https://link.springer.com/article/10.1007/s10531-022-02496-5) *Roadmap to recovery revealed through the reintroduction of an IUCN Red List species*, published in Biodiversity and Conservation.
 
----
-
-**Abstract**
+## Abstract
 
 Reintroductions are powerful tools for tackling biodiversity loss, but the resulting populations can be intrinsically small and vulnerable. It is therefore critical to maximise the number of individuals that are available to contribute to recovery efforts. To address this, we investigated how demographic parameters from a reintroduced population can reveal threats to long-term persistence, inform thresholds for management interventions, and create targets for removing an endangered species from the [IUCN Red List](https://www.iucnredlist.org/). 
 
@@ -13,3 +11,23 @@ We calculated capture-mark-recapture population estimates for endangered eastern
 Our demographic results indicated high mean apparent survival (90% ± 5), and PVAs revealed the probability of persistence over a 50-year time horizon was 50.5% with no interventions, 0% when the population was harvested of > 6 individuals, and 100% if harvests ≤ 54 juveniles were combined with an annual supplementation of ten maternal females (with ≤ 6 young each). Based on this model, a total harvest area of 413 km2 and an occupancy area of 437 km^2 would be needed to recover the species within 10 years (i.e., 90 similar fenced reserves, not accounting for edge effects). 
 
 Due to the inherent difficulty in securing large areas for species recovery, we see these ambitious targets as a call to create coordinated and collaborative sanctuary networks where species can be managed as a metapopulation across multiple sites. By taking advantage of a rapid life history and harvesting the ‘doomed surplus’, managers can achieve their stretch goals for species recovery in the long term.
+
+## Repository structure
+
+This repository follows an organised structure for clarity and reproducibility:
+
+  - `archive\`: superseded datasets and workflows 
+  - `input\`: raw and reference datasets (e.g., tables, spatial files) 
+  - `output\`: results from analyses (e.g., tables, plots, maps) 
+  - `metadata\`: API key, citation, and licence files
+  - `.gitattributes`: repository-specific Git settings 
+  - `.gitignore`: files to exclude from version control 
+  - `analyses.Rmd`: R Markdown with analysis workflows 
+  - `LICENSE`: MIT license
+  - `project.Rproj`: RStudio project file for consistent setup 
+  - `README.md`: project overview and usage guide 
+  - `tutorial.html`: rendered summary of analyses and results 
+
+## Licence
+
+Unless otherwise stated, all code in this repository is licensed under the MIT License. We kindly ask that you cite the relevant publication(s) or this repos if you reuse or adapt our code.

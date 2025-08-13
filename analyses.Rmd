@@ -1,101 +1,124 @@
 ---
 title: "Roadmap to recovery revealed through the reintroduction of an IUCN Red List species"
 author: "Wilson B A, Evans M J, Gordon I J, Pierson J C, Brockett B M, Wimpenny C, Batson W G, Newport J, & Manning A D"
-date: "26 January 2023"
-output:
+date: "Jan 26, 2023"
+output: 
   html_document:
     toc: true
     number_sections: true
-    toc_depth: 3
+    top_depth: 3
     toc_float:
-      collapsed: false
+      collapsed: true
     theme: cerulean
     highlight: pygments
+    self_contained: true
 editor_options:
   chunk_output_type: console
-  
 knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = file.path(dirname(inputFile), 'tutorial.html')) })
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(results='hide', warning=FALSE, message=FALSE, eval=FALSE)
-```
+
+# **Background**
+
+This [R project](https://support.posit.co/hc/en-us/articles/200526207-Using-RStudio-Projects) presents the workflows and datasets used in the '*Roadmap to recovery revealed through the reintroduction of an IUCN Red List species*' project. For information on our methodological approach, see the [GitHub repo](https://github.com/coexistence-conservation-lab/eastern-quoll-species-recovery) README. This repo was originally published on 26 Jan 2023, and refactored on 13 Aug 2025.
 
 Reintroductions are powerful tools for tackling biodiversity loss, but resulting populations can be intrinsically small and vulnerable. It is critical to maximise the number of individuals available to contribute to recovery efforts. We investigated whether demographic parameters from a reintroduced population of eastern quolls (*Dasyurus viverrinus*) at [a conservation-fenced reserve](https://www.mfgowoodlandexperiment.org.au/) could reveal threats to long-term persistence, inform thresholds for management interventions, and create targets for removing this endangered species from the [IUCN Red List](https://www.iucnredlist.org/species/6296/21947190).
 
-In these analyses, we:
+Here, we:
 
-  1. Calculated demographic population estimates using the [package RMark (Laake 2013)](http://cran.salud.gob.sv/web/packages/RMark/RMark.pdf) to interface with the [program MARK](http://www.phidot.org/software/mark/downloads/) 
-    - Note that this program needs to be installed for the analysis to run.
-  2. Plotted our population viability analysis results (PVA) using the [package vortexR (Pacioni & Mayer 2017)](https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12786) to collate the results generated with the [program Vortex (Lacy & Pollak 2013)](https://scti.tools/vortex/).
+  1. Calculate demographic population estimates using the [package RMark (Laake 2013)](http://cran.salud.gob.sv/web/packages/RMark/RMark.pdf) to interface with the [program MARK](http://www.phidot.org/software/mark/downloads/) (must be installed).
+  2. Plot our population viability analysis (PVA) results using the [package vortexR (Pacioni & Mayer 2017)](https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12786) to collate the results generated with the [program Vortex (Lacy & Pollak 2013)](https://scti.tools/vortex/).
     - Note that this package performs best in R versions 4.1.1 and 4.1.2.
 
 # **Setup**
 
-First, we installed the [pacman Package Management Tool](https://cran.r-project.org/web/packages/pacman/index.html), which allows us to install and load subsequent packages in a condensed and efficient way. 
-
-```{r, eval=FALSE}
-#install.packages(pacman)
+```{r global-options, include = FALSE}
+# Set default chunk options (use eval = TRUE to run code, and eval = FALSE to not)
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
-```{r}
-# Install and load required packages
-pacman::p_load(AICcmodavg, boot, dplyr, ggplot2, ggpubr, effects, emmeans, 
-               hydroTSM, janitor, lme4, lubridate, mgcv, multcomp, MuMIn, 
-               plotrix, plyr, readxl, reshape2, rJava, RMark, rstudioapi, 
-               scales, stringi, stringr, tidyverse, viridis, vortexR)
+The next chunk runs the standalone `setup.Rmd` file, which installs required packages and defines custom objects, functions, and conditional behaviours. Review this file to ensure you're familiar with the setup and its components.
+
+```{r setup, eval = TRUE, include = FALSE, message = FALSE, results = 'asis'}
+# Ensure cli package is loaded before using it
+if (!requireNamespace("cli", quietly = TRUE)) {install.packages("cli")}
+library(cli)
+
+# Start 2-step progress bar
+cli_progress_bar("Initialising setup", total = 2)
+
+# Set output directory for knitting if needed
+if (is.null(knitr::opts_knit$get("output.dir"))) {
+  knitr::opts_knit$set(output.dir = getwd())}
+
+# Show progress bar
+cli_progress_update(set = 2)
+
+# Load setup file while preserving global settings
+original_eval <- knitr::opts_chunk$get("eval")
+invisible(knitr::knit_child("setup.Rmd", quiet = TRUE, 
+                            envir = knitr::knit_global()))
+knitr::opts_chunk$set(eval = original_eval)
+
+# Show progress bars and success message after setup completes
+cli_progress_done()
+cli_alert_success("Setup successful!")
 ```
 
-We also set the working directly to where this R markdown is saved using the `rstudioapi` package.
+# **Definitions**
 
-```{r}
-# Set the working directory to where this markdown is saved
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-```
-
-Finally, we setup whether to use pre-generated (cached) results, or those generated in the current session.
-
-```{r caching_setup, eval=TRUE}
-# Setup whether to use cached or generated results
-use_cached_results=TRUE
-store_cached_results=TRUE
+```{r, eval = TRUE, include = FALSE}
+# Read in abbrevations and print as a clean table
+(def <- format_text(raw_data, sheet = "definitions"))
 ```
 
 # **Demography**
 
 ## Data preparation
 
-Here we read in our eastern quoll capture data.
+First, we read in our eastern quoll capture data.
 
 ```{r}
 # Read in eastern quoll individual data
-ind <- read_excel("eastern quoll CMR data.xlsx", 
-                     sheet="individuals") %>%
-  dplyr::select(c("quoll_code", "sex", "morph"))
+ind <- read_excel(raw_data, sheet = "individuals") %>% 
+  # Standardise column names to lowercase with underscores
+  clean_names() %>%
+  select(quoll_code, sex, morph)
 
 # Read in eastern quoll capture data
-cap <- read_excel("eastern quoll CMR data.xlsx", 
-                  sheet="captures") %>%
-  dplyr::select(c("quoll_code", "capture_date", "capture_time", 
-                  "session", "age_estimate", "ssr", "condition", 
-                  "body_weight", "number_py", "py_age", "pes_l", 
-                  "pes_r", "head_length")) %>% 
-  mutate(session=as.factor(session),
-         capture_time=as.factor(capture_time))
+cap <- read_excel(raw_data, sheet = "captures") %>%
+  # Standardise column names to lowercase with underscores
+  clean_names() %>%
+  select(quoll_code, 
+         capture_date, 
+         capture_time, 
+         session, 
+         age_estimate, 
+         ssr, 
+         condition, 
+         body_weight, 
+         number_py, 
+         py_age, 
+         pes_l, 
+         pes_r, 
+         head_length) %>% 
+  mutate(session = as.factor(session),
+         capture_time = as.factor(capture_time))
 
 # Read in eastern quoll capture session data
-sess <- read_excel("eastern quoll CMR data.xlsx", 
-                   sheet="sessions") %>%
-  dplyr::select(c("year", "session", "session_label", 
-                  "date", "season"))
+sess <- read_excel(raw_data, sheet = "sessions") %>% 
+  # Standardise column names to lowercase with underscores
+  clean_names() %>%
+  select(year, session, session_label, date, season)
 
 # Join individual, capture, and session data
-ind_cap <- left_join(ind, cap, by="quoll_code")
-ind_cap_sess <- left_join(ind_cap, sess, by="session") %>%
+ind_cap <- left_join(ind, cap, by = "quoll_code")
+
+ind_cap_sess <- left_join(ind_cap, sess, by = "session") %>%
   arrange(capture_date, capture_time) %>%
-  mutate(capture_date=as.Date(capture_date, format="%d/%m/%Y"), 
-         quoll_code=as.factor(quoll_code), 
-         night=stri_sub(session,-1), #library(stringi)
-         session=substr(session, 1, nchar(session)-1))
+  mutate(capture_date = as.Date(capture_date, format = "%d/%m/%Y"), 
+         quoll_code   = as.factor(quoll_code), 
+         night        = stri_sub(session,-1), 
+         session      = substr(session, 1, nchar(session)-1))
 ```
 
 ### Encounter history
@@ -108,51 +131,51 @@ ch|encounter history|frequency|sex
 2|0001101100000000|4|M
 3|0000110111000000|5|F
 
-We generate encounter histories for our individuals here.
+Here, w generate encounter histories for our individuals:
 
 ```{r}
 # Generate session night numbers (1 and 2) for primary and secondary trap nights
 ind_cap_sess <- ind_cap_sess %>%
-  mutate(session_night=paste0(session,"_", night), 
-         sex=factor(sex))
+  mutate(session_night = paste0(session,"_", night), 
+         sex = factor(sex))
 
 # Since some sessions pass over midnight, take the average date
 aggregated_dates <- aggregate(capture_date~session_night, 
-                              ind_cap_sess, mean)
+                              ind_cap_sess, 
+                              mean)
 
 # Remove the capture_date column so it can be rewritten in the history below
 ind_cap_sess$capture_date <- NULL
 
 # Join capture and date data
-ind_cap_sess <- left_join(ind_cap_sess, aggregated_dates, 
-                          by="session_night")
+ind_cap_sess <- left_join(ind_cap_sess, 
+                          aggregated_dates, 
+                          by = "session_night")
 
 # Display session nights and their mean dates
 table(ind_cap_sess$night, ind_cap_sess$session)
 
 # Build capture history by joining identities and capture_dates,
-history <- data.frame(table("quoll_code" = ind_cap_sess$quoll_code,
+history <- data.frame(table("quoll_code"  = ind_cap_sess$quoll_code,
                             "capture_date" = ind_cap_sess$capture_date))
 
 # removing duplicate captures within each trap night
-history <- acast(history, quoll_code~capture_date, value.var="Freq")
-history <- as.data.frame(ifelse(history==0, 0, 1))
+history    <- acast(history, quoll_code~capture_date, value.var = "Freq")
+history    <- as.data.frame(ifelse(history == 0, 0, 1))
 history$ch <- as.character(do.call(paste0, history))
 
 # Add the sex covariate to the encounter history dataframe 
 sex <- data.frame(unique(ind_cap_sess[,c("quoll_code", "sex")]))
-sex <- subset(sex, quoll_code!=0)
+sex <- subset(sex, quoll_code != 0)
 rownames(sex) <- sex$quoll_code
-sex <- sex[, 2, drop=FALSE]
-history <- merge(history, sex, by=0)
+sex <- sex[, 2, drop = FALSE]
+history <- merge(history, sex, by = 0)
 history$freq <- 1
 encounters_ch <- history[,c("ch", "freq", "sex")]
 ```
 
 ```{r}
-if (store_cached_results) {
-  save(ind_cap_sess, file="current_data_quoll.RData")
-}
+if (store_cached_results) {save(ind_cap_sess, file = "current_data_quoll_RData")}
 ```
 
 ### Time intervals
@@ -184,25 +207,26 @@ Here we generate our chosen covariates for input into the CMR models, including 
 
 ```{r}
 # Gather unique sessions and capture dates
-seasons <- unique(ind_cap_sess[,c("session","capture_date")])
+seasons <- unique(ind_cap_sess[,c("session", "capture_date")])
 seasons <- seasons[!duplicated(seasons$session), ]
 
 # Generate Oceania seasons to use as a covariate later
 seasons <- seasons %>%
-  mutate(year=format(capture_date, format="%Y"),
-         season=time2season(capture_date-365/2, 
-                            out.fmt="seasons", type="default")) %>%
-  mutate(season=str_replace(season, "autumm", "autumn"), 
-         season=str_to_title(season),
-         months=trunc((as.numeric(capture_date)-
-                         as.numeric(capture_date)[1])/30,0) + 1, 
-         capture_date=NULL)
+  mutate(year        = format(capture_date, format = "%Y"),
+         season      = time2season(capture_date - 365/2, 
+                                   out.fmt = "seasons", 
+                                   type = "default")) %>%
+  mutate(season      = str_replace(season, "autumm", "autumn"), 
+         season      = str_to_title(season),
+         months      = trunc((as.numeric(capture_date)-
+                                 as.numeric(capture_date)[1]) / 30, 0) + 1, 
+         capture_date = NULL)
 
 # Manually check that the months are as expected for each session
 print(seasons)
 
 # Generate month_factor dataframe for use in the CMR models later
-seasons <- data.frame(unique(seasons))
+seasons      <- data.frame(unique(seasons))
 month_factor <- factor(seasons$months)
 ```
 
@@ -212,21 +236,28 @@ When we set traps in the field, they can be triggered and closed by the wind, or
 
 ```{r}
 # Read in trap effectiveness data
-trap_effect <- read_excel("eastern quoll CMR data.xlsx", 
-                     sheet="trap_effectiveness") %>%
-  dplyr::select(c("session", "session_date", "traps_checked", 
-                  "defective_traps", "effective_traps", "ssr", 
-                  "cleanskins", "quolls_minus_ssr",
-                  "nontarget_bettong", "nontarget_btp", 
-                  "nontarget_other")) %>%
+trap_effect <- read_excel(raw_data, sheet = "trap effectiveness") %>%
+  # Standardise column names to lowercase with underscores
+  clean_names() %>%
+  select(session, 
+         session_date, 
+         traps_checked, 
+         defective_traps, 
+         effective_traps, 
+         ssr, 
+         cleanskins, 
+         quolls_minus_ssr, 
+         nontarget_bettong, 
+         nontarget_btp, 
+         nontarget_other) %>%
   replace_na()
 
 # Trim session and night of extra letters
 trap_effect <- trap_effect %>%
-  mutate(session=str_trim(session), 
-         night=str_sub(session, start= -1), 
-         session=substr(session, 1, nchar(session)-1), 
-         session_date=as.Date(session_date, format="%d/%m/%Y"))
+  mutate(session      = str_trim(session), 
+         night        = str_sub(session, start = -1), 
+         session      = substr(session, 1, nchar(session)-1), 
+         session_date = as.Date(session_date, format = "%d/%m/%Y"))
 
 # Create a df of aggregated, average dates for each trap session
 aggregated_dates <- aggregate(session_date~session + night, trap_effect, mean)
@@ -235,63 +266,74 @@ trap_effect$session_date <- NULL #not needed
 # Sum trap effectiveness statistics by session and night
 trap_effect <- trap_effect %>%
   group_by(session, night) %>%
-  summarise_all(list(sum=sum))
+  summarise_all(list(sum = sum))
 
 # Join trap effectiveness with aggregated dates, and order by date
 trap_effect <- left_join(trap_effect, aggregated_dates, 
-                         by=c("session", "night")) %>%
+                         by = c("session", "night")) %>%
     arrange(session_date)
 
 # Calculate number of available traps
-trap_effect <- data.frame(trap_effect, check.names=FALSE) %>%
-  mutate(traps=(traps_checked_sum-
-                defective_traps_sum-
-                nontarget_btp_sum-
-                nontarget_bettong_sum-
-                nontarget_other_sum), 
-         session_date=as.Date(session_date, format="%d/%m/%Y")) %>%
+trap_effect <- data.frame(trap_effect, check.names = FALSE) %>%
+  mutate(traps = (traps_checked_sum -
+                    defective_traps_sum -
+                    nontarget_btp_sum -
+                    nontarget_bettong_sum -
+                    nontarget_other_sum), 
+         session_date = as.Date(session_date, format = "%d/%m/%Y")) %>%
   arrange(session_date)
 
 # Remove first session so we can cbind() later
 trap_effect %$%
-{ session == lag(session, n=1) } %>% 
+{ session == lag(session, n = 1) } %>% 
   as.numeric() %>% 
   {.} -> trap_effect$same
 
 # Add a column with sub- and first-session values
 trap_effect <- trap_effect %>%
-  mutate(same=ifelse(night=="A", "first_session", "sub_session"))
+  mutate(same = ifelse(night == "A", "first_session", "sub_session"))
 ```
 
 #### Weather
 
 ```{r}
 # Read in weather data from the Australian Buureau of Meterology (product IDCJAC0010)
-weather <- read_excel("eastern quoll CMR data.xlsx", 
-                     sheet="weather") %>%
-  dplyr::select(c("year", "month", "day", "max_temp_c", "min_temp_c", "rain_mm"))
+weather <- read_excel(raw_data, sheet = "weather") %>% 
+  # Standardise column names to lowercase with underscores
+  clean_names() %>%
+  select(year, month, day, max_temp_c, min_temp_c, rain_mm)
 
 # Generate covariates for weather in the 3 months prior to trapping
 weather <- weather %>%
-  mutate(max_temp_3mp=rollapply(max_temp_c, 30, mean, 
-                                na.rm=TRUE, align="right", fill=NA), 
-         min_temp_3mp=rollapply(min_temp_c, 30, mean,
-                                na.rm=TRUE, align="right", fill=NA), 
-         rain_3mp=rollmeanr(rain_mm, 30, mean, 
-                            na.rm=TRUE, align="right", fill=NA), 
-         date=as.Date(with(weather, paste(year, month, day, sep="-")), "%Y-%m-%d"), 
-         day=NULL, month=NULL, year=NULL)
+  mutate(max_temp_3mp = rollapply(max_temp_c, 30, mean, na.rm = TRUE, 
+                                  align = "right", fill = NA), 
+         min_temp_3mp = rollapply(min_temp_c, 30, mean, na.rm = TRUE, 
+                                  align = "right", fill = NA), 
+         rain_3mp     = rollmeanr(rain_mm, 30, mean, na.rm = TRUE, 
+                                  align = "right", fill = NA), 
+         date         = as.Date(with(weather, paste(year, month, day, 
+                                                    sep = "-")), "%Y-%m-%d"), 
+         day          = NULL, 
+         month        = NULL, 
+         year         = NULL)
 ```
 
 ```{r}
 # Join trap effectiveness and weather dfs 
-trap_effect <- left_join(trap_effect, weather, by=c("session_date"="date"))
-trap_effect_c <- trap_effect %>%
-  subset(same=="sub_session")
+trap_effect <- left_join(trap_effect, weather, 
+                         by = c("session_date" = "date"))
+
+trap_effect_c <- trap_effect %>% 
+  subset(same == "sub_session")
 
 # Label rownames so they will be merged later
-rownames(trap_effect) <- seq(from=1, to=nrow(trap_effect), by=1)
-rownames(trap_effect_c) <- seq(from=1, to=nrow(trap_effect_c), by=1)
+rownames(trap_effect)    <- seq(from = 1, 
+                                to = nrow(trap_effect), 
+                                by = 1)
+
+rownames(trap_effect_c)  <- seq(from = 1, 
+                                to = nrow(trap_effect_c), 
+                                by = 1)
 ```
 
 ## MARK
@@ -309,286 +351,315 @@ If we wanted `p` and `c` to vary according to something else, such as bait type 
 
 ```{r}
 # Create processed data 'dp' with encounter history, model, and time intervals
-dp=process.data(encounters_ch, model="RDPdfClosed",
-                time.intervals=time.intervals)
+dp = process.data(encounters_ch, 
+                  model = "RDPdfClosed", 
+                  time.intervals = time.intervals)
 
 # Create the design data list 'ddl' wherein we can add model covariate
 ddl <- make.design.data(dp)
 
 # For capture probability 'p', add season and trap effectiveness covariates
-ddl$p <- left_join(ddl$p, seasons, by=c("session"="months_factor"))
+ddl$p <- left_join(ddl$p, seasons, 
+                   by = c("session" = "months_factor"))
+
 ddl$p <- cbind(ddl$p, trap_effect)
 
 #Manually check the order of the 
 print(ddl$p)
 
 ddl$p$min_temp <- as.vector(scale(ddl$p$min_temp))
-ddl$p$traps <- as.vector(scale(ddl$p$traps))
+ddl$p$traps    <- as.vector(scale(ddl$p$traps))
 
 # Combine dfs
-ddl$c <- left_join(ddl$c,seasons,by=c("session"="months_factor")) 
-ddl$c <- cbind(ddl$c,trap_effect_c) #check the order 
+ddl$c          <- left_join(ddl$c,seasons, 
+                            by = c("session" = "months_factor"))
+
+ddl$c          <- cbind(ddl$c,trap_effect_c) #check the order 
 ddl$c$min_temp <- as.vector(scale(ddl$c$min_temp)) 
-ddl$c$traps <- as.vector(scale(ddl$c$traps)) 
+ddl$c$traps    <- as.vector(scale(ddl$c$traps)) 
 ```
 
 ### Models where sex is not considered
 
-```{r, eval=!use_cached_results}
-setwd("MARK")
+```{r, eval = knit_options$use_cached_results}
+setwd("mark")
 
-# Null hypothesis where capture rate = recapture rate
-p <- list(formula=~1, share=T)
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.1=mark(dp,ddl, model.parameters=list(p=p,f=f,Phi=f),
-           model.name="mod1-p(.)==c(.)")
+# Null hypothesis where capture rate = recapture rate 🐢
+p   <- list(formula = ~1, share = T)
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.1 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, Phi = f),
+             model.name = "mod1-p(.) == c(.)")
 
 # Null hypothesis where capture rate and recapture rate can vary
-c <- list(formula=~1)
-p <- list(formula=~1)
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.2=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-           model.name="mod2-p(.)!=c(.)")
+c   <- list(formula = ~1)
+p   <- list(formula = ~1)
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.2 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod2-p(.) != c(.)")
 
 # Wherein capture rate and recapture rate are equal, but population size can vary by session
-p <- list(formula=~session, share=TRUE)
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.3=mark(dp,ddl, model.parameters=list(p=p,f=f,Phi=f),
-           model.name="mod3-p(a)==c(a)")
+p   <- list(formula = ~session, share = TRUE)
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.3 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, Phi = f),
+             model.name = "mod3-p(a) == c(a)")
 
-c <- list(formula=~session)
-p <- list(formula=~session)
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.4=mark(dp,ddl, model.parameters=list(p=p,c=c,f=f,Phi=f),
-           model.name="mod4-p(a)!=c(a)")
+c   <- list(formula = ~session)
+p   <- list(formula = ~session)
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.4 = mark(dp, ddl, 
+             model.parameters = list(p = p,c = c,f = f, Phi = f),
+             model.name = "mod4-p(a) != c(a)")
 
-p <- list(formula=~season, share=T)
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.5=mark(dp,ddl, model.parameters=list(p=p,f=f,Phi=f),
-           model.name="mod5-p(s)==c(s)")
+p   <- list(formula = ~season, share = T)
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.5 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, Phi = f),
+             model.name = "mod5-p(s) == c(s)")
 
-c <- list(formula=~season)
-p <- list(formula=~season)
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.6=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-           model.name="mod6-p(s)!=c(s)")
+c   <- list(formula = ~season)
+p   <- list(formula = ~season)
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.6 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod6-p(s) != c(s)")
 
-c <- list(formula=~factor(par.index))
-p <- list(formula=~factor(par.index))
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.7=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-           model.name="mod7-p(t)!=c(t)") #can't get model to run
+c   <- list(formula = ~factor(par.index))
+p   <- list(formula = ~factor(par.index))
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.7 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod7-p(t) != c(t)") #can't get model to run
 
-c <- list(formula=~traps)
-p <- list(formula=~traps)
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.8=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-           model.name="mod8-p(traps)!=c(traps)")
+c   <- list(formula = ~traps)
+p   <- list(formula = ~traps)
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.8 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod8-p(traps) != c(traps)")
 
-c <- list(formula=~min_temp_c)
-p <- list(formula=~min_temp_c)
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.9=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-            model.name="mod9-p(min)!=c(min)")
+c   <- list(formula = ~min_temp_c)
+p   <- list(formula = ~min_temp_c)
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.9 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod9-p(min) != c(min)")
 
-c <- list(formula=~max_temp)
-p <- list(formula=~max_temp)
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.10=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-            model.name="mod10-p(max)!=c(max)")
+c   <- list(formula = ~max_temp)
+p   <- list(formula = ~max_temp)
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.10 = mark(dp, ddl, 
+              model.parameters = list(p = p, f = f, c = c,  Phi = f),
+              model.name = "mod10-p(max) != c(max)")
 
-c <- list(formula=~rain_mm)
-p <- list(formula=~rain_mm)
-f <- list(formula=~time)
-Phi <- list(formula=~time)
-mod.11=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-            model.name="mod11-p(rain)!=c(rain)")
+c   <- list(formula = ~rain_mm)
+p   <- list(formula = ~rain_mm)
+f   <- list(formula = ~time)
+Phi <- list(formula = ~time)
+mod.11 = mark(dp, ddl, 
+              model.parameters = list(p = p, f = f, c = c, Phi = f),
+              model.name = "mod11-p(rain) != c(rain)"); beep(sound)
 ```
 
 ### Combining the results
 
 Our best model was model 7, where capture (`p`) and recapture probabilities (`c`) varied between primary and secondary sessions (i.e., by trap night).
 
-```{r, eval=!use_cached_results}
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+```{r, eval = knit_options$use_cached_results}
+# Set the working directory to where this markdown is saved
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) 
 
-model.table <- collect.models(, adjust=FALSE, table=TRUE) #creates model table
+# Generate and print model comparison table
+(model_table <- collect.models(, adjust = FALSE, table = TRUE))
 
-# Display the table
-model.table
-
-both.table <- model.table(model.table, model.name=FALSE)
-
-# Select the top model
-top.mod.both <- get(both.table$model[1])
-plotdat.both <- data.frame(top.mod.both$results$derived$`N Population Size`) #extract for plots
-both.results <- top.mod.both$results
+# Select the top model and extract results for plotting
+both_table   <- model_table(model_table, model.name = FALSE)
+top.mod.both <- get(both_table$model[1])
+plotdat_both <- data.frame(top.mod.both$results$derived$`N Population Size`) 
+both_results <- top.mod.both$results
 
 if (store_cached_results) {
-  write.csv(both.table, file="quoll.both.tableJune2022.csv")
-  save(plotdat.both, file="quoll.plotdat.both_June2022.RData")
-  save(top.mod.both,file="quoll.both.top.modJune2022.RData") #mod13
-  save(both.results, file="quoll.both.results_June2022.RData")
-  write.csv(both.results$real,file="quoll.both.results.tableJune2022.csv")
-}
+  save(plotdat_both, file = "quoll_plotdat_both.RData")
+  save(top.mod.both, file = "quoll_both_top_mod.RData") # mod13
+  save(both_results, file = "quoll_both_results.RData")}
+
+# Export df to a new sheet in the running workbook
+workbook <- export_sheet(both_table, sheet = "quoll both table")
+workbook <- export_sheet(both_results$real, sheet = "quoll both results")
 ```
 
 ```{r}
-# plotdat.both
-load(file="quoll.plotdat.both_June2022.RData")
+# plotdat_both
+load(file = "quoll_plotdat_both.RData")
 
 # top.mod.both
-load(file="quoll.both.top.modJune2022.RData")
+load(file = "quoll_both_top_mod.RData")
 
-# both.results
-load(file="quoll.both.results_June2022.RData")
+# both_results
+load(file = "quoll_both_results.RData")
 ```
 
 ### Models with sexes as groups
 
 We will now run the models separately for each sex.
 
-```{r, eval=!use_cached_results}
+```{r, eval = knit_options$use_cached_results}
 # Remove models from R so we don't mix them up with new models
-mt <- collect.models(table=TRUE, adjust=FALSE)
-mod_list <- model.table(mt, model.name=FALSE)$model
-rm(list=mod_list) 
+mt       <- collect.models(table = TRUE, adjust = FALSE)
+mod_list <- model_table(mt, model.name = FALSE)$model
 
-dp=process.data(encounters_ch, model="RDPdfClosed",
-                time.intervals=time.intervals, groups="sex")
+rm(list = mod_list) 
+
+dp = process.data(encounters_ch, 
+                  model = "RDPdfClosed",
+                  time.intervals = time.intervals, 
+                  groups = "sex")
 
 # Create the design data list where we can change parameters
-ddl=make.design.data(dp)
+ddl = make.design.data(dp)
 
 # Append seasons to the design data list as a covariate for the models
-ddl$p <- left_join(ddl$p, seasons, by=c("session"="months_factor"))
-ddl$p$night<-ifelse(ddl$p$Time==0,"A","B")
+ddl$p          <- left_join(ddl$p, seasons, by = c("session" = "months_factor"))
+ddl$p$night    <- ifelse(ddl$p$Time == 0,"A","B")
 
-ddl$p <- left_join(ddl$p, trap_effect, by=c("session","night")) 
+ddl$p          <- left_join(ddl$p, trap_effect, by = c("session","night")) 
 ddl$p$min_temp <- as.vector(scale(ddl$p$min_temp))
-ddl$p$traps <- as.vector(scale(ddl$p$traps))
+ddl$p$traps    <- as.vector(scale(ddl$p$traps))
 
 # Combine dfs
-ddl$c <- left_join(ddl$c,seasons, by=c("session"="months_factor"))
-ddl$c <- left_join(ddl$c, trap_effect_c, by=c("session")) 
+ddl$c          <- left_join(ddl$c,seasons, by = c("session" = "months_factor"))
+ddl$c          <- left_join(ddl$c, trap_effect_c, by = c("session")) 
 ddl$c$min_temp <- as.vector(scale(ddl$c$min_temp))
-ddl$c$traps <- as.vector(scale(ddl$c$traps))
+ddl$c$traps    <- as.vector(scale(ddl$c$traps)) 
 ```
 
 #### Models
 
-```{r, eval=!use_cached_results}
-setwd("MARK")
+```{r, eval = knit_options$use_cached_results}
+setwd("mark")
 
-p <- list(formula=~1)
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.1=mark(dp,ddl, model.parameters=list(p=p,f=f,Phi=f),
-           model.name="mod1-p(.)==c(.)(sex)")
+# Run models 🐢
+p   <- list(formula = ~1)
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.1 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, Phi = f),
+             model.name = "mod1-p(.) == c(.)(sex)")
 
-c <- list(formula=~1)
-p <- list(formula=~1)
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.2=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-           model.name="mod2-p(.)!=c(.)(sex)")
+c   <- list(formula = ~1)
+p   <- list(formula = ~1)
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.2 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod2-p(.) != c(.)(sex)")
 
-p <- list(formula=~session, share=TRUE)
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.3=mark(dp,ddl, model.parameters=list(p=p,f=f,Phi=f),
-           model.name="mod3-p(a)==c(a)(sex)")
+p   <- list(formula = ~session, share = TRUE)
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.3 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, Phi = f),
+             model.name = "mod3-p(a) == c(a)(sex)")
 
-c <- list(formula=~session)
-p <- list(formula=~session)
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.4=mark(dp,ddl, model.parameters=list(p=p,c=c,f=f,Phi=f),
-           model.name="mod4-p(a)!=c(a)(sex)")
+c   <- list(formula = ~session)
+p   <- list(formula = ~session)
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.4 = mark(dp, ddl, 
+             model.parameters = list(p = p,c = c,f = f, Phi = f),
+             model.name = "mod4-p(a) != c(a)(sex)")
 
-p <- list(formula=~season, share=TRUE)
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.5=mark(dp,ddl, model.parameters=list(p=p,f=f,Phi=f),
-           model.name="mod5-p(s)==c(s)(sex)")
+p   <- list(formula = ~season, share = TRUE)
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.5 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, Phi = f),
+             model.name = "mod5-p(s) == c(s)(sex)")
 
-c <- list(formula=~season)
-p <- list(formula=~season)
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.6=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-           model.name="mod6-p(s)!=c(s)(sex)")
+c   <- list(formula = ~season)
+p   <- list(formula = ~season)
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.6 = mark(dp, ddl, model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod6-p(s) != c(s)(sex)")
 
-c <- list(formula=~factor(par.index))
-p <- list(formula=~factor(par.index))
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.7=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-           model.name="mod7-p(t)!=c(t)(sex)")
+c   <- list(formula = ~factor(par.index))
+p   <- list(formula = ~factor(par.index))
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.7 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod7-p(t) != c(t)(sex)")
 
-c <- list(formula=~traps)
-p <- list(formula=~traps)
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.8=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-            model.name="mod8-p(traps)!=c(traps)(sex)")
+c   <- list(formula = ~traps)
+p   <- list(formula = ~traps)
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.8 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod8-p(traps) != c(traps)(sex)")
 
-c <- list(formula=~min_temp_s)
-p <- list(formula=~min_temp_s)
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.9=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-            model.name="mod9-p(min)!=c(min)(sex)")
+c   <- list(formula = ~min_temp_s)
+p   <- list(formula = ~min_temp_s)
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.9 = mark(dp, ddl, 
+             model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod9-p(min) != c(min)(sex)")
 
-c <- list(formula=~max_temp_c)
-p <- list(formula=~max_temp_c)
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.10=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-            model.name="mod10-p(max)!=c(max)(sex)")
+c   <- list(formula = ~max_temp_c)
+p   <- list(formula = ~max_temp_c)
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.10 = mark(dp, ddl, 
+              model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod10-p(max) != c(max)(sex)")
 
-c <- list(formula=~rain_mm)
-p <- list(formula=~rain_mm)
-f <- list(formula=~time:sex)
-Phi <- list(formula=~time:sex)
-mod.11=mark(dp,ddl, model.parameters=list(p=p,f=f,c=c,Phi=f),
-            model.name="mod11-p(rain)!=c(rain)(sex)")
+c   <- list(formula = ~rain_mm)
+p   <- list(formula = ~rain_mm)
+f   <- list(formula = ~time:sex)
+Phi <- list(formula = ~time:sex)
+mod.11 = mark(dp, ddl, 
+              model.parameters = list(p = p, f = f, c = c, Phi = f),
+             model.name = "mod11-p(rain) != c(rain)(sex)"); beep(sound)
 ```
 
 Our best model was also model 7 where capture probability (`p`) and recapture probability (`c`) vary between primary and secondary sessions (i.e., trap nights). Now we save the results and combine the data for both and sexes for plotting.
 
-```{r, eval=!use_cached_results}
+```{r, eval = knit_options$use_cached_results}
 # Set the working directory to where this markdown is saved
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) 
 
-# Collate the models
-model.table <- collect.models(, adjust=FALSE, table=TRUE) #creates model table
+# Collect model comparison table
+model_table <- collect.models(, adjust = FALSE, table = TRUE) 
 
 # Display the table
-print(model.table)
+print(model_table)
 
-sexes.table <- model.table(model.table, model.name=FALSE)
-top.mod.sexes <- get(sexes.table$model[1]) #selects the top model
-plotdat.sexes <- data.frame(top.mod.sexes$results$derived$`N Population Size`) #extract for plotting
-sexes.results <- top.mod.sexes$results
+# Select top model and extract for plotting
+sexes_table   <- model_table(model_table, model.name = FALSE)
+top.mod.sexes <- get(sexes_table$model[1]) 
+plotdat_sexes <- data.frame(top.mod.sexes$results$derived$`N Population Size`) 
+sexes_results <- top.mod.sexes$results
 
 if (store_cached_results) {
-  save(top.mod.sexes ,file="quoll.sexes.top.modJune2022.RData")
-  save(plotdat.sexes, file="quoll.plotdat.sexes_June2022.RData")
-  save(sexes.results, file="quoll.sexes.results_June2022.RData")
-  write.csv(sexes.table,file="quoll.sexes.tableJune2022.csv")
-  write.csv(sexes.results$real, file="quoll.sexes.results.tableJune2022.csv")
-}
+  save(top.mod.sexes,           file = "quoll_sexes_top_mod.RData")
+  save(plotdat_sexes,           file = "quoll_plotdat_sexes == .RData")
+  save(sexes_results,           file = "quoll_sexes_results == .RData")
+  write.csv(sexes_table,        file = "quoll_sexes_table.csv")
+  write.csv(sexes_results$real, file = "quoll_sexes_results_table.csv")}
 ```
 
 ## Plots
@@ -598,81 +669,80 @@ if (store_cached_results) {
 Here we load the effects. Note that we need to manually add the sex variable into the dataframe - make sure to check values for females, males, and both.
 
 ```{r}
-if (use_cached_results) {
-  load(file="quoll.plotdat.both_June2022.RData")
-  load(file="quoll.plotdat.sexes_June2022.RData")
-  load(file="quoll.sexes.top.modJune2022.RData")
-  load(file="quoll.sexes.results_June2022.RData")
-}
+if (knit_options$use_cached_results) {
+  load(file = "quoll_plotdat_both == .RData")
+  load(file = "quoll_plotdat_sexes == .RData")
+  load(file = "quoll_sexes_top_mod.RData")
+  load(file = "quoll_sexes_results == .RData")}
 
-plotdat <- rbind(plotdat.both, plotdat.sexes) #check this is correct
+plotdat <- rbind(plotdat_both, plotdat_sexes) #check this is correct
 plotdat$session <- paste0(seasons$season, " ", seasons$year) #add season to df
 plotdat$session <- fct_inorder(plotdat$session) #library(forcats)
-plotdat$group <- c(rep("Both", nrow(plotdat.both)),
-                   rep("Females", nrow(plotdat.both)),
-                   rep("Males", nrow(plotdat.both))) #update this number
+plotdat$group <- c(rep("Both", nrow(plotdat_both)),
+                   rep("Females", nrow(plotdat_both)),
+                   rep("Males", nrow(plotdat_both))) #update this number
 
 seasons$session <- paste0(seasons$season," ",seasons$year)
-plotdat <- left_join(plotdat,seasons, by="session")
+plotdat <- left_join(plotdat,seasons, by = "session")
 plotdat$group <- factor(plotdat$group, 
-                        levels=c("Both","Females","Males"))
+                        levels = c("Both","Females","Males"))
 
 if (store_cached_results) {
-  save(plotdat, file="quoll.estimates_June2022.RData")
-  write.csv(plotdat, file="quoll.predictedplotdata_June2022.csv")
-}
+  save(plotdat, file = "quoll_estimates == .RData")
+  write.csv(plotdat, file = "quoll_predictedplotdata == .csv")}
 ```
 
 Now we plot those effects:
 
-```{r, warning=FALSE}
-if (use_cached_results) {
-  load(file="quoll.estimates_June2022.RData")
-}
+```{r, warning = FALSE}
+if (knit_options$use_cached_results) {
+  load(file = "quoll_estimates == .RData")}
 
-pop <- ggplot(plotdat, aes(x=months, y=estimate, 
-                   shape=group, fill=group, group=group, col=group)) + 
-  geom_vline(xintercept=seq(8.5, max(plotdat$months), 12), 
-             lty=3, col="darkgrey") + 
-  geom_errorbar(aes(ymin=lcl, ymax=ucl), width=0)  + 
-  geom_line(aes(group=group), lty=2, show.legend=FALSE) +
-  geom_point(aes(group=group), cex=4) + 
-  annotate(geom="text", x=seq(0, max(plotdat$months), 12), 
-           y=60, label=unique(seasons$year), 
-           hjust=0, colour="darkgrey", size=3) + 
-  theme(axis.line = element_line(colour="black"),
+(pop <- ggplot(plotdat, aes(x = months, y = estimate, 
+                           shape = group, fill = group, 
+                           group = group, col = group)) + 
+  annotate(geom = "text", x = 63, y = 4, label = "a", 
+           fontface = "bold", size = 6) + 
+  annotate(geom = "text", x = seq(0, max(plotdat$months), 12), 
+           y = 60, label = unique(seasons$year), 
+           hjust = 0, colour = "darkgrey", size = 3) +
+  geom_vline(xintercept = seq(8.5, max(plotdat$months), 12), 
+             lty = 3, col = "darkgrey") + 
+  geom_errorbar(aes(ymin = lcl, ymax = ucl), width = 0)  + 
+  geom_line(aes(group = group), lty = 2, show.legend = FALSE) +
+  geom_point(aes(group = group), cex = 4) + 
+  labs(x = "Trap session", y = "Estimated eastern quoll population size (N)", 
+       shape = "session", col = "session", fill = "session") +
+  scale_y_continuous(limits = c(0, 60), 
+                     labels = function(x) formatC(x, width = 6)) +
+  scale_x_continuous(breaks = unique(as.numeric(as.character(plotdat$months))),
+                     labels = unique(plotdat$session),
+                     limits = c(-1, max(plotdat$months + 2))) + 
+  scale_shape_manual(values = c(21, 22, 24)) +
+  scale_colour_manual(values = inferno(3, begin = 0.4, end = 0.8)) +
+  scale_fill_manual(values = inferno(3, begin = 0.4, end = 0.8)) +
+  scale_linetype_manual(values = c(2, 1, 3)) + 
+  theme(axis.line = element_line(colour = "black"),
         legend.position = c(0.11, 0.76),
         legend.title = element_blank(),
-        legend.text = element_text(size=8),
-        legend.key = element_rect(colour="transparent", fill="transparent"),
+        legend.text = element_text(size = 8),
+        legend.key = element_rect(colour = "transparent", 
+                                  fill = "transparent"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         panel.border = element_blank(),
-        panel.background = element_rect(fill="white"),
-        axis.text.y = element_text(angle=0, vjust=0.5, colour="black"),
-        axis.text.x = element_text(angle=90, vjust=0.5, 
-                                   hjust=1, colour="black"),
+        panel.background = element_rect(fill = "white"),
+        axis.text.y = element_text(angle = 0, vjust = 0.5, colour = "black"),
+        axis.text.x = element_text(angle = 90, vjust = 0.5, 
+                                   hjust = 1, colour = "black"),
         axis.ticks.x = element_blank(),
         plot.margin = margin(0.1, 0.1, 0.1, 0.1, "cm"),
-        strip.text.y = element_blank()) +
-  scale_y_continuous(limits=c(0, 60), labels=function(x) formatC(x, width=6)) +
-  scale_x_continuous(breaks=unique(as.numeric(as.character(plotdat$months))),
-                     labels=unique(plotdat$session),
-                     limits=c(-1, max(plotdat$months + 2))) + 
-  scale_shape_manual(values=c(21, 22, 24)) +
-  scale_colour_manual(values=inferno(3, begin=0.4, end=0.8)) +
-  scale_fill_manual(values=inferno(3, begin=0.4, end=0.8)) +
-  scale_linetype_manual(values=c(2, 1, 3)) + 
-  xlab("Trap session") + 
-  ylab("Estimated eastern quoll population size (N)") + 
-  labs(shape="session", col="session", fill="session") +
-  annotate(geom="text", x=63, y=4, label="a", fontface="bold", size=6)
-print(pop)
+        strip.text.y = element_blank()))
 ```
 
-```{r, include=FALSE}
-jpeg(file="Figure 2a.jpeg", 
-     width=5500, height=3500, units="px", res=800)
+```{r, include = FALSE}
+jpeg(file = "Figure 2a.jpeg", 
+     width = 5500, height = 3500, units = "px", res = 800)
 print(pop)
 dev.off()
 ```
@@ -682,134 +752,138 @@ dev.off()
 We can look at mean body weights for females, males, and both across sessions.
 
 ```{r}
-if (use_cached_results) {
+if (knit_options$use_cached_results) {
   # ind_cap_sess
-  load(file="current_data_quoll.RData")
-}
+  load(file = "current_data_quoll_RData")}
 
-ind_cap_sess <- left_join(ind_cap_sess, seasons, by="session")
-ind_cap_sess$session_label <- paste0(ind_cap_sess$season, 
-                                                    " ", 
-                                                    ind_cap_sess$year)
-ind_cap_sess$sex_word <- ifelse(ind_cap_sess$sex=="M", "Males", "Females")
+ind_cap_sess <- left_join(ind_cap_sess, seasons, by = "session")
+ind_cap_sess$session_label <- paste0(ind_cap_sess$season, " ",
+                                     ind_cap_sess$year)
+ind_cap_sess$sex_word <- ifelse(ind_cap_sess$sex == "M", "Males", "Females")
 
 ind_cap_sess$session_label <- fct_inorder(ind_cap_sess$session_label)
-ind_cap_sess$sex=factor(ind_cap_sess$sex)
-ind_cap_sess <- subset(ind_cap_sess, ssr=="0")
+ind_cap_sess$sex = factor(ind_cap_sess$sex)
+ind_cap_sess <- subset(ind_cap_sess, ssr == "0")
 ind_cap_sess$body_weight_kg <- as.numeric(as.character(ind_cap_sess$body_weight_kg))
 
-jill <- lm(body_weight_kg~session_label,data=data)
-bob=allEffects(jill)
+jill <- lm(body_weight_kg~session_label,data = data)
+bob = allEffects(jill)
 effects.b <- as.data.frame(bob[[1]])
 effects.b$group <- c("Both")
 
 pw <- lsmeans(jill, pairwise ~ session_label)
-ph <- cld(pw, alpha=0.05/nrow(effects.b), Letters=letters, adjust="sidak")
+ph <- cld(pw, alpha = 0.05/nrow(effects.b), 
+          Letters = letters, adjust = "sidak")
 ph <- data.frame(ph)
-effects.b <- merge(ph, effects.b, by=c("session_label"))
+effects.b <- merge(ph, effects.b, by = c("session_label"))
 effects.b$.group <- trimws(effects.b$.group)
 
-load(file="quollconditionJune2022.RData")
-data=subset(data,data$sex_word=="Males")
-jill <- lm(body_weight_kg~session_label,data=data)
-bob=allEffects(jill)
+load(file = "quollcondition.RData")
+data = subset(data,data$sex_word == "Males")
+jill <- lm(body_weight_kg~session_label,data = data)
+bob = allEffects(jill)
 effects.m <- as.data.frame(bob[[1]])
 effects.m$group <- c("Males")
 
 pw <- lsmeans(jill, pairwise ~ session_label)
-ph <- cld(pw, alpha=0.05/nrow(effects.m), Letters=letters, adjust="sidak")
+ph <- cld(pw, alpha = 0.05/nrow(effects.m), 
+          Letters = letters, adjust = "sidak")
 ph <- data.frame(ph)
-effects.m <- merge(ph, effects.m, by=c("session_label"))
+effects.m <- merge(ph, effects.m, by = c("session_label"))
 effects.m$.group <- trimws(effects.m$.group)
 
-load(file="quollconditionJune2022.RData")
-data=subset(data,data$sex_word=="Females")
-jill <- lm(body_weight_kg~session_label,data=data)
-bob=allEffects(jill)
+load(file = "quollcondition.RData")
+data = subset(data,data$sex_word == "Females")
+jill <- lm(body_weight_kg~session_label,data = data)
+bob = allEffects(jill)
 effects.f <- as.data.frame(bob[[1]])
 effects.f$group <- c("Females")
 
 pw <- lsmeans(jill, pairwise ~ session_label)
-ph <- cld(pw, alpha=0.05/nrow(effects.f), Letters=letters, adjust="sidak")
+ph <- cld(pw, alpha = 0.05/nrow(effects.f), 
+          Letters = letters, adjust = "sidak")
 ph <- data.frame(ph)
-effects.f <- merge(ph, effects.f, by=c("session_label"))
+effects.f <- merge(ph, effects.f, by = c("session_label"))
 effects.f$.group <- trimws(effects.f$.group)
-effects=rbind(effects.b,effects.m,effects.f)
-effects$group <- factor(effects$group, levels=c("Both","Females","Males"))
+effects = rbind(effects.b,effects.m,effects.f)
+effects$group <- factor(effects$group, 
+                        levels = c("Both","Females","Males"))
 
 seasons$session_label <- paste0(seasons$season," ",seasons$year)
-effects <- left_join(effects, seasons, by="session_label")
-write.csv(effects, file="quoll.weights.effectsJune2022.csv")
-save(effects, file="quoll.weights.effects.Rdata")
+effects <- left_join(effects, seasons, by = "session_label")
+
+# Export df to a new sheet in the running workbook
+workbook <- export_sheet(effects, sheet = "quoll weight effects")
+save(effects, file = "quoll_weights_effects.Rdata")
 ```
 
 #### Plot
 
 Here we generate a plot of mean body weights for `females`, `males`, and `both` across sessions.
 
-```{r, warning=FALSE}
-load(file="quoll.weights.effects.Rdata")
+```{r, warning = FALSE}
+load(file = "quoll_weights_effects.Rdata")
 
-weight <- ggplot(effects, aes(x=months, y=fit, 
-                              shape=group, fill=group, 
-                              col=group), label=group) + 
-  geom_vline(xintercept=seq(8.5, max(effects$months), 12), 
-             lty=3, colour="darkgrey") + 
-  geom_errorbar(aes(ymin=lower, ymax=upper), 
-                width=0, position=position_dodge(2.5))  + 
-  geom_line(aes(group=group), lty=2, 
-            position=position_dodge(2.5), show.legend=FALSE) + 
-  geom_point(aes(group=group), position=position_dodge(2.5), cex=4) + 
-  theme(axis.line = element_line(colour="black"),
+(weight <- ggplot(effects, aes(x = months, y = fit, 
+                              shape = group, fill = group, 
+                              col = group), label = group) + 
+  annotate(geom = "text", x = 63, y = 0.67, label = "b", 
+           fontface = "bold", size = 6) + 
+  geom_vline(xintercept = seq(8.5, max(effects$months), 12), 
+             lty = 3, colour = "darkgrey") + 
+  geom_errorbar(aes(ymin = lower, ymax = upper), 
+                width = 0, position = position_dodge(2.5))  + 
+  geom_line(aes(group = group), lty = 2, 
+            position = position_dodge(2.5), show.legend = FALSE) + 
+  geom_point(aes(group = group), position = position_dodge(2.5), cex = 4) + 
+  labs(x = "Trap session", y = "Mean eastern quoll weight (kg)", 
+       shape = "group", fill = "group", colour = "group") +
+  scale_colour_manual(values = inferno(3, begin = 0.4, end = 0.8)) +
+  scale_fill_manual(values = inferno(3, begin = 0.4, end = 0.8)) +
+  scale_linetype_manual(values = c(2,1,3)) + 
+  scale_shape_manual(values = c(21, 22, 24)) + 
+  scale_x_continuous(breaks = unique(as.numeric(as.character(effects$months))),
+                     labels = unique(effects$session_label), 
+                     limits = c(-1, max(effects$months + 2))) + 
+  scale_y_continuous(labels = function(x) formatC(x, width = 6)) +
+  theme(axis.line = element_line(colour = "black"), 
+        axis.text.x = element_text(angle = 90, vjust = 0.5, 
+                                 hjust = 1, colour = "black"),
+        axis.text.y = element_text(angle = 0, vjust = 0.5, colour = "black"),
+        axis.ticks.x = element_blank(),
+        legend.key = element_rect(colour = "transparent", fill = "transparent"),
         legend.position = c(0.67, 0.75),
         legend.title = element_blank(),
-        legend.key = element_rect(colour="transparent", fill="transparent"),
+        panel.border = element_blank(),
+        panel.background = element_rect(fill = "white"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
-        panel.border = element_blank(),
-        panel.background = element_rect(fill="white"),
-        axis.text.y = element_text(angle=0, vjust=0.5, colour="black"),
-        axis.text.x = element_text(angle=90, vjust=0.5, 
-                                 hjust=1, colour="black"),
-        axis.ticks.x = element_blank(),
         plot.margin = margin(0.1, 0.1, 0.1, 0.1, "cm"),
-        strip.text.y = element_blank()) +
-  scale_x_continuous(breaks=unique(as.numeric(as.character(effects$months))),
-                     labels=unique(effects$session_label), 
-                     limits=c(-1, max(effects$months + 2))) + 
-  scale_y_continuous(labels=function(x) formatC(x, width=6)) +
-  scale_shape_manual(values=c(21, 22, 24)) +
-  scale_colour_manual(values=inferno(3, begin=0.4, end=0.8)) +
-  scale_fill_manual(values=inferno(3, begin=0.4, end=0.8)) +
-  scale_linetype_manual(values=c(2,1,3)) + 
-  xlab("Trap session") + ylab("Mean eastern quoll weight (kg)") +
-  labs(shape="group", fill="group", colour="group") +
-  annotate(geom="text", x=63, y=0.67, label="b", fontface="bold", size=6)
-print(weight)
+        strip.text.y = element_blank()))
 ```
 
-```{r, include=FALSE}
-jpeg(file="Figure 2b.jpeg", 
-     width=5500, height=3500, units="px", res=800)
-print(weight)
-dev.off()
+```{r, include = FALSE}
+# Export plot as a jpeg file
+ggsave(filename = "output/figure 2b.jpeg", 
+       plot = weight, 
+       height = 3500, width = 5500, units = "px", res = 800)
 ```
 
-Here we combine the population and weight estimates into a single publication figure.
-
-```{r, include=FALSE}
+```{r, include = FALSE}
+# Combine plots
 pop_pub <- pop + xlab("") +
-  theme(axis.text.x=element_blank(),
-        axis.ticks.x=element_blank())
+  theme(axis.text.x = element_blank(), 
+        axis.ticks.x = element_blank())
   
-weight_pub <- weight + theme(legend.position='none')
+weight_pub <- weight + theme(legend.position = 'none')
 
-pop_weight <- ggarrange(pop_pub, weight_pub, ncol=1, nrow=2, widths=c(2, 1.2))
-print(pop_weight)
+pop_weight <- ggarrange(pop_pub, weight_pub, 
+                        ncol = 1, nrow = 2, widths = c(2, 1.2))
 
-jpeg(file="Figure 2.jpeg", width=4750, height=5500, units="px", res=800)
-print(pop_weight)
-dev.off()
+# Export plot as a jpeg file
+ggsave(filename = "output/figure 2.jpeg", 
+       plot = pop_weight, 
+       height = 5500, width = 4750, units = "px", res = 800)
 ```
 
 ### Linear regression
@@ -817,16 +891,16 @@ dev.off()
 Here we fitted a linear model with body `weight` (kg) against estimated population size (`N`), to find a significant negative relationship (*p* = 0.034).
 
 ```{r}
-N <- read.csv("quoll.predictedplotdata_June2022.csv")
-N <- N[with(N, order(group, months)),]
-kg <- read.csv("quoll.weights.effectsJune2022.csv")
+N  <- read.csv("quoll_predictedplotdata == .csv")
+N  <- N[with(N, order(group, months)),]
+kg <- read.csv("quoll_weights_effects.csv")
 kg <- kg[with(kg, order(group, months)),]
 
 data <- cbind(N, kg)
 data$pop <- data$estimate
 data$weight <- data$fit
 
-mod <- lm(weight~pop, data=data)
+mod <- lm(weight~pop, data = data)
 summary(mod)
 anova(mod)
 ```
@@ -836,27 +910,27 @@ anova(mod)
 Finally, we calculated eastern quoll density by dividing the trapped area (485 ha) by the mean `estimate` number of females and males across all sessions excluding autumn 2017 (where the population was still establishing), resulting in **1 female per 19.57 ha (± 2.84)**, and **1 male per 37.51 ha (± 1.06)**, and a maximum **carrying capacity of 51 adult eastern quolls** (based on the Autumn 2021 session estimate).
 
 ```{r}
-N <- read.csv("quoll.predictedplotdata_June2022.csv")
-N <- subset(N, session!="Autumn 2017")
+N <- read.csv("quoll_predictedplotdata == .csv")
+N <- subset(N, session != "Autumn 2017")
 MULLIGANS_HECTARES = 485
 QUOLLS_PER_HECTARE = 12.97
 
-female <- subset(N, group=="Females")
+female <- subset(N, group == "Females")
 MULLIGANS_HECTARES/mean(female$estimate)
 std.error(female$estimate)
 
-male <- subset(N, group=="Males")
+male <- subset(N, group == "Males")
 MULLIGANS_HECTARES/mean(male$estimate)
 std.error(male$estimate)
 
-both <- subset(N, group=="Both")
+both <- subset(N, group == "Both")
 MULLIGANS_HECTARES/mean(both$estimate)
 std.error(both$estimate)
 
 print(QUOLLS_PER_HECTARE * MULLIGANS_HECTARES)
 
-max <- subset(N, group=="Both")
-max <- subset(max, session=="Autumn 2021")
+max <- subset(N, group == "Both")
+max <- subset(max, session == "Autumn 2021")
 MULLIGANS_HECTARES/max$estimate
 std.error(max$estimate)
 max$estimate
@@ -874,53 +948,60 @@ The [package vortexR (Pacioni & Mayer 2017)](https://besjournals.onlinelibrary.w
 Note that this package performs best in R versions 4.1.1 and 4.1.2.
 
 ```{r}
-pop <- collate_dat('Eastern quoll', 1000, save2disk=TRUE,
-                   dir_in="vortex/VOutput", 
-                   dir_out="Processed data", verbose=FALSE) %>%
-  clean_names() %>% na.omit() %>%
-  mutate(census=as.numeric(as.character(year)),
-         year=as.numeric(as.character(census))/3,
-         Scenario=factor(scen_name, 
-                         levels=c("No intervention", 
-                                  "Harvest (3JF, 3JM)",
-                                  "Supplement (1F with 3JF, 3JM)",
-                                  "Supplement (1F with 3JF, 3JM) and harvest (2JF, 2JM)",
-                                  "Supplement (10F with 30JF, 30JM) and harvest (27JF, 27JM)")))
+# Fetch Vortex model results and prepare for plotting
+pop <- collate_dat('Eastern quoll', 
+                   1000, 
+                   save2disk = TRUE,
+                   dir_in = "vortex/VOutput", 
+                   dir_out = "Processed data", 
+                   verbose = FALSE) %>%
+  clean_names() %>% 
+  na.omit() %>%
+  mutate(census = as.numeric(as.character(year)),
+         year = as.numeric(as.character(census))/3,
+         Scenario = factor(scen_name, levels = c("No intervention", 
+              "Harvest (3JF, 3JM)",
+              "Supplement (1F with 3JF, 3JM)",
+              "Supplement (1F with 3JF, 3JM) and harvest (2JF, 2JM)",
+              "Supplement (10F with 30JF, 30JM) and harvest (27JF, 27JM)")))
 ```
 
   4. Finally, we generate a plot with parameter values (i.e., `n_all`) on the y-axis and `Scenario` on the x-axis.
 
 ```{r}
-pva <- ggplot(pop, aes(x=year, y=n_all, col=Scenario, 
-                       ymin=n_all - se_n_extant, 
-                       ymax=n_all + se_n_extant)) +
-  geom_line(size=0.5) +
-  theme(axis.line = element_line(colour="black"),
-        legend.key = element_rect(colour="transparent", fill="transparent"),
-        legend.text = element_text(size=8),
-        legend.position = "bottom", legend.direction="vertical",
+# Plot PVA scenarios
+(pva <- ggplot(pop, aes(x = year, 
+                        y = n_all, 
+                        col = Scenario, 
+                        ymin = n_all - se_n_extant, 
+                        ymax = n_all + se_n_extant)) +
+  geom_line(size = 0.5) + 
+  guides(color = guide_legend(nrow = 3, byrow = TRUE)) + 
+  labs(x = "Year", y = "Simulated eastern quoll population size (N)") + 
+  scale_color_manual(values = c("#FFDB6D", "#D16103", "#478841", 
+                                "#81CED4", "#04647E"), 
+                     labels = function(x) str_wrap(x, width = 50)) +
+  theme(axis.line = element_line(colour = "black"),
+        legend.direction = "vertical",
+        legend.key = element_rect(colour = "transparent", fill = "transparent"),
+        legend.position = "bottom", 
+        legend.text = element_text(size = 8), 
+        panel.background = element_rect(fill = "white"), 
         panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        panel.background = element_rect(fill="white")) +
-  scale_color_manual(values=c("#FFDB6D", "#D16103",
-                              "#478841", "#81CED4", "#04647E"), 
-                              labels=function(x) str_wrap(x, width=50)) +
-  guides(color=guide_legend(nrow=3, byrow=TRUE)) +
-  xlim(0, 50) + xlab("Year") +
-  ylab("Simulated eastern quoll population size (N)")
-print(pva)
+        panel.grid.minor = element_blank()) +
+  xlim(0, 50))
 ```
 
-```{r, include=FALSE}
-jpeg(file="Figure 3.jpeg", 
-     width=5200, height=3850, units="px", res=800)
-print(pva)
-dev.off()
+```{r, eval=FALSE, include=FALSE}
+# Export plot as a jpeg file
+ggsave(filename = "output/figure 3.jpeg", 
+       plot = pva, 
+       height = 3850, width = 5200, units = "px", res = 800)
 ```
 
 # **Session information**
 
-```{r}
-# Display version information for R, OS, and packages
+```{r, eval = TRUE}
+# Display R version, OS, and loaded packages
 sessionInfo()
 ```
