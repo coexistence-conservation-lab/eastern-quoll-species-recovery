@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the following."
+title: "Roadmap to recovery revealed through the reintroduction of an IUCN Red List species"
+authors:
+  - name: Wilson B A, Evans M J, Gordon I J, Pierson J C, Brockett B M, Wimpenny C, Batson W G, Newport J, & Manning A D
+date-released: Jan 26, 2023
+repository-code: https://github.com/ecologibel/eastern_quoll_species_recovery
+license: MIT
